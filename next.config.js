@@ -13,5 +13,4 @@ module.exports = {
       'i.kym-cdn.com'
     ],
   },
-  output: "export",
 };
