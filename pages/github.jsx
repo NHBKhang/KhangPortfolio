@@ -6,7 +6,7 @@ import styles from '../styles/GithubPage.module.css';
 const GithubPage = ({ repos, user }) => {
   return (
     <>
-      <div className={styles.user}>
+      {/* <div className={styles.user}>
         <div>
           <Image
             src={user.avatar_url}
@@ -35,30 +35,33 @@ const GithubPage = ({ repos, user }) => {
           hideColorLegend
           hideMonthLabels
         />
-      </div>
+      </div> */}
     </>
   );
 };
 
 export async function getStaticProps() {
 
-  const userRes = await fetch(
-    `https://api.github.com/users/NHBKhang`,
-  );
-  const user = await userRes.json();
+  // const userRes = await fetch(
+  //   `https://api.github.com/users/NHBKhang`,
+  // );
+  // const user = await userRes.json();
 
-  const repoRes = await fetch(
-    `https://api.github.com/users/NHBKhang/repos?per_page=100`,
-  );
-  let repos = await repoRes.json();
-  repos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6);
+  // const repoRes = await fetch(
+  //   `https://api.github.com/users/NHBKhang/repos?per_page=100`,
+  // );
+  // let repos = await repoRes.json();
+  // repos = repos
+  //   .sort((a, b) => b.stargazers_count - a.stargazers_count)
+  //   .slice(0, 6);
 
+  // return {
+  //   props: { title: 'GitHub', repos, user },
+  //   revalidate: 10,
+  // };
   return {
-    props: { title: 'GitHub', repos, user },
-    revalidate: 10,
-  };
+      props: { title: 'GitHub' },
+    };
 }
 
 export default GithubPage;
