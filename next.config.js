@@ -13,6 +13,4 @@ module.exports = {
       'i.kym-cdn.com'
     ],
   },
-  basePath: "/KhangPortfolio",
-  assetPrefix: "/KhangPortfolio/",
 };
