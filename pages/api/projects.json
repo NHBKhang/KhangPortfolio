@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Lottery",
-    "image": "https://imgur.com/kbGs6zH.png",
+    "image": "https://cdn6.f-cdn.com/contestentries/1174780/11830557/5a02a124d3af3_thumb900.jpg",
     "description": "Một dự án đơn giản sử dụng .Net Framework để mô phỏng lại game xổ số",
     "tags": ["C#", ".Net framework"],
     "source_code": "https://github.com/NHBKhang/Lottery"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Wedding Hall Manager",
-    "image": "https://imgur.com/8FFqaX8.png",
+    "image": "https://img.weddingbazaar.com/shaadisaga_production/landing/mmlistcard.jpg",
     "description": "Dự án quản lý nhà hàng tiệc cưới sử dụng ngôn ngữ Java để học lập trình hướng đối tượng",
     "tags": ["Java"],
     "source_code": "https://github.com/NHBKhang/QuanLySanhCuoi/"
@@ -35,7 +35,7 @@
   {
     "id": 5,
     "name": "Quantum Minds",
-    "image": "https://imgur.com/tAZotn3.png",
+    "image": "https://dntech.vn/uploads/details/2021/11/images/ai%20l%C3%A0%20g%C3%AC.jpg",
     "description": "Game giải đố góc nhìn thứ nhất viết bằng engine Unity",
     "tags": ["C#", "HLSL", "Shaderlab", "Unity3D"],
     "source_code": "https://github.com/NHBKhang/QuantumMinds"
@@ -68,9 +68,10 @@
   {
     "id": 9,
     "name": "Khang Vscode Portfolio",
-    "image": "https://imgur.com/mKkz0iz.png",
+    "image": "https://i0.wp.com/www.alphr.com/wp-content/uploads/2021/04/How-to-Collapse-All-in-VS-Code.png?fit=1920%2C1080&ssl=1",
     "description": "Dự án đơn giản về trang web bán điện thoại trực tuyến sử dụng công nghê Flask",
-    "tags": ["React", "Next","Typescript", "Css", "Javascript"],
-    "source_code": "https://github.com/NHBKhang/SaleApp"
+    "tags": ["React", "Next", "Css", "Javascript"],
+    "source_code": "https://github.com/NHBKhang/KhangPortfolio",
+    "demo": "https://khang-vss-portfolio.netlify.app/"
   }
 ]

@@ -3,8 +3,8 @@ import styles from '../styles/ContactCode.module.css';
 const contactItems = [
   {
     social: 'website',
-    link: 'https://github.com/NHBKhang/MyWebsite',
-    href: 'https://github.com/NHBKhang/MyWebsite',
+    link: 'https://khang-vss-portfolio.netlify.app/',
+    href: 'https://khang-vss-portfolio.netlify.app/',
   },
   {
     social: 'email',
