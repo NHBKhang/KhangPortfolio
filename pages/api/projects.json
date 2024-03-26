@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "name": "Lottery",
+    "image": "https://imgur.com/kbGs6zH.png",
+    "description": "Một dự án đơn giản sử dụng .Net Framework để mô phỏng lại game xổ số",
+    "tags": ["C#", ".Net framework"],
+    "source_code": "https://github.com/NHBKhang/Lottery"
+  },
+  {
+    "id": 2,
+    "name": "Wedding Hall Manager",
+    "image": "https://imgur.com/8FFqaX8.png",
+    "description": "Dự án quản lý nhà hàng tiệc cưới sử dụng ngôn ngữ Java để học lập trình hướng đối tượng",
+    "tags": ["Java"],
+    "source_code": "https://github.com/NHBKhang/QuanLySanhCuoi/"
+  },
+  {
+    "id": 3,
+    "name": "Vung Tau Travel Website",
+    "image": "https://nhbkhang.github.io/VungTauTravelWebsite/img/logo.png",
+    "description": "Website du lịch Vũng Tàu sử dụng cho môn thiết kế web",
+    "tags": ["Html", "Css", "Javascript"],
+    "source_code": "https://github.com/NHBKhang/VungTauTravelWebsite",
+    "demo": "https://nhbkhang.github.io/VungTauTravelWebsite/"
+  },
+  {
+    "id": 4,
+    "name": "Electronic Sale App",
+    "image": "https://media.istockphoto.com/id/166107706/photo/mobility-concept-with-digital-devices-on-laptop.jpg?s=612x612&w=0&k=20&c=cjnkfi3c8hjHq76VV0KI1pNDgnyuyHZOE1l8-o0_QY8=",
+    "description": "Dự án đơn giản về trang web bán điện thoại trực tuyến sử dụng công nghệ Flask",
+    "tags": ["Html", "Css", "Javascript", "Python", "Flask", "Bootstrap", "MySQL"],
+    "source_code": "https://github.com/NHBKhang/SaleApp"
+  },
+  {
+    "id": 5,
+    "name": "Quantum Minds",
+    "image": "https://imgur.com/tAZotn3.png",
+    "description": "Game giải đố góc nhìn thứ nhất viết bằng engine Unity",
+    "tags": ["C#", "HLSL", "Shaderlab", "Unity3D"],
+    "source_code": "https://github.com/NHBKhang/QuantumMinds"
+  },
+  {
+    "id": 6,
+    "name": "Django Message App",
+    "image": "https://cdn.fosstodon.org/cache/preview_cards/images/027/034/744/original/955cab1964b116f3.jpg",
+    "description": "Hệ thống nhắn tin trực tuyến áp dụng các phương pháp bảo mật an toàn thông tin",
+    "tags": ["Html", "Css", "Javascript", "Python", "Django", "Tailwind", "SQLite"],
+    "source_code": "https://github.com/NHBKhang/MessageApp"
+  },
+  {
+    "id": 7,
+    "name": "Bookstore Manager",
+    "image": "https://celadonbooks.com/wp-content/uploads/2019/09/memoir-definition.jpg",
+    "description": "Đồ án hệ thống quản lý nhà sách cho môn công nghệ phần mềm sử dụng Flask",
+    "tags": ["Html", "Css", "Javascript", "Python", "Flask", "Bootstrap", "MySQL"],
+    "source_code": "https://github.com/NHBKhang/BookStoreManager",
+    "demo": "https://nhbkhang12.pythonanywhere.com/"
+  },
+  {
+    "id": 8,
+    "name": "Course App",
+    "image": "https://www.studytienganh.vn/upload/2021/06/106292.jpg",
+    "description": "Dự án đơn giản về trang web học tập trực tuyến sử dụng công nghệ Django",
+    "tags": ["React-native", "REST", "Javascript", "Python", "Django", "MySQL"],
+    "source_code": "https://github.com/NHBKhang/SaleApp"
+  },
+  {
+    "id": 9,
+    "name": "Khang Vscode Portfolio",
+    "image": "https://imgur.com/mKkz0iz.png",
+    "description": "Dự án đơn giản về trang web bán điện thoại trực tuyến sử dụng công nghê Flask",
+    "tags": ["React", "Next","Typescript", "Css", "Javascript"],
+    "source_code": "https://github.com/NHBKhang/SaleApp"
+  }
+]
