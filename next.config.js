@@ -13,7 +13,9 @@ module.exports = {
       'i.kym-cdn.com',
       'cdn6.f-cdn.com',
       'img.weddingbazaar.com',
-      'i0.wp.com'
+      'i0.wp.com',
+      'img.freepik.com',
+      'i.imgflip.com',
     ],
   },
 };

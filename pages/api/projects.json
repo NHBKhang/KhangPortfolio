@@ -73,5 +73,13 @@
     "tags": ["React", "Next", "Css", "Javascript"],
     "source_code": "https://github.com/NHBKhang/KhangPortfolio",
     "demo": "https://khang-vss-portfolio.netlify.app/"
+  },
+  {
+    "id": 10,
+    "name": "Bookstore System V2",
+    "image": "https://img.freepik.com/premium-vector/book-shop-interior-illustration-various-books-shelves-cashier-desk-indoors-bookstore-with-girl-seller-no-buyers-inside-popular-new-items_109722-486.jpg?w=1380",
+    "description": "Đồ án cuối kỳ cho môn Lập trình Cơ sở dữ liệu. Project được làm lại tập trung hơn vào CSDL với công nghệ Django",
+    "tags": ["Python", "Django", "Html", "Javascript", "Css", "Bootstrap", "MySQL"],
+    "source_code": "https://github.com/NHBKhang/BookstoreSystemV2"
   }
 ]
