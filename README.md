@@ -7,4 +7,4 @@ Owner project: https://github.com/itsnitinr/vscode-portfolio
 - Languages: Javascript, Css
 - Framework: React, Next
 
-- Live demo: https://khang-vss-portfolio.netlify.app/
+- Live demo: https://khang-vsc-portfolio.netlify.app/

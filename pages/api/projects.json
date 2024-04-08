@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Lottery",
+    "name": "Lottery Game",
     "image": "https://cdn6.f-cdn.com/contestentries/1174780/11830557/5a02a124d3af3_thumb900.jpg",
-    "description": "Một dự án đơn giản sử dụng .Net Framework để mô phỏng lại game xổ số",
+    "description": "Một dự án đơn giản sử dụng .Net Framework để thiết kế giao diện. Project mô phỏng lại game xổ số Vietlot",
     "tags": ["C#", ".Net framework"],
     "source_code": "https://github.com/NHBKhang/Lottery"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Vung Tau Travel Website",
     "image": "https://nhbkhang.github.io/VungTauTravelWebsite/img/logo.png",
-    "description": "Website du lịch Vũng Tàu sử dụng cho môn thiết kế web",
+    "description": "Website sử dụng cho môn thiết kế web. Website giới thiệu du lịch Vũng Tàu và các dịch vụ khác",
     "tags": ["Html", "Css", "Javascript"],
     "source_code": "https://github.com/NHBKhang/VungTauTravelWebsite",
     "demo": "https://nhbkhang.github.io/VungTauTravelWebsite/"
@@ -62,7 +62,7 @@
     "name": "Course App",
     "image": "https://www.studytienganh.vn/upload/2021/06/106292.jpg",
     "description": "Dự án đơn giản về trang web học tập trực tuyến sử dụng công nghệ Django",
-    "tags": ["React-native", "REST", "Javascript", "Python", "Django", "MySQL"],
+    "tags": ["React-native", "REST", "Javascript", "Python", "Css", "Django", "MySQL"],
     "source_code": "https://github.com/NHBKhang/SaleApp"
   },
   {
@@ -81,5 +81,21 @@
     "description": "Đồ án cuối kỳ cho môn Lập trình Cơ sở dữ liệu. Project được làm lại tập trung hơn vào CSDL với công nghệ Django",
     "tags": ["Python", "Django", "Html", "Javascript", "Css", "Bootstrap", "MySQL"],
     "source_code": "https://github.com/NHBKhang/BookstoreSystemV2"
+  },
+  {
+    "id": 11,
+    "name": "Subject Ouline App",
+    "image": "https://media.istockphoto.com/id/1270206184/vector/online-courses-concept-with-line-laptop-illustration-with-editable-stroke.jpg?s=612x612&w=0&k=20&c=GOTveu88Q2o7YdpvTsrfdwt-FBz4MHzAIWDSyEAKFYY=",
+    "description": "Đồ án cuối kỳ cho môn Các công nghệ lập trình hiện đại. Project sử dụng các công nghệ hiện đại như Django, RESTful API, React native",
+    "tags": ["Python", "Javascript", "Css", "Django", "MySQL","REST", "React-native", "Firebase"],
+    "source_code": "https://github.com/NHBKhang/SubjectOutline"
+  },
+  {
+    "id": 12,
+    "name": "Basic Equation",
+    "image": "https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths.webp",
+    "description": "Project đơn giản ôn tập thuật toán và cấu trúc dữ liệu. Project lập trình theo hướng cấu trúc sử dụng cho việc học lập trình căn bản",
+    "tags": ["C/C++"],
+    "source_code": "https://github.com/NHBKhang/BasicEquation"
   }
 ]

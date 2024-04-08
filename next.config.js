@@ -16,6 +16,8 @@ module.exports = {
       'i0.wp.com',
       'img.freepik.com',
       'i.imgflip.com',
+      'media.geeksforgeeks.org',
+      'lh3.googleusercontent.com',
     ],
   },
 };

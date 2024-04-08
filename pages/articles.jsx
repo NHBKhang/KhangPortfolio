@@ -14,7 +14,7 @@ const ArticlesPage = ({ articles }) => {
           rel="noopener"
           className={styles.underline}
         >
-          github.io
+          khang.github.io
         </a>
       </h3>
       <div className={styles.container}>

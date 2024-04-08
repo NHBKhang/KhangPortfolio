@@ -162,3 +162,17 @@
 .REST:hover {
   background: rgba(82, 143, 240, 0.25);
 }
+
+.Firebase {
+  border: 0.1rem solid rgb(152, 181, 8);
+}
+.Firebase:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.C\/C\+\+ {
+  border: 0.1rem solid rgb(211, 21, 211);
+}
+.C\/C\+\+:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
