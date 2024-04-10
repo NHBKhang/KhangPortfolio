@@ -17,7 +17,9 @@ module.exports = {
       'img.freepik.com',
       'i.imgflip.com',
       'media.geeksforgeeks.org',
-      'lh3.googleusercontent.com',
+      'media.licdn.com',
+      'fontawesome.com',
+      'www.vietnamworks.com',
     ],
   },
 };

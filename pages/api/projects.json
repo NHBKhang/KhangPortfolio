@@ -97,5 +97,23 @@
     "description": "Project đơn giản ôn tập thuật toán và cấu trúc dữ liệu. Project lập trình theo hướng cấu trúc sử dụng cho việc học lập trình căn bản",
     "tags": ["C/C++"],
     "source_code": "https://github.com/NHBKhang/BasicEquation"
+  },
+  {
+    "id": 13,
+    "name": "Photo Gallery",
+    "image": "https://fontawesome.com/social/image-landscape?f=&s=",
+    "description": "Website Next.js cá nhân chứa các ảnh đã lưu trữ",
+    "tags": ["Typescript", "Javascript", "Css", "Next", "React", "Tailwind"],
+    "source_code": "https://github.com/NHBKhang/PhotoGallery",
+    "demo": "https://nhbkhang-photo-gallery-k7vtb7j7q-nhbkhangs-projects.vercel.app/"
+  },
+  {
+    "id": 14,
+    "name": "My CV Template",
+    "image": "https://www.vietnamworks.com/hrinsider/wp-content/uploads/2021/07/shutterstock_1210613140.jpg",
+    "description": "Website template đơn giản chứa CV của tôi và CV có thể tải về được",
+    "tags": ["Html", "Javascript", "Css", "Scss", "Bootstrap"],
+    "source_code": "https://github.com/NHBKhang/MyCVTemplate",
+    "demo": "https://nhbkhang.github.io/MyCVTemplate/"
   }
 ]

@@ -44,6 +44,13 @@
   background: rgba(118, 74, 188, 0.25);
 }
 
+.Scss {
+  border: 0.1rem solid rgb(168, 25, 99);
+}
+.Scss:hover {
+  background: rgba(118, 74, 188, 0.25);
+}
+
 .Html {
   border: 0.1rem solid rgb(82, 143, 240);
 }
