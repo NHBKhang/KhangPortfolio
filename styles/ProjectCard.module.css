@@ -23,6 +23,7 @@
 .tags {
   display: flex;
   flex-wrap: wrap;
+  justify-content: safe;
   margin: 0.5rem 0 1rem;
 }
 

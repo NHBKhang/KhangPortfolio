@@ -2,9 +2,9 @@ import styles from '../styles/ContactCode.module.css';
 
 const contactItems = [
   {
-    social: 'website',
-    link: 'https://khang-vss-portfolio.netlify.app/',
-    href: 'https://khang-vss-portfolio.netlify.app/',
+    social: 'my website',
+    link: 'Khang Portfolio',
+    href: 'https://khang-vsc-portfolio.netlify.app/',
   },
   {
     social: 'email',

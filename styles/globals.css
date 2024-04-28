@@ -59,7 +59,7 @@
 }
 
 .Java {
-  border: 0.1rem solid rgb(25, 118, 210);
+  border: 0.1rem solid rgb(125, 70, 38);
 }
 .Java:hover {
   background: rgba(25, 118, 210, 0.25);
@@ -143,7 +143,7 @@
 }
 
 .Django {
-  border: 0.1rem solid rgb(188, 19, 197);
+  border: 0.1rem solid rgb(197, 19, 120);
 }
 .Django:hover {
   background: rgba(82, 143, 240, 0.25);
@@ -181,5 +181,33 @@
   border: 0.1rem solid rgb(211, 21, 211);
 }
 .C\/C\+\+:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.Ruby {
+  border: 0.1rem solid rgb(78, 8, 79);
+}
+.Ruby:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.Kotlin {
+  border: 0.1rem solid rgb(179, 255, 144);
+}
+.Kotlin:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.Objective\-C {
+  border: 0.1rem solid rgb(241, 149, 255);
+}
+.Objective\-C:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.Objective\-C\+\+ {
+  border: 0.1rem solid rgb(178, 67, 218);
+}
+.Objective\-C\+\+:hover {
   background: rgba(82, 143, 240, 0.25);
 }

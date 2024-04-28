@@ -54,7 +54,7 @@
     "image": "https://celadonbooks.com/wp-content/uploads/2019/09/memoir-definition.jpg",
     "description": "Đồ án hệ thống quản lý nhà sách cho môn công nghệ phần mềm sử dụng Flask",
     "tags": ["Html", "Css", "Javascript", "Python", "Flask", "Bootstrap", "MySQL"],
-    "source_code": "https://github.com/NHBKhang/BookStoreManager",
+    "source_code": "https://github.com/NHBKhang/BookstoreManager",
     "demo": "https://nhbkhang12.pythonanywhere.com/"
   },
   {
@@ -62,7 +62,7 @@
     "name": "Course App",
     "image": "https://www.studytienganh.vn/upload/2021/06/106292.jpg",
     "description": "Dự án đơn giản về trang web học tập trực tuyến sử dụng công nghệ Django",
-    "tags": ["React-native", "REST", "Javascript", "Python", "Css", "Django", "MySQL"],
+    "tags": ["React-native", "REST", "Javascript", "Python", "Css", "Django", "Ruby", "Kotlin", "Objective-C", "MySQL"],
     "source_code": "https://github.com/NHBKhang/SaleApp"
   },
   {
@@ -78,16 +78,16 @@
     "id": 10,
     "name": "Bookstore System V2",
     "image": "https://img.freepik.com/premium-vector/book-shop-interior-illustration-various-books-shelves-cashier-desk-indoors-bookstore-with-girl-seller-no-buyers-inside-popular-new-items_109722-486.jpg?w=1380",
-    "description": "Đồ án cuối kỳ cho môn Lập trình Cơ sở dữ liệu. Project được làm lại tập trung hơn vào CSDL với công nghệ Django",
-    "tags": ["Python", "Django", "Html", "Javascript", "Css", "Bootstrap", "MySQL"],
+    "description": "Đồ án cuối kỳ cho môn Lập trình Cơ sở dữ liệu và bài tập lớn cho môn Kiểm thử phần mềm. Project được làm lại hoàn thiện hơn với công nghệ Django",
+    "tags": ["Python", "Django", "Html", "Javascript", "Css", "Bootstrap", "REST", "MySQL"],
     "source_code": "https://github.com/NHBKhang/BookstoreSystemV2"
   },
   {
     "id": 11,
-    "name": "Subject Ouline App",
+    "name": "Subject Ouline Compiler",
     "image": "https://media.istockphoto.com/id/1270206184/vector/online-courses-concept-with-line-laptop-illustration-with-editable-stroke.jpg?s=612x612&w=0&k=20&c=GOTveu88Q2o7YdpvTsrfdwt-FBz4MHzAIWDSyEAKFYY=",
-    "description": "Đồ án cuối kỳ cho môn Các công nghệ lập trình hiện đại. Project sử dụng các công nghệ hiện đại như Django, RESTful API, React native",
-    "tags": ["Python", "Javascript", "Css", "Django", "MySQL","REST", "React-native", "Firebase"],
+    "description": "Đồ án cuối kỳ cho môn Các công nghệ lập trình hiện đại. Project sử dụng các công nghệ hiện đại như Django, REST API, React native và OAuth2",
+    "tags": ["Python", "Javascript", "Typescript", "Css", "Ruby", "Kotlin", "REST", "Objective-C", "Objective-C++", "Django", "MySQL", "Firebase", "React-native"],
     "source_code": "https://github.com/NHBKhang/SubjectOutline"
   },
   {
@@ -115,5 +115,13 @@
     "tags": ["Html", "Javascript", "Css", "Scss", "Bootstrap"],
     "source_code": "https://github.com/NHBKhang/MyCVTemplate",
     "demo": "https://nhbkhang.github.io/MyCVTemplate/"
+  },
+  {
+    "id": 15,
+    "name": "AI Chatbox?",
+    "image": "https://media.istockphoto.com/id/1311491514/video/retro-loading-bar-animation-isolated-on-a-black-background.jpg?s=640x640&k=20&c=L-XP7g6eVCrsmxJ3q9t08II9jI7l9ey3lr5RrhRceuQ=",
+    "description": "Project tạo chatbox trí tuệ nhân tạo (On Proccesing)",
+    "tags": ["Python", "Django"],
+    "source_code": "https://github.com/NHBKhang/AIChatbox"
   }
 ]
