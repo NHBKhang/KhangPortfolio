@@ -27,7 +27,7 @@
   {
     "id": 4,
     "name": "Electronic Sale App",
-    "image": "https://media.istockphoto.com/id/166107706/photo/mobility-concept-with-digital-devices-on-laptop.jpg?s=612x612&w=0&k=20&c=cjnkfi3c8hjHq76VV0KI1pNDgnyuyHZOE1l8-o0_QY8=",
+    "image": "https://st.depositphotos.com/1000128/2454/i/450/depositphotos_24542943-stock-photo-mobile-devices-wireless-communication-technology.jpg",
     "description": "Dự án đơn giản về trang web bán điện thoại trực tuyến sử dụng công nghệ Flask",
     "tags": ["Html", "Css", "Javascript", "Python", "Flask", "Bootstrap", "MySQL"],
     "source_code": "https://github.com/NHBKhang/SaleApp"
@@ -43,7 +43,7 @@
   {
     "id": 6,
     "name": "Django Message App",
-    "image": "https://cdn.fosstodon.org/cache/preview_cards/images/027/034/744/original/955cab1964b116f3.jpg",
+    "image": "https://wallpapercave.com/wp/wp12510353.jpg",
     "description": "Hệ thống nhắn tin trực tuyến áp dụng các phương pháp bảo mật an toàn thông tin",
     "tags": ["Html", "Css", "Javascript", "Python", "Django", "Tailwind", "SQLite"],
     "source_code": "https://github.com/NHBKhang/MessageApp"
@@ -62,7 +62,7 @@
     "name": "Course App",
     "image": "https://www.studytienganh.vn/upload/2021/06/106292.jpg",
     "description": "Dự án đơn giản về trang web học tập trực tuyến sử dụng công nghệ Django",
-    "tags": ["React-native", "REST", "Javascript", "Python", "Css", "Django", "Ruby", "Kotlin", "Objective-C", "MySQL"],
+    "tags": ["React Native", "REST", "Javascript", "Python", "Css", "Html", "Django", "Ruby", "Kotlin", "Objective-C", "MySQL"],
     "source_code": "https://github.com/NHBKhang/SaleApp"
   },
   {
@@ -85,9 +85,9 @@
   {
     "id": 11,
     "name": "Subject Ouline Compiler",
-    "image": "https://media.istockphoto.com/id/1270206184/vector/online-courses-concept-with-line-laptop-illustration-with-editable-stroke.jpg?s=612x612&w=0&k=20&c=GOTveu88Q2o7YdpvTsrfdwt-FBz4MHzAIWDSyEAKFYY=",
+    "image": "https://uploads.heightsplatform.com/program/public/blogarticle/602/cover_image/original-04814f76e2e035a6a98528da9eff36c1.png",
     "description": "Đồ án cuối kỳ cho môn Các công nghệ lập trình hiện đại. Project sử dụng các công nghệ hiện đại như Django, REST API, React native và OAuth2",
-    "tags": ["Python", "Javascript", "Typescript", "Css", "Ruby", "Kotlin", "REST", "Objective-C", "Objective-C++", "Django", "MySQL", "Firebase", "React-native"],
+    "tags": ["Python", "Javascript", "Typescript", "Css", "Html", "Ruby", "Kotlin", "REST", "Objective-C", "Objective-C++", "Django", "MySQL", "Firebase", "React Native"],
     "source_code": "https://github.com/NHBKhang/SubjectOutline"
   },
   {
@@ -119,7 +119,7 @@
   {
     "id": 15,
     "name": "AI Chatbox?",
-    "image": "https://media.istockphoto.com/id/1311491514/video/retro-loading-bar-animation-isolated-on-a-black-background.jpg?s=640x640&k=20&c=L-XP7g6eVCrsmxJ3q9t08II9jI7l9ey3lr5RrhRceuQ=",
+    "image": "https://images.pond5.com/loading-process-complete-footage-090557892_prevstill.jpeg",
     "description": "Project tạo chatbox trí tuệ nhân tạo (On Proccesing)",
     "tags": ["Python", "Django"],
     "source_code": "https://github.com/NHBKhang/AIChatbox"

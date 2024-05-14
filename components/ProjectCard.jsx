@@ -3,7 +3,7 @@ import styles from '../styles/ProjectCard.module.css';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} key={project.id}>
       <div style={{ width: "100%", height: 200, position: "relative", background: "skyblue" }}>
         <Image src={project.image} alt={project.name} layout='fill' objectFit="cover"/>
       </div>

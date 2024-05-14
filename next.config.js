@@ -6,8 +6,8 @@ module.exports = {
       'dntech.vn',
       'nhbkhang.github.io',
       'celadonbooks.com',
-      'media.istockphoto.com',
-      'cdn.fosstodon.org',
+      'st.depositphotos.com',
+      'wallpapercave.com',
       'www.studytienganh.vn',
       'www.newshub.co.nz',
       'i.kym-cdn.com',
@@ -20,6 +20,8 @@ module.exports = {
       'media.licdn.com',
       'fontawesome.com',
       'www.vietnamworks.com',
+      'uploads.heightsplatform.com',
+      'images.pond5.com'
     ],
   },
 };
