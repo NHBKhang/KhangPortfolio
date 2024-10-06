@@ -47,11 +47,9 @@
   cursor: pointer;
   color: white;
   text-decoration: none;
-  background-image: linear-gradient(
-    120deg,
-    var(--accent-color) 100%,
-    var(--accent-color) 100%
-  );
+  background-image: linear-gradient(120deg,
+      var(--accent-color) 100%,
+      var(--accent-color) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;

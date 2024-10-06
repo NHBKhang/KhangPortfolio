@@ -21,7 +21,7 @@ module.exports = {
       'fontawesome.com',
       'www.vietnamworks.com',
       'uploads.heightsplatform.com',
-      'images.pond5.com',
+      'cdn-icons-png.flaticon.com',
       "media.hanoitimes.vn"
     ],
   },

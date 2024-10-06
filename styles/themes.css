@@ -1,4 +1,8 @@
 /* GitHub Dark */
+html {
+  overflow: hidden;
+}
+
 :root {
   --main-bg: #24292e;
   --bg-text: rgba(56, 58, 61, 0.35);
@@ -35,6 +39,7 @@
   --sidebar-hover-bg: #3c3d51;
   --explorer-bg: #21222c;
   --explorer-hover-bg: #313241;
+  --explorer-active-bg: #2f394d;
   --explorer-border: #161a1d;
   --tabs-bg: #191a21;
   --tab-bg: #21222c;
@@ -61,6 +66,7 @@
   --sidebar-hover-bg: #00010a;
   --explorer-bg: #0a0e14;
   --explorer-hover-bg: #00010a;
+  --explorer-active-bg: #0c0f3d;
   --explorer-border: transparent;
   --tabs-bg: #0a0e14;
   --tab-bg: #0a0e14;
@@ -87,6 +93,7 @@
   --sidebar-hover-bg: #191e2a;
   --explorer-bg: #1f2430;
   --explorer-hover-bg: #191e2a;
+  --explorer-active-bg: #313a50;
   --explorer-border: transparent;
   --tabs-bg: #1f2430;
   --tab-bg: #1f2430;
@@ -113,6 +120,7 @@
   --sidebar-hover-bg: #434c5e;
   --explorer-bg: #2e3440;
   --explorer-hover-bg: #434c5e;
+  --explorer-active-bg: #3c4762;
   --explorer-border: rgba(136, 192, 208, 0.2);
   --tabs-bg: #2e3440;
   --tab-bg: #2e3440;
@@ -139,6 +147,7 @@
   --sidebar-hover-bg: #0e293f;
   --explorer-bg: #011627;
   --explorer-hover-bg: #0e293f;
+  --explorer-active-bg: #1c4d76;
   --explorer-border: transparent;
   --tabs-bg: #011627;
   --tab-bg: #01111d;

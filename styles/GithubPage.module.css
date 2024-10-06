@@ -8,7 +8,7 @@
   margin-bottom: 1.5rem;
 }
 
-.user > div {
+.user>div {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -19,7 +19,7 @@
   height: 100%;
 }
 
-.user > div:last-child {
+.user>div:last-child {
   border-right: none;
 }
 
@@ -52,6 +52,7 @@
   .user h3 {
     font-size: 14px;
   }
+
   .username {
     display: none;
   }

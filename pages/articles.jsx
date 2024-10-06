@@ -1,7 +1,6 @@
 import ArticleCard from '../components/ArticleCard';
 import styles from '../styles/ArticlesPage.module.css';
 import { getArticles } from './api/articles';
-import { getProjects } from './api/projects';
 
 const ArticlesPage = ({ articles }) => {
   return (

@@ -4,11 +4,11 @@
   gap: 2rem;
 }
 
-.container > * {
+.container>* {
   flex: 1;
 }
 
-.container > div:first-child {
+.container>div:first-child {
   border-right: 1px solid var(--accent-color);
 }
 
@@ -67,7 +67,8 @@
   .container {
     display: block;
   }
-  .container > div:first-child {
+
+  .container>div:first-child {
     border-right: none;
     margin-bottom: 2.5rem;
   }
@@ -77,6 +78,7 @@
   .flex {
     display: block;
   }
+
   .form input {
     font-size: 0.85rem;
   }

@@ -16,7 +16,9 @@ const ProjectsPage = ({ projects }) => {
 };
 
 export async function getStaticProps() {
-  const projects = getProjects();
+  var projects = getProjects();
+
+  projects = projects.sort((a, b) => b.id - a.id);
 
   return {
     props: { title: 'Projects', projects },

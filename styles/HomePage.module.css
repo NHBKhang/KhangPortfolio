@@ -7,6 +7,7 @@
   flex-direction: column;
   position: relative;
 }
+
 .content {
   z-index: 100;
 }
@@ -114,22 +115,28 @@
   .background {
     font-size: 8.5rem;
   }
+
   .content {
     padding: 0 3rem;
   }
+
   .name {
     font-size: 6rem;
   }
+
   .bio {
     font-size: 3rem;
     margin-bottom: 5rem;
   }
+
   .button {
     font-size: 2rem;
   }
+
   .outlined {
     font-size: 2rem;
   }
+
   .illustration {
     height: 900px;
     width: 700px;
@@ -141,21 +148,26 @@
   .background {
     display: none;
   }
+
   .container {
     display: block;
   }
+
   .foreground {
     margin: 4rem 0;
     display: block;
     text-align: center;
   }
+
   .name {
     font-size: 4rem;
   }
+
   .bio {
     font-size: 1.75rem;
     margin: 0.75rem auto 3rem;
   }
+
   .illustration {
     position: absolute;
     bottom: -50px;
@@ -170,13 +182,16 @@
   .foreground {
     margin: 2rem 0;
   }
+
   .name {
     font-size: 3rem;
     margin-bottom: 0.5rem;
   }
+
   .bio {
     font-size: 1.5rem;
   }
+
   .illustration {
     height: 500px;
     width: 400px;
@@ -188,6 +203,7 @@
   .container {
     display: flex;
   }
+
   .illustration {
     display: none;
   }
@@ -198,19 +214,24 @@
   .foreground {
     margin: 0;
   }
+
   .name {
     font-size: 2rem;
   }
+
   .bio {
     font-size: 1.25rem;
     margin-bottom: 2rem;
   }
+
   .button {
     font-size: 1rem;
   }
+
   .outlined {
     font-size: 1rem;
   }
+
   .illustration {
     position: absolute;
     bottom: 0;

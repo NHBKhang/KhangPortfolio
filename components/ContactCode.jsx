@@ -33,17 +33,17 @@ const contactItems = [
   },
   {
     social: 'instagram',
-    link: 'khang29012003',
+    link: 'Nghỉ chơi',
     href: 'https://www.instagram.com',
   },
   {
     social: 'polywork',
-    link: 'không có',
+    link: 'Không có',
     href: 'https://www.polywork.com',
   },
   {
     social: 'telegram',
-    link: 'quên rồi',
+    link: 'Quên rồi',
     href: '/',
   },
   {

@@ -13,7 +13,8 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const main = document.getElementById('main-editor')
     main.scrollTop = 0
-  }, [router.pathname])
+  }, [router.pathname]);
+  
   return (
     <>
       <Titlebar />

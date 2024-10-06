@@ -8,3 +8,7 @@ Owner project: https://github.com/itsnitinr/vscode-portfolio
 - Framework: React, Next
 
 - Live demo: https://khang-vsc-portfolio.netlify.app/
+
+* **Chạy Project:**
+        ##
+            npm run dev

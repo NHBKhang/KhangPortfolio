@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card} key={project.id}>
       <div style={{ width: "100%", height: 200, position: "relative", background: "skyblue" }}>
-        <Image src={project.image} alt={project.name} layout='fill' objectFit="cover"/>
+        <Image src={project.image} alt={project.name} layout='fill' objectFit="fill"/>
       </div>
       <div className={styles.content}>
         <h3>{project.name}</h3>

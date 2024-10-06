@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import ChevronRight from '../components/icons/ChevronRight';
 import styles from '../styles/Explorer.module.css';
+import { useRouter } from 'next/router';
 
 const explorerItems = [
   {
@@ -39,6 +40,7 @@ const explorerItems = [
 
 const Explorer = () => {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
+  const router = useRouter();
 
   return (
     <div className={styles.explorer}>
@@ -63,15 +65,15 @@ const Explorer = () => {
           style={portfolioOpen ? { display: 'block' } : { display: 'none' }}
         >
           {explorerItems.map((item) => (
-            <Link style={{textDecoration: "none"}} href={item.path} key={item.name}>
-              <div className={styles.file}>
+            <Link style={{ textDecoration: "none" }} href={item.path} key={item.name}>
+              <div className={`${styles.file} ${router.pathname === item.path && styles.active}`}>
                 <Image
                   src={`/${item.icon}`}
                   alt={item.name}
                   height={18}
                   width={18}
                 />{' '}
-                <p style={{color: "whitesmoke"}}>{item.name}</p>
+                <p style={{ color: "whitesmoke" }}>{item.name}</p>
               </div>
             </Link>
           ))}

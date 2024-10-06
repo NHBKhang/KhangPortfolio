@@ -7,8 +7,7 @@ import styles from '../styles/ArticleCard.module.css';
 const ArticleCard = ({ article }) => {
   return (
     <a
-      href={article.url}
-      target="_blank"
+      href={`/articles/${article.id}`}
       rel="noopener noreferrer"
       className={styles.container}
     >

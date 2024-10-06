@@ -56,6 +56,10 @@
   transition: transform 0.2s;
 }
 
+.active {
+  background-color: var(--explorer-active-bg);
+}
+
 @media screen and (min-width: 2000px) {
   .explorer {
     width: 10vw;

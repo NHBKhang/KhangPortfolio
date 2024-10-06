@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.items > * {
+.items>* {
   padding: 0 0.5rem;
   cursor: pointer;
 }
@@ -60,6 +60,7 @@
   .items p {
     display: none;
   }
+
   .title {
     flex: 4;
   }

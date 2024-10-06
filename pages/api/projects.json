@@ -111,17 +111,26 @@
     "id": 14,
     "name": "My CV Template",
     "image": "https://www.vietnamworks.com/hrinsider/wp-content/uploads/2021/07/shutterstock_1210613140.jpg",
-    "description": "Website template đơn giản chứa CV của tôi và CV có thể tải về được",
+    "description": "Website template đơn giản chứa CV của tôi và CV có thể tải về được (Private vì thông tin cá nhân)",
     "tags": ["Html", "Javascript", "Css", "Scss", "Bootstrap"],
     "source_code": "https://github.com/NHBKhang/MyCVTemplate",
     "demo": "https://nhbkhang.github.io/MyCVTemplate/"
   },
   {
     "id": 15,
-    "name": "AI Chatbox?",
-    "image": "https://images.pond5.com/loading-process-complete-footage-090557892_prevstill.jpeg",
-    "description": "Project tạo chatbox trí tuệ nhân tạo (On Proccesing)",
-    "tags": ["Python", "Django"],
-    "source_code": "https://github.com/NHBKhang/AIChatbox"
+    "name": "For You 💕",
+    "image": "https://cdn-icons-png.flaticon.com/512/9553/9553174.png",
+    "description": "Website là lá thư dành cho bạn 💌",
+    "tags": ["Html", "Javascript", "Css"],
+    "source_code": "https://github.com/NHBKhang/ForYou",
+    "demo": "https://nhbkhang.github.io/ForYou/"
+  },
+  {
+    "id": 16,
+    "name": "SoundScape Music Player",
+    "image": "https://res.cloudinary.com/dd0qzygo7/image/upload/v1727713607/My%20Folder/logo123_eoz3rc.png",
+    "description": "Website nghe nhạc trực tuyến mô phỏng SoundCloud với nhiều bài hát tích hợp AWS S3. Đồ án ngành cuối cùng tổng kết cho 4 năm học",
+    "tags": ["React", "Django", "REST", "MySQL", "Bootstrap", "Python", "Html", "Javascript", "Css"],
+    "source_code": "https://github.com/NHBKhang/MusicPlayer"
   }
 ]
