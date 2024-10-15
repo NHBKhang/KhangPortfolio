@@ -52,15 +52,14 @@ const Sidebar = () => {
         {sidebarTopItems.map(({ Icon, path }) => (
           <Link href={path} key={path}>
             <div
-              className={`${styles.iconContainer} ${
-                router.pathname === path && styles.active
-              }`}
+              className={`${styles.iconContainer} ${router.pathname === path && styles.active
+                }`}
             >
               <Icon
                 fill={
                   router.pathname === path
-                    ? 'rgb(225, 228, 232)'
-                    : 'rgb(106, 115, 125)'
+                  ? 'var(--icon-fill-active)'
+                  : 'var(--icon-fill-inactive)'
                 }
                 className={styles.icon}
               />
@@ -75,8 +74,8 @@ const Sidebar = () => {
               <Icon
                 fill={
                   router.pathname === path
-                    ? 'rgb(225, 228, 232)'
-                    : 'rgb(106, 115, 125)'
+                    ? 'var(--icon-fill-active)'
+                    : 'var(--icon-fill-inactive)'
                 }
                 className={styles.icon}
               />

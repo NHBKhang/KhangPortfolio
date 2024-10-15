@@ -52,14 +52,14 @@
     display: inline-block;
     padding: 10px 16px;
     border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--button-2nd-bg);
+    color: var(--text-clr);
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .viewFullArticle:hover {
-    background-color: #0056b3;
+    background-color: var(--button-2nd-hover-bg);
 }
 
 @media screen and (min-width: 2000px) {

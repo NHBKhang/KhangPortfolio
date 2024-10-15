@@ -40,28 +40,47 @@ const GithubPage = ({ repos, user }) => {
   );
 };
 
+const token = process.env.GITHUB_TOKEN;
+
 export async function getStaticProps() {
+  try {
+    const userRes = await fetch(`https://api.github.com/users/NHBKhang`, {
+      headers: {
+        Authorization: `token ${token}`,
+      },
+    });
 
-  const userRes = await fetch(
-    `https://api.github.com/users/NHBKhang`,
-  );
-  const user = await userRes.json();
+    if (!userRes.ok) {
+      throw new Error('Failed to fetch user data');
+    }
+    const user = await userRes.json();
 
-  const repoRes = await fetch(
-    `https://api.github.com/users/NHBKhang/repos?per_page=100`,
-  );
-  let repos = await repoRes.json();
-  repos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6);
+    const repoRes = await fetch(`https://api.github.com/users/NHBKhang/repos?per_page=100`, {
+      headers: {
+        Authorization: `token ${token}`,
+      },
+    });
 
-  return {
-    props: { title: 'GitHub', repos, user },
-    revalidate: 10,
-  };
-  return {
-      props: { title: 'GitHub' },
+    if (!repoRes.ok) {
+      throw new Error('Failed to fetch repositories');
+    }
+
+    let repos = await repoRes.json();
+    repos = repos
+      .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
+      .slice(0, 6);
+
+    return {
+      props: { title: 'GitHub', repos, user },
+      revalidate: 10,
     };
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+    return {
+      props: { title: 'GitHub', repos: [], user: null },
+      revalidate: 10,
+    };
+  }
 }
 
 export default GithubPage;

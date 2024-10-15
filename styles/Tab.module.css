@@ -1,7 +1,7 @@
 .tab {
   padding: 0.5rem 1.25rem;
   background: var(--tab-bg);
-  color: #ececec;
+  color: var(--text-2nd-clr);
   display: flex;
   align-items: center;
   border: 1px solid var(--tab-border);

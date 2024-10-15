@@ -5,6 +5,10 @@
   overflow-x: auto;
 }
 
+.tabs a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
   .tabs {
     width: 78vw;

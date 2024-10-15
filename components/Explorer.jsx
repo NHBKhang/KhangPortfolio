@@ -73,7 +73,7 @@ const Explorer = () => {
                   height={18}
                   width={18}
                 />{' '}
-                <p style={{ color: "whitesmoke" }}>{item.name}</p>
+                <p className={styles.name}>{item.name}</p>
               </div>
             </Link>
           ))}

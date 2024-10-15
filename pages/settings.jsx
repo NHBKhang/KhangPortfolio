@@ -48,6 +48,48 @@ const SettingsPage = () => {
           theme="night-owl"
           description="A VS Code theme for the night owls out there."
         />
+        <ThemeInfo
+          name="Soft Light"
+          icon="/light.png"
+          publisher="Light Theme"
+          theme="soft-light"
+          description="A visually appealing light theme inspired by Visual Studio Code."
+        />
+        <ThemeInfo
+          name="Bright Light"
+          icon="/light.png"
+          publisher="Light Theme"
+          theme="bright-light"
+          description="A vibrant and visually appealing light theme inspired by Visual Studio Code."
+        />
+        <ThemeInfo
+          name="Muted Elegance"
+          icon="/muted-elegance.png"
+          publisher="NHBKhang"
+          theme="muted-elegance"
+          description="A sophisticated theme that balances muted tones with elegant accents, creating a serene and visually pleasing workspace."
+        />
+        <ThemeInfo
+          name="Pastel Dream"
+          icon="/pastel-dream.jpg"
+          publisher="NHBKhang"
+          theme="pastel-dream"
+          description="A vibrant and visually appealing theme filled with colors for a lively experience."
+        />
+        <ThemeInfo
+          name="Colorful"
+          icon="/colorful.jpg"
+          publisher="NHBKhang"
+          theme="colorful"
+          description="A vibrant theme bursting with various colors for a lively and energetic coding experience."
+        />
+        <ThemeInfo
+          name="SoundScape"
+          icon="/soundscape.png"
+          publisher="SoundScape Theme"
+          theme="soundscape"
+          description="An immersive theme that harmonizes vibrant colors to create a lively and energetic atmosphere for coding and creativity."
+        />
       </div>
     </>
   );

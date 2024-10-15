@@ -30,7 +30,7 @@
 }
 
 .name {
-  color: #eee;
+  color: var(--text-3nd-clr);
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -38,7 +38,7 @@
 
 .bio {
   width: max-content;
-  color: #eee;
+  color: var(--text-3nd-clr);
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 3rem;
@@ -85,7 +85,7 @@
   font-size: 1.25rem;
   padding: 0.5rem 1rem;
   margin-right: 1.5rem;
-  color: #eee;
+  color: var(--text-3nd-clr);
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -94,7 +94,7 @@
 .outlined {
   font-size: 1.25rem;
   padding: 0.5rem 1rem;
-  color: #eee;
+  color: var(--text-3nd-clr);
   border: 2px solid var(--accent-color);
   background: transparent;
   cursor: pointer;

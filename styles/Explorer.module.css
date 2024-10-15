@@ -1,7 +1,7 @@
 .explorer {
   background: var(--explorer-bg);
   width: 18vw;
-  color: rgb(225, 228, 232);
+  color: var(--text-2nd-clr);
   font-family: 'Source Sans Pro', sans-serif;
   border-right: 1px solid var(--explorer-border);
 }
@@ -57,7 +57,11 @@
 }
 
 .active {
-  background-color: var(--explorer-active-bg);
+  background-color: var(--explorer-active-bg) !important;
+}
+
+.name {
+  color: var(--text-2nd-clr);
 }
 
 @media screen and (min-width: 2000px) {

@@ -45,7 +45,7 @@
   font-size: 0.9rem;
   letter-spacing: 0;
   cursor: pointer;
-  color: white;
+  color: var(--text-clr);
   text-decoration: none;
   background-image: linear-gradient(120deg,
       var(--accent-color) 100%,

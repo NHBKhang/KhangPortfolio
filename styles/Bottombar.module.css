@@ -2,7 +2,7 @@
   background: var(--bottombar-bg);
   height: 25px;
   border-top: 1px solid var(--bottombar-border);
-  color: rgb(225, 228, 232);
+  color: var(--text-2nd-clr);
   padding: 0 0.5rem;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .bottomBar a {
-  color: white;
+  color: var(--text-clr);
   text-decoration: none;
 }
 
