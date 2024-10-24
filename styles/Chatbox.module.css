@@ -1,0 +1,196 @@
+.chatbox {
+    width: 320px;
+    height: 480px;
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--chatbox-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: translateY(150%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.chatbox.open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.chatHeader {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chatTitle {
+    margin: 0;
+    font-size: 18px;
+}
+
+.messages {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+    text-align: justify;
+}
+
+.userMessage {
+    background-color: #d1f7c4;
+    align-self: flex-end;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.botMessage {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.inputContainer {
+    display: flex;
+    padding: 7px;
+    height: 52px;
+    border-top: 1px solid rgba(245, 245, 245, 0.25);
+    background-color: var(--chatbox-input-bg);
+}
+
+.chatInput {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.sendButton {
+    padding: 8px 12px;
+    background-color: var(--button-bg);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+}
+
+.toggleButton {
+    position: absolute;
+    bottom: 32px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    z-index: 1001;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, opacity 0.3s ease;
+}
+
+.toggleButton:hover {
+    background-color: rgb(240, 240, 240);
+    transform: scale(1.05);
+}
+
+.toggleButton:active {
+    transform: scale(0.95);
+}
+
+.toggleButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.icon {
+    position: absolute;
+}
+
+.hidden {
+    animation: fadeOut 0.3s forwards;
+    pointer-events: none;
+}
+
+.visible {
+    animation: fadeIn 0.3s forwards;
+    pointer-events: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        transform: rotate(180deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+        transform: rotate(180deg);
+    }
+}
+
+
+.loading {
+    animation: loading 0.5s infinite;
+    opacity: 0;
+    font-style: italic;
+    color: #888;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}

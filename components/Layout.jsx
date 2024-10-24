@@ -6,6 +6,7 @@ import Tabsbar from './Tabsbar'
 import styles from '../styles/Layout.module.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Chatbox from './Chatbox'
 
 const Layout = ({ children }) => {
   // set scroll to top of main content on url pathname change
@@ -14,7 +15,7 @@ const Layout = ({ children }) => {
     const main = document.getElementById('main-editor')
     main.scrollTop = 0
   }, [router.pathname]);
-  
+
   return (
     <>
       <Titlebar />
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <Bottombar />
+      <Chatbox />
     </>
   )
 }

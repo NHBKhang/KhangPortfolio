@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.14",
+    "dialogflow": "^1.2.0",
+    "google-auth-library": "^9.14.2",
     "next": "^14.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

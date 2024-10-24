@@ -34,6 +34,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #007bff;
   --button-2nd-hover-bg: #0056b3;
+  --chatbox-bg: #39393b;
+  --chatbox-input-bg: #24292f;
 }
 
 /* Dracula */
@@ -68,6 +70,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #006cdf;
   --button-2nd-hover-bg: #00438a;
+  --chatbox-bg: #65656e;
+  --chatbox-input-bg: #1d1e27;
 }
 
 /* Ayu Dark */
@@ -102,6 +106,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #aec100;
   --button-2nd-hover-bg: #7c8a00;
+  --chatbox-bg: #353537;
+  --chatbox-input-bg: #111822;
 }
 
 /* Ayu Mirage */
@@ -136,6 +142,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #aec100;
   --button-2nd-hover-bg: #7c8a00;
+  --chatbox-bg: #373739;
+  --chatbox-input-bg: #151820;
 }
 
 /* Nord */
@@ -170,6 +178,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #008ac1;
   --button-2nd-hover-bg: #00638b;
+  --chatbox-bg: #5a5a65;
+  --chatbox-input-bg: #66748f;
 }
 
 /* Night Owl */
@@ -204,6 +214,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #0059ff;
   --button-2nd-hover-bg: #0046c7;
+  --chatbox-bg: #102638;
+  --chatbox-input-bg: #031727;
 }
 
 /* Soft Light */
@@ -238,40 +250,8 @@ html {
   --text-3nd-clr: #333333;
   --button-2nd-bg: #00bfff;
   --button-2nd-hover-bg: #0098db;
-}
-
-/* Muted Elegance */
-[data-theme='muted-elegance'] {
-  --icon-fill-active: rgb(30, 30, 30);
-  --icon-fill-inactive: rgb(90, 105, 120);
-  --main-bg: #b0b0b0;
-  --bg-text: #a0a0a0;
-  --text-color: #2a2a2a;
-  --accent-color: rgb(45, 60, 75);
-  --titlebar-bg: #bfbfbf;
-  --sidebar-bg: #a5a5a5;
-  --sidebar-hover-bg: #b0b0b0;
-  --explorer-bg: #d0d0d0;
-  --explorer-hover-bg: #c0c0c0;
-  --explorer-active-bg: #a0b0c0;
-  --explorer-border: rgba(0, 0, 0, 0.15);
-  --tabs-bg: #c8c8c8;
-  --tab-bg: #d2d2d2;
-  --tab-active-bg: #b0b0b0;
-  --tab-border: rgb(130, 130, 130);
-  --bottombar-bg: #999999;
-  --bottombar-border: #b0b0b0;
-  --button-bg: rgb(28, 71, 122);
-  --button-text: #ffffff;
-  --bottombar-hover-bg: #a8a8a8;
-  --scrollbar-track-bg: #c8c8c8;
-  --scrollbar-thumb-bg: #a0a0a0;
-  --article-bg: #b7babb;
-  --text-clr: #000000;
-  --text-2nd-clr: rgb(20, 20, 20);
-  --text-3nd-clr: #222222;
-  --button-2nd-bg: #00a6ff;
-  --button-2nd-hover-bg: #0056ea;
+  --chatbox-bg: #eeeeee;
+  --chatbox-input-bg: #cfcfcf;
 }
 
 /* Bright Light */
@@ -306,6 +286,44 @@ html {
   --text-3nd-clr: #333333;
   --button-2nd-bg: #00bfff;
   --button-2nd-hover-bg: #0098db;
+  --chatbox-bg: #ffffff;
+  --chatbox-input-bg: #e0e0e0;
+}
+
+/* Muted Elegance */
+[data-theme='muted-elegance'] {
+  --icon-fill-active: rgb(30, 30, 30);
+  --icon-fill-inactive: rgb(90, 105, 120);
+  --main-bg: #b0b0b0;
+  --bg-text: #a0a0a0;
+  --text-color: #2a2a2a;
+  --accent-color: rgb(45, 60, 75);
+  --titlebar-bg: #bfbfbf;
+  --sidebar-bg: #a5a5a5;
+  --sidebar-hover-bg: #b0b0b0;
+  --explorer-bg: #d0d0d0;
+  --explorer-hover-bg: #c0c0c0;
+  --explorer-active-bg: #a0b0c0;
+  --explorer-border: rgba(0, 0, 0, 0.15);
+  --tabs-bg: #c8c8c8;
+  --tab-bg: #d2d2d2;
+  --tab-active-bg: #b0b0b0;
+  --tab-border: rgb(130, 130, 130);
+  --bottombar-bg: #999999;
+  --bottombar-border: #b0b0b0;
+  --button-bg: rgb(28, 71, 122);
+  --button-text: #ffffff;
+  --bottombar-hover-bg: #a8a8a8;
+  --scrollbar-track-bg: #c8c8c8;
+  --scrollbar-thumb-bg: #a0a0a0;
+  --article-bg: #b7babb;
+  --text-clr: #000000;
+  --text-2nd-clr: rgb(20, 20, 20);
+  --text-3nd-clr: #222222;
+  --button-2nd-bg: #00a6ff;
+  --button-2nd-hover-bg: #0056ea;
+  --chatbox-bg: #cfcfcf;
+  --chatbox-input-bg: #b1b1b1;
 }
 
 /* Pastel Dream */
@@ -338,6 +356,8 @@ html {
   --text-3nd-clr: #999999;
   --button-2nd-bg: #32cd32;
   --button-2nd-hover-bg: #228b22;
+  --chatbox-bg: #ffe4dc;
+  --chatbox-input-bg: #ffdb86;
 }
 
 /* Colorful */
@@ -372,6 +392,8 @@ html {
   --text-3nd-clr: #222222;
   --button-2nd-bg: #ff4500;
   --button-2nd-hover-bg: #dc143c;
+  --chatbox-bg: #b3d4aa;
+  --chatbox-input-bg: #8fa888;
 }
 
 [data-theme='soundscape'] {
@@ -391,7 +413,7 @@ html {
   --tabs-bg: #2a2a2a;
   --tab-bg: #2e2e2e;
   --tab-active-bg: #1db954;
-  --tab-border: rgba(255, 255, 255, 0.2);
+  --tab-border: #ffffff33;
   --bottombar-bg: #2a2a2a;
   --bottombar-border: rgba(255, 255, 255, 0.2);
   --button-bg: #1db954;
@@ -405,4 +427,6 @@ html {
   --text-3nd-clr: rgb(240, 240, 240);
   --button-2nd-bg: rgba(255, 255, 255, 0.9);
   --button-2nd-hover-bg: rgba(255, 255, 255, 0.75);
+  --chatbox-bg: #2a2a2a;
+  --chatbox-input-bg: #000000;
 }
