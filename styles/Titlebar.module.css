@@ -16,6 +16,7 @@
   display: flex;
   margin-right: auto;
   margin-left: 0.5rem;
+  user-select: none;
 }
 
 .title {
@@ -64,4 +65,44 @@
   .title {
     flex: 4;
   }
+}
+
+.dropdown {
+  position: absolute;
+  top: 25px;
+  background: var(--dropdown-bg);
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 250, 250, 0.4);
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  width: 300px;
+  padding: 4px;
+  user-select: none;
+}
+
+.show {
+  display: flex;
+  opacity: 1;
+}
+
+.dropdown div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+
+.dropdown div p {
+  padding: 3px 24px;
+  cursor: pointer;
+  color: var(--text-clr);
+  transition: background-color 0.2s ease;
+}
+
+.dropdown div:hover {
+  background: rgba(0, 153, 255, 0.9);
 }

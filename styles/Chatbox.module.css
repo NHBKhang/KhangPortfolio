@@ -2,8 +2,8 @@
     width: 320px;
     height: 480px;
     position: absolute;
-    bottom: 90px;
-    right: 20px;
+    bottom: 85px;
+    right: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -97,15 +97,15 @@
 
 .toggleButton {
     position: absolute;
-    bottom: 32px;
-    right: 20px;
+    bottom: 30px;
+    right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(232, 232, 232);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     color: white;
     border: 1px solid var(--accent-color);
     cursor: pointer;

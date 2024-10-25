@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   width: 4.5vw;
-  min-width: 40px;
   height: calc(100vh - 30px - 25px);
 }
 
@@ -56,6 +55,7 @@
 @media screen and (max-width: 600px) {
   .sidebar {
     width: 10vw;
+    min-width: 40px;
   }
 
   .icon {

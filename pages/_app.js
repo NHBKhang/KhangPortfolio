@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Head from "../components/Head";
 import "../styles/globals.css";
 import "../styles/themes.css";
+import { GlobalProvider } from "../configs/GlobalContext";
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,10 +17,12 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
-      <Head title={`NHBKhang | ${pageProps.title}`} />
-      <Component {...pageProps} />
-    </Layout>
+    <GlobalProvider>
+      <Layout>
+        <Head title={`NHBKhang | ${pageProps.title}`} />
+        <Component {...pageProps} />
+      </Layout>
+    </GlobalProvider>
   );
 }
 

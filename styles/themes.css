@@ -36,6 +36,7 @@ html {
   --button-2nd-hover-bg: #0056b3;
   --chatbox-bg: #39393b;
   --chatbox-input-bg: #24292f;
+  --dropdown-bg: #2e363c;
 }
 
 /* Dracula */
@@ -72,6 +73,7 @@ html {
   --button-2nd-hover-bg: #00438a;
   --chatbox-bg: #65656e;
   --chatbox-input-bg: #1d1e27;
+  --dropdown-bg: #303140;
 }
 
 /* Ayu Dark */
@@ -108,6 +110,7 @@ html {
   --button-2nd-hover-bg: #7c8a00;
   --chatbox-bg: #353537;
   --chatbox-input-bg: #111822;
+  --dropdown-bg: #31383e;
 }
 
 /* Ayu Mirage */
@@ -144,6 +147,7 @@ html {
   --button-2nd-hover-bg: #7c8a00;
   --chatbox-bg: #373739;
   --chatbox-input-bg: #151820;
+  --dropdown-bg: #2c3339;
 }
 
 /* Nord */
@@ -180,6 +184,7 @@ html {
   --button-2nd-hover-bg: #00638b;
   --chatbox-bg: #5a5a65;
   --chatbox-input-bg: #66748f;
+  --dropdown-bg: #2d3439;
 }
 
 /* Night Owl */
@@ -216,6 +221,7 @@ html {
   --button-2nd-hover-bg: #0046c7;
   --chatbox-bg: #102638;
   --chatbox-input-bg: #031727;
+  --dropdown-bg: #011e35;
 }
 
 /* Soft Light */
@@ -252,6 +258,7 @@ html {
   --button-2nd-hover-bg: #0098db;
   --chatbox-bg: #eeeeee;
   --chatbox-input-bg: #cfcfcf;
+  --dropdown-bg: #dfe1e8;
 }
 
 /* Bright Light */
@@ -288,6 +295,7 @@ html {
   --button-2nd-hover-bg: #0098db;
   --chatbox-bg: #ffffff;
   --chatbox-input-bg: #e0e0e0;
+  --dropdown-bg: #edf0ff;
 }
 
 /* Muted Elegance */
@@ -297,7 +305,7 @@ html {
   --main-bg: #b0b0b0;
   --bg-text: #a0a0a0;
   --text-color: #2a2a2a;
-  --accent-color: rgb(45, 60, 75);
+  --accent-color: rgb(66, 77, 110);
   --titlebar-bg: #bfbfbf;
   --sidebar-bg: #a5a5a5;
   --sidebar-hover-bg: #b0b0b0;
@@ -324,6 +332,7 @@ html {
   --button-2nd-hover-bg: #0056ea;
   --chatbox-bg: #cfcfcf;
   --chatbox-input-bg: #b1b1b1;
+  --dropdown-bg: #d2dadc;
 }
 
 /* Pastel Dream */
@@ -331,7 +340,7 @@ html {
   --main-bg: #fffbf2;
   --bg-text: #ffedd1;
   --text-color: #2d2d2d;
-  --accent-color: #ff6347;
+  --accent-color: #ff2600d5;
   --titlebar-bg: #ffb6c1;
   --sidebar-bg: #ffcccb;
   --sidebar-hover-bg: #ff9999;
@@ -341,7 +350,7 @@ html {
   --explorer-border: #ff7f50;
   --tabs-bg: #ffebcd;
   --tab-bg: #fff8dc;
-  --tab-active-bg: #ffdead;
+  --tab-active-bg: #ffdeada3;
   --tab-border: #f4a460;
   --bottombar-bg: #ffe4b5;
   --bottombar-border: #deb887;
@@ -351,13 +360,14 @@ html {
   --scrollbar-track-bg: #ffebcd;
   --scrollbar-thumb-bg: #f08080;
   --article-bg: #ffdfdf;
-  --text-clr: #3c3c3c;
-  --text-2nd-clr: #6a6a6a;
-  --text-3nd-clr: #999999;
+  --text-clr: #1a1a1a;
+  --text-2nd-clr: #555555;
+  --text-3nd-clr: #808080;
   --button-2nd-bg: #32cd32;
   --button-2nd-hover-bg: #228b22;
   --chatbox-bg: #ffe4dc;
   --chatbox-input-bg: #ffdb86;
+  --dropdown-bg: #ff9cac;
 }
 
 /* Colorful */
@@ -367,18 +377,18 @@ html {
   --main-bg: linear-gradient(to bottom right, #d1cca3, #e8c6c6, #cce2f8);
   --bg-text: linear-gradient(to right, #e0ffff, #fff8dc, #fff0f5);
   --text-color: rgb(255, 255, 255);
-  --accent-color: rgb(75, 0, 130);
+  --accent-color: rgb(81, 0, 139);
   --titlebar-bg: linear-gradient(to right, #64b6ff, #a9d6ff, #d1e8ff);
   --sidebar-bg: linear-gradient(to right, #ffb6c1, #ff78bb);
   --sidebar-hover-bg: linear-gradient(to right, #ff79bc, #ff2e9d);
   --explorer-bg: linear-gradient(to right, #add8e6, #87ceeb, #b0e0e6);
   --explorer-hover-bg: #7cbdd7;
-  --explorer-active-bg: #00ff7f;
+  --explorer-active-bg: #00944a57;
   --explorer-border: rgba(0, 0, 0, 0.2);
   --tabs-bg: linear-gradient(to right, #f0f8ff, #e6e6fa);
   --tab-bg: rgb(224, 255, 255);
   --tab-active-bg: linear-gradient(to right, #adff2f, #98fb98);
-  --tab-border: rgb(240, 128, 128);
+  --tab-border: rgb(255, 115, 0);
   --bottombar-bg: linear-gradient(to right, #ffd700, #ffec40);
   --bottombar-border: #ffd700;
   --button-bg: rgb(34, 139, 34);
@@ -394,6 +404,7 @@ html {
   --button-2nd-hover-bg: #dc143c;
   --chatbox-bg: #b3d4aa;
   --chatbox-input-bg: #8fa888;
+  --dropdown-bg: linear-gradient(to right, #fff6a5, #d0ffb5);
 }
 
 [data-theme='soundscape'] {
@@ -408,11 +419,11 @@ html {
   --sidebar-hover-bg: #2e2e2e;
   --explorer-bg: #1e1e1e;
   --explorer-hover-bg: #292929;
-  --explorer-active-bg: #1db954;
+  --explorer-active-bg: #00ff5937;
   --explorer-border: rgba(255, 255, 255, 0.2);
   --tabs-bg: #2a2a2a;
   --tab-bg: #2e2e2e;
-  --tab-active-bg: #1db954;
+  --tab-active-bg: #00ff5929;
   --tab-border: #ffffff33;
   --bottombar-bg: #2a2a2a;
   --bottombar-border: rgba(255, 255, 255, 0.2);
@@ -421,12 +432,13 @@ html {
   --bottombar-hover-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-track-bg: rgba(255, 255, 255, 0.1);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.3);
-  --article-bg: #1e1e1e;
+  --article-bg: #343434;
   --text-clr: #ffffff;
   --text-2nd-clr: rgb(232, 232, 232);
   --text-3nd-clr: rgb(240, 240, 240);
-  --button-2nd-bg: rgba(255, 255, 255, 0.9);
-  --button-2nd-hover-bg: rgba(255, 255, 255, 0.75);
+  --button-2nd-bg: rgb(0, 200, 255);
+  --button-2nd-hover-bg: rgb(0, 178, 227);
   --chatbox-bg: #2a2a2a;
   --chatbox-input-bg: #000000;
+  --dropdown-bg: #2b2b2b;
 }

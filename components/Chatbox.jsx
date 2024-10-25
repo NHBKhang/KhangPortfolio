@@ -60,10 +60,10 @@ const Chatbox = () => {
                 aria-label={isOpen ? 'Đóng chat' : 'Mở chat'}>
                 <img
                     className={`${styles.icon} ${isOpen ? styles.visible : styles.hidden}`}
-                    src='./close.png' alt='close' width={30} height={30} />
+                    src='close.png' alt='close' width={27} height={27} />
                 <img
                     className={`${styles.icon} ${isOpen ? styles.hidden : styles.visible}`}
-                    src='./coco.png' alt='open' width={38} height={38} />
+                    src='coco.png' alt='open' width={35} height={35} />
             </button>
 
             <div className={`${styles.chatbox} ${isOpen ? styles.open : ''}`}>

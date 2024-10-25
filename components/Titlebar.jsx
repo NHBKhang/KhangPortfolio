@@ -1,7 +1,43 @@
 import Image from 'next/image';
 import styles from '../styles/Titlebar.module.css';
+import { useState } from 'react';
+import { useGlobalContext } from '../configs/GlobalContext';
 
 const Titlebar = () => {
+  const { chatboxHidden, setChatboxHidden } = useGlobalContext();
+  const [isDropdownOpen, setDropdownOpen] = useState({});
+
+  const toggleDropdown = (key) => {
+    setDropdownOpen(prev => ({ [key]: !prev[key] }));
+  };
+
+  const closeDropdown = (key) => {
+    setDropdownOpen(prev => ({ ...prev, [key]: false }));
+  };
+
+  const fileDropdown = [
+    {
+      label: 'New File',
+      action: () => closeDropdown('file'),
+      shortcut: 'Key'
+    },
+    {
+      label: 'Open File',
+      action: () => closeDropdown('file'),
+    },
+  ];
+
+  const viewDropdown = [
+    {
+      label: chatboxHidden ? 'Enable Chatbox' : 'Disable Chatbox',
+      action: () => {
+        setChatboxHidden(!chatboxHidden);
+        closeDropdown('view');
+      },
+      shortcut: 'Ctrl+Shift+C'
+    },
+  ];
+
   return (
     <section className={styles.titlebar}>
       <Image
@@ -12,13 +48,43 @@ const Titlebar = () => {
         className={styles.icon}
       />
       <div className={styles.items}>
-        <p>File</p>
+        <p onClick={() => toggleDropdown('file')}>File</p>
+        <div
+          className={`${styles.dropdown} ${isDropdownOpen.file && styles.show}`}
+          onMouseLeave={() => closeDropdown('file')}
+        >
+          {fileDropdown.map((item, index) => (
+            <div key={index} onClick={() => item.action()}>
+              <p>{item.label}</p>
+              {item.shortcut && <p>{item.shortcut}</p>}
+            </div>
+          ))}
+        </div>
+
         <p>Edit</p>
-        <p>View</p>
+
+        <p onClick={() => toggleDropdown('view')}>View</p>
+        <div
+          className={`${styles.dropdown} ${isDropdownOpen.view && styles.show}`}
+          style={{ left: '105px' }}
+          onMouseLeave={() => closeDropdown('view')}
+        >
+          {viewDropdown.map((item, index) => (
+            <div key={index} onClick={() => item.action()}>
+              <p>{item.label}</p>
+              {item.shortcut && <p>{item.shortcut}</p>}
+            </div>
+          ))}
+        </div>
+
         <p>Go</p>
+
         <p>Run</p>
+
         <p>Terminal</p>
+
         <p>Help</p>
+
       </div>
       <p className={styles.title}>NHBKhang - Visual Studio Code</p>
       <div className={styles.windowButtons}>

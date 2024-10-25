@@ -7,8 +7,10 @@ import styles from '../styles/Layout.module.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Chatbox from './Chatbox'
+import { useGlobalContext } from '../configs/GlobalContext'
 
 const Layout = ({ children }) => {
+  const { chatboxHidden } = useGlobalContext();
   // set scroll to top of main content on url pathname change
   const router = useRouter()
   useEffect(() => {
@@ -30,7 +32,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <Bottombar />
-      <Chatbox />
+      {!chatboxHidden && <Chatbox />}
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ContactCode from '../components/ContactCode';
 import styles from '../styles/ContactPage.module.css';
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
   const [name, setName] = useState('');
@@ -10,18 +11,22 @@ const ContactPage = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
-    console.log(process.env.NEXT_PUBLIC_API_URL);
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
-      method: 'POST',
-      body: JSON.stringify({ name, email, subject, message }),
-    });
-    if (res.ok) {
+
+    const contactData = { name, email, subject, message };
+
+    try {
+      const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+      const userId = process.env.NEXT_PUBLIC_EMAIL_USER_ID;
+
+      await emailjs.send(serviceId, templateId, contactData, userId);
       alert('Your response has been received!');
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
-    } else {
+    } catch (error) {
+      console.error('Error sending email:', error);
       alert('There was an error. Please try again in a while.');
     }
   };
@@ -33,7 +38,7 @@ const ContactPage = () => {
         <ContactCode />
       </div>
       <div>
-        <h3 className={styles.heading}>Hoặc điền vào form này (tốt nhất đừng điền)</h3>
+        <h3 className={styles.heading}>Hoặc điền vào form này</h3>
         <form className={styles.form} onSubmit={submitForm}>
           <div className={styles.flex}>
             <div>

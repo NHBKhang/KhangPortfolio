@@ -1,9 +1,17 @@
+.explorerWrapper {
+  display: flex;
+  position: relative;
+  transition: width 0.3s ease;
+  max-width: 25vw;
+}
+
 .explorer {
   background: var(--explorer-bg);
   width: 18vw;
   color: var(--text-2nd-clr);
   font-family: 'Source Sans Pro', sans-serif;
   border-right: 1px solid var(--explorer-border);
+  overflow: hidden;
 }
 
 .title {
@@ -80,4 +88,24 @@
   .explorer {
     display: none;
   }
+}
+
+.resizer {
+  width: 4px;
+  cursor: ew-resize;
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  user-select: none;
+}
+
+.resizer:hover {
+  background-color: #0099ff;
+}
+
+.resizer:active {
+  background-color: #007bff;
 }
