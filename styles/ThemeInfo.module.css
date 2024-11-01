@@ -12,6 +12,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  margin-top: 3px;
+  font-size: 10px;
+  color: var(--text-3rd-clr);
 }
 
 .info button {
@@ -22,6 +29,11 @@
   padding: 0.15rem 0.5rem;
   font-weight: 600;
   cursor: pointer;
+  width: fit-content;
+}
+
+.info button.muted {
+  background: grey;
 }
 
 .info button:focus {

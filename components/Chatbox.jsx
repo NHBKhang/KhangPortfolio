@@ -52,6 +52,18 @@ const Chatbox = () => {
         }
     }, [messages]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (isOpen) {
+                setIsOpen(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [isOpen]);
+
     return (
         <div>
             <button
@@ -60,15 +72,15 @@ const Chatbox = () => {
                 aria-label={isOpen ? 'Đóng chat' : 'Mở chat'}>
                 <img
                     className={`${styles.icon} ${isOpen ? styles.visible : styles.hidden}`}
-                    src='close.png' alt='close' width={27} height={27} />
+                    src='/img/close.png' alt='close' width={30} height={30} />
                 <img
                     className={`${styles.icon} ${isOpen ? styles.hidden : styles.visible}`}
-                    src='coco.png' alt='open' width={35} height={35} />
+                    src='/img/coco.png' alt='open' width={37} height={37} />
             </button>
 
             <div className={`${styles.chatbox} ${isOpen ? styles.open : ''}`}>
                 <div className={styles.chatHeader}>
-                    <h2 className={styles.chatTitle}>Coco Chat</h2>
+                    <h2 className={styles.chatTitle}>Coco Talk</h2>
                 </div>
                 <div className={styles.messages} ref={messagesRef}>
                     {messages.map((m, index) => (

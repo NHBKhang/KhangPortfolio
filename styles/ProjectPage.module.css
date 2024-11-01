@@ -1,0 +1,41 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.techStack h3 {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.techStack ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.stats p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.viewRepo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

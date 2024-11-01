@@ -1,103 +1,111 @@
 import ThemeInfo from '../components/ThemeInfo';
 import styles from '../styles/SettingsPage.module.css';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+import CustomHead from '../components/Head';
 
 const SettingsPage = () => {
+  const { t } = useTranslation('settings');
+
   return (
     <>
-      <h2>Manage Themes</h2>
+      <CustomHead page={'settings'} />
+      <h2>{t('manageThemes')}</h2>
       <div className={styles.container}>
         <ThemeInfo
           name="GitHub Dark"
-          icon="/github-dark.png"
+          icon="/img/github-dark.png"
           publisher="GitHub"
           theme="github-dark"
-          description="GitHub theme for VS Code"
+          description={t('githubDark')}
         />
         <ThemeInfo
           name="Dracula"
-          icon="/dracula.png"
+          icon="/img/dracula.png"
           publisher="Dracula Theme"
           theme="dracula"
-          description="Official Dracula Theme. A dark theme for many editors, shells, and more."
+          description={t('dracula')}
         />
         <ThemeInfo
           name="Ayu Dark"
-          icon="/ayu.png"
+          icon="/img/ayu.png"
           publisher="teabyii"
           theme="ayu-dark"
-          description="A simple theme with bright colors."
+          description={t('ayuDark')}
         />
         <ThemeInfo
           name="Ayu Mirage"
-          icon="/ayu.png"
+          icon="/img/ayu.png"
           publisher="teabyii"
           theme="ayu-mirage"
-          description="A simple theme with bright colors."
+          description={t('ayuMirage')}
         />
         <ThemeInfo
           name="Nord"
-          icon="/nord.png"
+          icon="/img/nord.png"
           publisher="arcticicestudio"
           theme="nord"
-          description="An arctic, north-bluish clean and elegant Visual Studio Code theme."
+          description={t('nord')}
         />
         <ThemeInfo
           name="Night Owl"
-          icon="/night-owl.png"
+          icon="/img/night-owl.png"
           publisher="sarah.drasner"
           theme="night-owl"
-          description="A VS Code theme for the night owls out there."
+          description={t('nightOwl')}
         />
         <ThemeInfo
           name="Soft Light"
-          icon="/light.png"
+          icon="/img/light.png"
           publisher="Light Theme"
           theme="soft-light"
-          description="A visually appealing light theme inspired by Visual Studio Code."
+          description={t('softLight')}
         />
         <ThemeInfo
           name="Bright Light"
-          icon="/light.png"
+          icon="/img/light.png"
           publisher="Light Theme"
           theme="bright-light"
-          description="A vibrant and visually appealing light theme inspired by Visual Studio Code."
+          description={t('brightLight')}
         />
         <ThemeInfo
           name="Muted Elegance"
-          icon="/muted-elegance.png"
+          icon="/img/muted-elegance.png"
           publisher="NHBKhang"
           theme="muted-elegance"
-          description="A sophisticated theme that balances muted tones with elegant accents, creating a serene and visually pleasing workspace."
+          description={t('mutedElegance')}
         />
         <ThemeInfo
           name="Pastel Dream"
-          icon="/pastel-dream.jpg"
+          icon="/img/pastel-dream.jpg"
           publisher="NHBKhang"
           theme="pastel-dream"
-          description="A vibrant and visually appealing theme filled with colors for a lively experience."
+          description={t('pastelDream')}
         />
         <ThemeInfo
           name="Colorful"
-          icon="/colorful.jpg"
+          icon="/img/colorful.jpg"
           publisher="NHBKhang"
           theme="colorful"
-          description="A vibrant theme bursting with various colors for a lively and energetic coding experience."
+          description={t('colorful')}
         />
         <ThemeInfo
           name="SoundScape"
-          icon="/soundscape.png"
+          icon="/img/soundscape.png"
           publisher="SoundScape Theme"
           theme="soundscape"
-          description="An immersive theme that harmonizes vibrant colors to create a lively and energetic atmosphere for coding and creativity."
+          description={t('soundscape')}
         />
       </div>
     </>
   );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   return {
-    props: { title: 'Settings' },
+    props: {
+      ...(await serverSideTranslations(locale, ['settings']))
+    },
   };
 }
 

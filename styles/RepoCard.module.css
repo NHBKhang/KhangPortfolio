@@ -39,3 +39,8 @@
   color: var(--accent-color);
   margin-right: 0.3rem;
 }
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}

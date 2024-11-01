@@ -86,7 +86,11 @@
 
 @media screen and (max-width: 600px) {
   .explorer {
-    display: none;
+    display: none !important;
+  }
+
+  .resizer {
+    display: none !important;
   }
 }
 

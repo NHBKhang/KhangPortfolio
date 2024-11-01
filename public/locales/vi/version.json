@@ -1,0 +1,10 @@
+{
+    "version": "Phiên bản",
+    "description": "Trang này cung cấp thông tin chi tiết về các phiên bản của phần mềm, bao gồm các bản phát hành gần đây, ngày phát hành, và các ghi chú phát hành quan trọng. Ở đây, bạn sẽ tìm thấy các thông tin về các tính năng mới, sửa lỗi và cải tiến hiệu suất được giới thiệu trong từng phiên bản. Nếu bạn muốn tìm hiểu về cách phần mềm đã tiến hóa qua từng phiên bản, đây là nơi lý tưởng để khám phá. Ngoài ra, tôi cung cấp các liên kết đến các ghi chú thay đổi (changelog) cho mỗi phiên bản, nơi bạn có thể tìm thấy thông tin chi tiết về tất cả các thay đổi được thực hiện. Điều này giúp bạn có cái nhìn rõ hơn về các tính năng đã được triển khai và các vấn đề đã được khắc phục.",
+    "releaseNotes": "Ghi chú phát hành",
+    "currentVersion": "Phiên bản hiện tại",
+    "releaseDate": "Ngày phát hành",
+    "notes": "Ghi chú",
+    "changelog": "Nhật ký thay đổi",
+    "viewChangelog": "Xem nhật ký thay đổi đầy đủ"
+}

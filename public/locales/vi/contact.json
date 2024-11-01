@@ -1,0 +1,11 @@
+{
+    "socialContact": "Liên hệ qua mạng xã hội",
+    "formContact": "Hoặc điền vào form này",
+    "nameLabel": "Tên",
+    "emailLabel": "Email",
+    "subjectLabel": "Tiêu đề",
+    "messageLabel": "Nội dung",
+    "sendButton": "Gửi",
+    "responseReceived": "Phản hồi của bạn đã được nhận!",
+    "errorResponse": "Có lỗi xảy ra. Vui lòng thử lại sau."
+}

@@ -1,32 +1,36 @@
 import Head from 'next/head';
+import { useTranslation } from 'next-i18next';
+import { useLanguage } from '../configs/LanguageContext';
+import { getPageTitle } from '../utils/getPageTitle';
+import PropTypes from 'prop-types';
 
-const CustomHead = ({ title }) => {
+const CustomHead = ({ page, params = {} }) => {
+  const { t } = useTranslation('common');
+  const { language } = useLanguage() || { language: 'en' };
+
   return (
     <Head>
-      <title>{title}</title>
-      <meta
-        name="description"
-        content="Nguyen Ha Bao Khang is an avid full stack web developer building websites and applications you'd love to use"
-      />
-      <meta
-        name="keywords"
-        content="nguyen ha bao khang, nhbkhang, khang, web developer portfolio, nhbkhang web developer, nhbkhang developer, nhbkhang portfolio, vscode-portfolio"
-      />
-      <meta property="og:title" content="Bao Khang's Portfolio" />
-      <meta
-        property="og:description"
-        content="A full-stack developer building websites that you'd like to use."
-      />
+      <title>{getPageTitle(language, page, params)}</title>
+      <meta name="description" content={t('description')} />
+      <meta name="keywords" content={t('keywords')} />
+      <meta property="og:title" content={t('ogTitle')} />
+      <meta property="og:description" content={t('ogDescription')} />
       <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
       <meta property="og:url" content="https://vscode-portfolio.vercel.app" />
       <meta name="twitter:card" content="summary_large_image" />
-      <link rel='icon' href='https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png'/>
+      <link rel="icon" href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" />
     </Head>
   );
 };
 
-export default CustomHead;
-
 CustomHead.defaultProps = {
-  title: 'NHBKhang',
+  page: 'home',
+  params: [],
 };
+
+CustomHead.propTypes = {
+  page: PropTypes.string,
+  params: PropTypes.array,
+};
+
+export default CustomHead;

@@ -1,4 +1,4 @@
-import data from './articles.json';
+import data from '../data/articles.json';
 
 export const getArticles = () => {
   return data;

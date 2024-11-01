@@ -8,12 +8,13 @@ import { useGlobalContext } from '../configs/GlobalContext';
 
 const explorerItems = [
   { name: 'home.jsx', path: '/', icon: 'react_icon.svg' },
-  { name: 'about.txt', path: '/about', icon: 'txt_icon.svg' },
+  { name: 'about.txt', path: '/about', icon: 'txt_icon.png' },
   { name: 'contact.css', path: '/contact', icon: 'css_icon.svg' },
   { name: 'projects.js', path: '/projects', icon: 'js_icon.svg' },
   { name: 'articles.json', path: '/articles', icon: 'json_icon.svg' },
   { name: 'github.md', path: '/github', icon: 'markdown_icon.svg' },
-  { name: 'other-info.html', path: '/github', icon: 'html_icon.svg' },
+  { name: 'other-info.html', path: '/info', icon: 'html_icon.svg' },
+  { name: 'version.xml', path: '/versions', icon: 'xml_icon.png' },
 ];
 
 const Explorer = () => {
@@ -92,7 +93,7 @@ const Explorer = () => {
                 style={{ textDecoration: 'none' }}
                 href={item.path}>
                 <div className={`${styles.file} ${router.pathname === item.path && styles.active}`}>
-                  <Image src={`/${item.icon}`} alt={item.name} height={18} width={18} />
+                  <Image src={`/img/${item.icon}`} alt={item.name} height={18} width={18} />
                   <p className={styles.name}>{item.name}</p>
                 </div>
               </Link>

@@ -7,12 +7,12 @@ const Tabsbar = () => {
 
   return (
     <div className={`${styles.tabs} ${explorerHidden && styles.fullWidth}`}>
-      <Tab icon="/react_icon.svg" filename="home.jsx" path="/" />
-      <Tab icon="/txt_icon.svg" filename="about.txt" path="/about" />
-      <Tab icon="/css_icon.svg" filename="contact.css" path="/contact" />
-      <Tab icon="/js_icon.svg" filename="projects.js" path="/projects" />
-      <Tab icon="/json_icon.svg" filename="articles.json" path="/articles" />
-      <Tab icon="/markdown_icon.svg" filename="github.md" path="/github" />
+      <Tab icon="/img/react_icon.svg" filename="home.jsx" path="/" />
+      <Tab icon="/img/txt_icon.png" filename="about.txt" path="/about" />
+      <Tab icon="/img/css_icon.svg" filename="contact.css" path="/contact" />
+      <Tab icon="/img/js_icon.svg" filename="projects.js" path="/projects" />
+      <Tab icon="/img/json_icon.svg" filename="articles.json" path="/articles" />
+      <Tab icon="/img/markdown_icon.svg" filename="github.md" path="/github" />
     </div>
   );
 };

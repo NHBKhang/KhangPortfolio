@@ -2,9 +2,11 @@ import Image from 'next/image';
 import styles from '../styles/Titlebar.module.css';
 import { useState } from 'react';
 import { useGlobalContext } from '../configs/GlobalContext';
+import { useLanguage } from '../configs/LanguageContext';
 
 const Titlebar = () => {
   const { chatboxHidden, setChatboxHidden } = useGlobalContext();
+  const { toggleLanguage, language } = useLanguage();
   const [isDropdownOpen, setDropdownOpen] = useState({});
 
   const toggleDropdown = (key) => {
@@ -27,6 +29,17 @@ const Titlebar = () => {
     },
   ];
 
+  const editDropdown = [
+    {
+      label: 'Change Language',
+      action: () => {
+        closeDropdown('edit');
+        toggleLanguage();
+      },
+      shortcut: language.toUpperCase()
+    },
+  ];
+
   const viewDropdown = [
     {
       label: chatboxHidden ? 'Enable Chatbox' : 'Disable Chatbox',
@@ -41,7 +54,7 @@ const Titlebar = () => {
   return (
     <section className={styles.titlebar}>
       <Image
-        src="/vscode_icon.svg"
+        src="/img/vscode_icon.svg"
         alt="VSCode Icon"
         height={15}
         width={15}
@@ -51,6 +64,7 @@ const Titlebar = () => {
         <p onClick={() => toggleDropdown('file')}>File</p>
         <div
           className={`${styles.dropdown} ${isDropdownOpen.file && styles.show}`}
+          style={{ left: '30px' }}
           onMouseLeave={() => closeDropdown('file')}
         >
           {fileDropdown.map((item, index) => (
@@ -61,7 +75,19 @@ const Titlebar = () => {
           ))}
         </div>
 
-        <p>Edit</p>
+        <p onClick={() => toggleDropdown('edit')}>Edit</p>
+        <div
+          className={`${styles.dropdown} ${isDropdownOpen.edit && styles.show}`}
+          style={{ left: '65px' }}
+          onMouseLeave={() => closeDropdown('edit')}
+        >
+          {editDropdown.map((item, index) => (
+            <div key={index} onClick={() => item.action()}>
+              <p>{item.label}</p>
+              {item.shortcut && <p>{item.shortcut}</p>}
+            </div>
+          ))}
+        </div>
 
         <p onClick={() => toggleDropdown('view')}>View</p>
         <div

@@ -1,0 +1,78 @@
+{
+    "en": [
+        {
+            "id": 1,
+            "version": "1.0.0",
+            "releaseDate": "November 1st, 2024",
+            "notes": [
+                "Initial release with core functionalities.",
+                "Improved performance and fixed minor bugs."
+            ],
+            "changelogDescription": "This version includes significant updates and improvements. Please refer to the official changelog for more details.",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Added 6 new themes include 2 light themes, 3 unique themes and 1 theme from SoundScape."
+                },
+                {
+                    "type": "features",
+                    "message": "Introduced Coco Talk - new Chabox for enhanced user interaction. Users can now engage with the app through an interactive chat interface, asking questions, and receiving support in real-time."
+                },
+                {
+                    "type": "features",
+                    "message": "Implemented language change feature, allowing users to switch between multiple languages seamlessly."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Enhanced color palette for better visibility."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Enhanced email sending functionality for better reliability and user experience."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Updated user interface for a more intuitive and engaging experience."
+                }
+            ]
+        }
+    ],
+    "vi": [
+        {
+            "id": 1,
+            "version": "1.0.0",
+            "releaseDate": "1 tháng 11, 2024",
+            "notes": [
+                "Phát hành đầu tiên với các chức năng cơ bản.",
+                "Cải thiện hiệu suất và sửa một số lỗi nhỏ."
+            ],
+            "changelogDescription": "Phiên bản này bao gồm những cập nhật và cải tiến đáng kể. Vui lòng tham khảo changelog chính thức để biết thêm chi tiết.",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Thêm 6 chủ đề mới bao gồm 2 màu chủ đề sáng, 3 màu chủ đề độc đáo và 1 màu chủ đề từ SoundScape."
+                },
+                {
+                    "type": "features",
+                    "message": "Giới thiệu Coco Talk - Chabox mới cho tương tác người dùng tốt hơn. Người dùng giờ đây có thể tương tác với ứng dụng thông qua giao diện trò chuyện, đặt câu hỏi và nhận hỗ trợ theo thời gian thực."
+                },
+                {
+                    "type": "features",
+                    "message": "Thực hiện chức năng thay đổi ngôn ngữ, cho phép người dùng chuyển đổi giữa nhiều ngôn ngữ một cách liền mạch."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Cải thiện bảng màu cho khả năng nhìn tốt hơn."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Cải thiện chức năng gửi email để nâng cao độ tin cậy và trải nghiệm người dùng."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Cập nhật giao diện người dùng để mang lại trải nghiệm trực quan và hấp dẫn hơn."
+                }
+            ]
+        }
+    ]
+}

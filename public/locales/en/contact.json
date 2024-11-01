@@ -1,0 +1,11 @@
+{
+    "socialContact": "Contact me via social media",
+    "formContact": "Or fill out this form",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "sendButton": "Send",
+    "responseReceived": "Your response has been received!",
+    "errorResponse": "There was an error. Please try again later."
+}

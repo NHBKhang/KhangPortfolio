@@ -1,0 +1,17 @@
+{
+    "manageThemes": "Quản lý màu chủ đề",
+    "githubDark": "Chủ đề GitHub cho VS Code.",
+    "dracula": "Chủ đề Dracula chính thức. Một chủ đề tối cho nhiều trình chỉnh sửa, shell và hơn thế nữa.",
+    "ayuDark": "Một chủ đề đơn giản với màu sắc sáng.",
+    "ayuMirage": "Một chủ đề đơn giản với màu sắc sáng.",
+    "nord": "Một chủ đề VS Code sạch sẽ và thanh lịch với tông màu xanh bắc cực.",
+    "nightOwl": "Một chủ đề VS Code dành cho những người thức khuya.",
+    "softLight": "Một chủ đề nhẹ nhàng về mặt thị giác, lấy cảm hứng từ Visual Studio Code.",
+    "brightLight": "Một chủ đề sáng và hấp dẫn, được lấy cảm hứng từ Visual Studio Code.",
+    "mutedElegance": "Một chủ đề tinh tế, cân bằng giữa các tông màu nhẹ nhàng và các điểm nhấn thanh lịch, tạo ra một không gian làm việc yên bình và hấp dẫn.",
+    "pastelDream": "Một chủ đề sống động và hấp dẫn với nhiều màu sắc cho trải nghiệm đầy sức sống.",
+    "colorful": "Một chủ đề sống động, tràn đầy màu sắc cho trải nghiệm lập trình vui tươi và năng động.",
+    "soundscape": "Một chủ đề đắm chìm hòa quyện những màu sắc sống động để tạo ra bầu không khí sôi động và tràn đầy năng lượng cho lập trình và sáng tạo.",
+    "setColor": "Đặt màu chủ đề",
+    "currentColor": "Chủ đề hiện tại"
+}

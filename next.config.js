@@ -1,4 +1,7 @@
+const { i18n } = require('./next-i18next.config');
+
 module.exports = {
+  i18n,
   images: {
     domains: [
       'res.cloudinary.com',
@@ -22,7 +25,10 @@ module.exports = {
       'www.vietnamworks.com',
       'uploads.heightsplatform.com',
       'cdn-icons-png.flaticon.com',
-      "media.hanoitimes.vn"
+      'media.hanoitimes.vn',
     ],
+  },
+  async redirects() {
+    return [];
   },
 };

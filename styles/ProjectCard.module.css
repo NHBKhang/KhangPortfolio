@@ -18,6 +18,11 @@
 .content p {
   font-size: 0.8rem;
   margin-top: 0.5rem;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .tags {

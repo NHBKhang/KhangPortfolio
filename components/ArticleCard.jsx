@@ -1,22 +1,27 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import EyeIcon from '../components/icons/EyeIcon';
 import HeartIcon from '../components/icons/HeartIcon';
 import CommentIcon from '../components/icons/CommentIcon';
 import styles from '../styles/ArticleCard.module.css';
 
 const ArticleCard = ({ article }) => {
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/articles/${article.id}`);
+  };
+
   return (
-    <a
-      href={`/articles/${article.id}`}
-      rel="noopener noreferrer"
+    <div
       className={styles.container}
+      onClick={handleCardClick}
+      role="button"
+      tabIndex={0}
+      onKeyPress={(e) => e.key === 'Enter' && handleCardClick()}
     >
-      <div  style={{ width: "100%", height: 180, position: "relative"}}>
-        <Image
-          src={article.cover_image}
-          alt={article.title}
-          layout='fill' objectFit="cover"
-        />
+      <div style={{ width: '100%', height: 180, position: 'relative' }}>
+        <Image src={article.cover_image} alt={article.title} layout="fill" objectFit="cover" />
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{article.title}</h3>
@@ -33,7 +38,7 @@ const ArticleCard = ({ article }) => {
           <CommentIcon className={styles.icon} /> {article.comments_count}
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 

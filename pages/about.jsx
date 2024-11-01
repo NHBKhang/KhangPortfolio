@@ -1,23 +1,32 @@
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import CustomHead from '../components/Head';
+
 const AboutPage = () => {
+  const { t } = useTranslation('about');
+
   return (
     <>
-      <h3 style={{color: "red", padding: 5}}>Một chút xíu thông tin về tôi</h3>
-      <div style={{padding: 15}}>
-        <p> - Họ tên: Nguyễn Hà Bảo Khang</p>
-        <p> - Ngày sinh: 29/01/2003</p>
-        <p> - Nơi sinh: TP Hồ Chí Minh</p>
-        <p> - Giới tính: Nam (for sure)</p>
-        <p> - Quốc tịch: Việt Nam</p>
-        <p> - Quê quán: Long An</p>
-        <p> - Sở thích: Nghe nhạc, anime và bạn :3</p>
+      <CustomHead page="about" />
+      <h3 style={{ color: "red", padding: 5 }}>{t('aboutMe')}</h3>
+      <div style={{ padding: 15 }}>
+        <p> - {t('fullName')}</p>
+        <p> - {t('birthDate')}</p>
+        <p> - {t('birthPlace')}</p>
+        <p> - {t('gender')}</p>
+        <p> - {t('nationality')}</p>
+        <p> - {t('hometown')}</p>
+        <p> - {t('hobbies')}</p>
       </div>
     </>
   );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   return {
-    props: { title: 'About' },
+    props: {
+      ...(await serverSideTranslations(locale, ['about'])),
+    },
   };
 }
 

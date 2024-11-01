@@ -1,11 +1,25 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import styles from '../styles/ProjectCard.module.css';
 
 const ProjectCard = ({ project }) => {
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/projects/${project.id}`);
+  };
+
   return (
-    <div className={styles.card} key={project.id}>
-      <div style={{ width: "100%", height: 200, position: "relative", background: "skyblue" }}>
-        <Image src={project.image} alt={project.name} layout='fill' objectFit="fill"/>
+    <div
+      className={styles.card}
+      key={project.id}
+      onClick={handleCardClick}
+      role="button"
+      tabIndex={0}
+      onKeyPress={(e) => e.key === 'Enter' && handleCardClick()}
+    >
+      <div style={{ width: '100%', height: 200, position: 'relative', background: 'skyblue' }}>
+        <Image src={project.image} alt={project.name} layout="fill" objectFit="fill" />
       </div>
       <div className={styles.content}>
         <h3>{project.name}</h3>
@@ -30,13 +44,13 @@ const ProjectCard = ({ project }) => {
           )}
           {project.demo && (
             <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.underline}
-          >
-            Live Demo
-          </a>
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.underline}
+            >
+              Live Demo
+            </a>
           )}
         </div>
       </div>
