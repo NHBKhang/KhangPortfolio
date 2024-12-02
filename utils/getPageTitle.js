@@ -1,4 +1,6 @@
 export const getPageTitle = (locale, title, params = {}) => {
+    if (locale.trim() === '' || title.trim() === '') return;
+
     const titles = {
         en: {
             base: 'NHBKhang',
@@ -10,8 +12,8 @@ export const getPageTitle = (locale, title, params = {}) => {
             projects: 'Projects',
             settings: 'Settings',
             github: 'Github',
-            article: `Article ${params.id || ''}`,
-            project: `Project ${params.id || ''}`,
+            article: `Article ${params.name || ''}`,
+            project: `Project ${params.name || ''}`,
             version: 'Version'
         },
         vi: {
@@ -24,8 +26,8 @@ export const getPageTitle = (locale, title, params = {}) => {
             home: 'Trang chủ',
             settings: 'Cài đặt',
             github: 'Github',
-            article: `Bài đăng ${params.id || ''}`,
-            project: `Dự án ${params.id || ''}`,
+            article: `Bài đăng ${params.name || ''}`,
+            project: `Dự án ${params.name || ''}`,
             version: 'Phiên bản'
         },
     };

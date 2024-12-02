@@ -1,4 +1,5 @@
 {
+    "changeLanguage": "Change language",
     "manageThemes": "Manage Themes Color",
     "githubDark": "GitHub theme for VS Code.",
     "dracula": "Official Dracula Theme. A dark theme for many editors, shells, and more.",

@@ -41,7 +41,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       articles: sortedArticles,
-      ...(await serverSideTranslations(locale, ['articles']))
+      ...(await serverSideTranslations(locale, ['articles', 'common']))
     }
   };
 }

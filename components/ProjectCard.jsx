@@ -1,9 +1,13 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from '../styles/ProjectCard.module.css';
+import { useTranslation } from 'next-i18next';
+import { useLanguage } from '../configs/LanguageContext';
 
 const ProjectCard = ({ project }) => {
   const router = useRouter();
+  const { t } = useTranslation('projects');
+  const { language } = useLanguage();
 
   const handleCardClick = () => {
     router.push(`/projects/${project.id}`);
@@ -22,8 +26,8 @@ const ProjectCard = ({ project }) => {
         <Image src={project.image} alt={project.name} layout="fill" objectFit="fill" />
       </div>
       <div className={styles.content}>
-        <h3>{project.name}</h3>
-        <p>{project.description}</p>
+        <h3 className={styles.title}>{project.name}</h3>
+        <p>{project.description[language]}</p>
         <div className={styles.tags}>
           {project.tags.map((tag) => (
             <span key={tag} className={tag}>
@@ -39,7 +43,7 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className={styles.underline}
             >
-              Source Code
+              {t('sourceCode')}
             </a>
           )}
           {project.demo && (
@@ -49,7 +53,7 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className={styles.underline}
             >
-              Live Demo
+              {t('liveDemo')}
             </a>
           )}
         </div>

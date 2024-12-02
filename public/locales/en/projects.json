@@ -5,5 +5,10 @@
     "technologies": "Technologies",
     "developmentTime": "Development Time",
     "role": "Role",
-    "viewRepo": "View Repository"
+    "viewRepo": "View Repository",
+    "sourceCode": "Source Code",
+    "liveDemo": "Live Demo",
+    "viewSourceCode": "View Source Code",
+    "viewLiveDemo": "View Live Demo",
+    "languagesAndTechnologies": "Languages and Technologies"
 }

@@ -3,9 +3,11 @@
     "formContact": "Or fill out this form",
     "nameLabel": "Name",
     "emailLabel": "Email",
+    "countryLabel": "Country",
     "subjectLabel": "Subject",
     "messageLabel": "Message",
     "sendButton": "Send",
+    "responseSending": "Sending message...",
     "responseReceived": "Your response has been received!",
     "errorResponse": "There was an error. Please try again later."
 }

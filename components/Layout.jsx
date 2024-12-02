@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Chatbox from './Chatbox'
 import { useGlobalContext } from '../configs/GlobalContext'
+import { ToastContainer } from 'react-toastify'
 
 const Layout = ({ children }) => {
   const { chatboxHidden } = useGlobalContext();
@@ -32,9 +33,11 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <Bottombar />
+      
+      <ToastContainer />
       {!chatboxHidden && <Chatbox />}
     </>
   )
 }
 
-export default Layout
+export default Layout;

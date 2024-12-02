@@ -1,12 +1,30 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from '../styles/Chatbox.module.css';
+import { useTranslation } from 'next-i18next';
+import { useNotification } from '../utils/toast';
+import { useLanguage } from '../configs/LanguageContext';
+
+const defaultMessage = [
+    { sender: 'bot', text: { vi: "Xin chào!", en: "Hello there!" } },
+    { sender: 'bot', text: { 
+        vi: "Tên tôi là Coco Chat, tôi là bot hỗ trợ của Khang Portfolio 🤖", 
+        en: "My name is Coco Chat, I'm Khang Portfolio's support bot 🤖" 
+    } },
+    { sender: 'bot', text: { 
+        vi: "Tôi có giúp gì cho bạn?", 
+        en: "How can I help you?" 
+    } },
+];
 
 const Chatbox = () => {
+    const { language } = useLanguage();
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const [loading, setLoading] = useState(false);
     const messagesRef = useRef();
+    const { t } = useTranslation('common');
+    const sendNotification = useNotification();
 
     const sendMessage = async () => {
         if (message.trim() === '') return;
@@ -18,19 +36,16 @@ const Chatbox = () => {
         try {
             const sessionId = `session-${Date.now()}`;
 
-            const res = await fetch('/api/dialogflow', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ message, sessionId: sessionId }),
+            const res = await axios.post('/api/dialogflow', {
+                message: message,
+                sessionId: sessionId,
             });
 
-            const data = await res.json();
+            const data = res.data;
             const botMessage = { sender: 'bot', text: data.response };
             setMessages((prev) => [...prev, botMessage]);
         } catch (error) {
-            console.error('Error:', error);
+            sendNotification({ message: t('botError') }, 'error');
         } finally {
             setLoading(false);
         }
@@ -64,6 +79,14 @@ const Chatbox = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [isOpen]);
 
+    useEffect(() => {
+        const localizedMessages = defaultMessage.map(msg => ({
+            sender: msg.sender,
+            text: msg.text[language] || msg.text.en
+        }));
+        setMessages(localizedMessages);
+    }, [language]);
+
     return (
         <div>
             <button
@@ -80,7 +103,7 @@ const Chatbox = () => {
 
             <div className={`${styles.chatbox} ${isOpen ? styles.open : ''}`}>
                 <div className={styles.chatHeader}>
-                    <h2 className={styles.chatTitle}>Coco Talk</h2>
+                    <h2 className={styles.chatTitle}>Coco Chat</h2>
                 </div>
                 <div className={styles.messages} ref={messagesRef}>
                     {messages.map((m, index) => (
@@ -93,7 +116,7 @@ const Chatbox = () => {
                     ))}
                     {loading &&
                         <div className={`${styles.botMessage} ${styles.loading}`}>
-                            Đang soạn tin nhắn...
+                            {t('botPlaceholder')}
                         </div>
                     }
                 </div>
@@ -103,10 +126,12 @@ const Chatbox = () => {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         onKeyPress={handleKeyPress}
-                        placeholder="Nhập tin nhắn của bạn..."
+                        placeholder={t('botPlaceholder')}
                         className={styles.chatInput}
                     />
-                    <button onClick={sendMessage} className={styles.sendButton}>Gửi</button>
+                    <button onClick={sendMessage} className={styles.sendButton}>
+                        {t('sendButton')}
+                    </button>
                 </div>
             </div>
         </div>

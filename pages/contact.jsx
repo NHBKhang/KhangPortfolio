@@ -5,33 +5,45 @@ import emailjs from 'emailjs-com';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CustomHead from '../components/Head';
+import { notify, useNotification } from '../utils/toast';
 
 const ContactPage = () => {
-  const { t } = useTranslation('contact'); // Assuming you have a 'contact' namespace for translations
+  const { t } = useTranslation('contact');
+  const sendNotification = useNotification();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
   const submitForm = async (e) => {
     e.preventDefault();
 
-    const contactData = { name, email, subject, message };
+    const contactData = { name, email, subject, message, country };
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+    const userId = process.env.NEXT_PUBLIC_EMAIL_USER_ID;
+
 
     try {
-      const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
-      const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
-      const userId = process.env.NEXT_PUBLIC_EMAIL_USER_ID;
+      const promise = emailjs.send(serviceId, templateId, contactData, userId);
+      await notify.promise(promise,
+        {
+          pending: t('responseSending'),
+          success: t('responseReceived'),
+          error: t('errorResponse')
+        }
+      );
 
-      await emailjs.send(serviceId, templateId, contactData, userId);
-      alert(t('responseReceived'));
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
+      setEmail('');
     } catch (error) {
-      console.error('Error sending email:', error);
-      alert(t('errorResponse'));
+      console.error(error);
+      sendNotification({ message: t('errorResponse') }, 'error');
     }
   };
 
@@ -71,6 +83,17 @@ const ContactPage = () => {
               </div>
             </div>
             <div>
+              <label htmlFor="country">{t('countryLabel')}</label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+                required
+              />
+            </div>
+            <div>
               <label htmlFor="subject">{t('subjectLabel')}</label>
               <input
                 type="text"
@@ -103,7 +126,7 @@ const ContactPage = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['contact'])),
+      ...(await serverSideTranslations(locale, ['contact', 'common'])),
     },
   };
 }

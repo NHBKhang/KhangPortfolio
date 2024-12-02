@@ -4,9 +4,24 @@
     "viewWork": "Xem sản phẩm",
     "contactMe": "Liên hệ với tôi",
     "fullStackDeveloper": "Lập trình viên Full Stack",
-
     "description": "Nguyễn Hà Bảo Khang là một lập trình viên full stack đam mê xây dựng các trang web và ứng dụng mà bạn sẽ thích.",
     "keywords": "nguyễn hà bảo khang, nhbkhang, khang, hồ sơ lập trình viên web, nhbkhang lập trình viên web, nhbkhang lập trình viên, nhbkhang hồ sơ, vscode-portfolio",
     "ogTitle": "Hồ sơ của Bảo Khang",
-    "ogDescription": "Một lập trình viên full-stack xây dựng các trang web mà bạn muốn sử dụng."
+    "ogDescription": "Một lập trình viên full-stack xây dựng các trang web mà bạn muốn sử dụng.",
+    "pageNotFound": "Không tìm thấy trang",
+    "notFoundMessage": "Xin lỗi, trang bạn tìm kiếm không còn tồn tại.",
+    "goBackHome": "Quay trở về trang chủ",
+    "info": "Thông báo",
+    "success": "Thành công",
+    "error": "Thất bại",
+    "warning": "Cảnh báo",
+    "loading": "Đang tải...",
+    "botError": "Không thể gửi tin nhắn!",
+    "botComposing": "Đang soạn tin nhắn...",
+    "botPlaceholder": "Nhập tin nhắn của bạn...",
+    "sendButton": "Gửi",
+    "changeLanguage": "Thay đổi ngôn ngữ",
+    "enableChatbox": "Bật hộp trò chuyện",
+    "disableChatbox": "Tắt hộp trò chuyện",
+    "settings": "Cài đặt"
 }

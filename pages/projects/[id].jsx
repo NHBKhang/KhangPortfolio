@@ -4,11 +4,14 @@ import styles from '../../styles/ProjectPage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CustomHead from '../../components/Head';
+import { useLanguage } from '../../configs/LanguageContext';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const ProjectPage = ({ project }) => {
     const router = useRouter();
-    const { id } = router.query;
     const { t } = useTranslation('projects');
+    const { language } = useLanguage();
 
     if (router.isFallback) {
         return <div>Loading...</div>;
@@ -20,28 +23,38 @@ const ProjectPage = ({ project }) => {
 
     return (
         <>
-            <CustomHead page={'project'} params={{ id: id }} />
+            <CustomHead page={'project'} params={{ name: project.name }} />
+
             <div className={styles.container}>
                 <h1 className={styles.title}>{project.name}</h1>
-                <p className={styles.description}>{project.description}</p>
-
-                <div className={styles.techStack}>
-                    <h3>{t('technologies')}:</h3>
-                    <ul>
-                        {project.tags.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                        ))}
-                    </ul>
+                <Image
+                    src={project.image}
+                    alt={project.name}
+                    width={800}
+                    height={450}
+                    className={styles.image}
+                />
+                <p className={styles.description}>{project.description[language]}</p>
+                <h4 className={styles.languagesAndTechnologies}>
+                    {t('languagesAndTechnologies')}
+                </h4>
+                <div className={styles.tags}>
+                    {project.tags.map((tag, index) => (
+                        <span key={index} className={`${tag} ${styles.tag}`}>
+                            {tag}
+                        </span>
+                    ))}
                 </div>
-
-                <div className={styles.stats}>
-                    <p>{t('developmentTime')}: {project.developmentTime}</p>
-                    <p>{t('role')}: {project.role}</p>
+                <div className={styles.buttonGroup}>
+                    <Link className={styles.sourceCodeLink}
+                        href={project.source_code} target="_blank" rel="noopener noreferrer">
+                        {t('viewSourceCode')}
+                    </Link>
+                    {project.demo && <Link className={styles.liveDemoLink}
+                        href={project.demo} target="_blank" rel="noopener noreferrer">
+                        {t('viewLiveDemo')}
+                    </Link>}
                 </div>
-
-                <a className={styles.viewRepo} href={project.repository_url} target="_blank" rel="noopener noreferrer">
-                    {t('viewRepo')}
-                </a>
             </div>
         </>
     );
@@ -54,7 +67,7 @@ export async function getStaticProps({ params, locale }) {
     return {
         props: {
             project: project || null,
-            ...(await serverSideTranslations(locale, ['projects'])),
+            ...(await serverSideTranslations(locale, ['projects', 'common'])),
         },
         revalidate: 60,
     };

@@ -5,5 +5,10 @@
     "technologies": "Công nghệ",
     "developmentTime": "Thời gian phát triển",
     "role": "Vai trò",
-    "viewRepo": "Xem kho lưu trữ"
+    "viewRepo": "Xem kho lưu trữ",
+    "sourceCode": "Mã nguồn",
+    "liveDemo": "Demo trực tuyến",
+    "viewSourceCode": "Xem mã nguồn",
+    "viewLiveDemo": "Xem demo trực tuyến",
+    "languagesAndTechnologies": "Ngôn ngữ và công nghệ"
 }

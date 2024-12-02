@@ -12,12 +12,14 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .description {
     font-size: 16px;
     margin-bottom: 16px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .coverWrapper {
@@ -32,15 +34,24 @@
     width: auto;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 16px;
     object-fit: cover;
     overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.createdDate {
+    margin-bottom: 16px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #ababab;
 }
 
 .stats {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    border: 1px solid rgba(245, 245, 245, 0.25);
+    padding: 7px;
 }
 
 .stat {
@@ -55,11 +66,13 @@
     background-color: var(--button-2nd-bg);
     color: var(--text-clr);
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.1s ease, transform 0.2s ease-in;
 }
 
 .viewFullArticle:hover {
     background-color: var(--button-2nd-hover-bg);
+    box-shadow: 0 1px 2px var(--text-clr);
+    transform: translateY(-2px);
 }
 
 @media screen and (min-width: 2000px) {

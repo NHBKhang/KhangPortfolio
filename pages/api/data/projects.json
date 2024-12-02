@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1,
+    "name": "Lottery Game",
+    "image": "https://cdn6.f-cdn.com/contestentries/1174780/11830557/5a02a124d3af3_thumb900.jpg",
+    "description": {
+      "vi": "Một dự án đơn giản sử dụng .Net Framework để thiết kế giao diện người dùng. Project mô phỏng lại game xổ số Vietlot",
+      "en": "A simple project using .Net Framework to design the user interface. The project simulates the Vietlot lottery game."
+    },
+    "tags": [
+      "C#",
+      ".Net framework"
+    ],
+    "source_code": "https://github.com/NHBKhang/Lottery"
+  },
+  {
+    "id": 2,
+    "name": "Wedding Hall Manager",
+    "image": "https://img.weddingbazaar.com/shaadisaga_production/landing/mmlistcard.jpg",
+    "description": {
+      "vi": "Dự án quản lý nhà hàng tiệc cưới sử dụng ngôn ngữ Java để học lập trình hướng đối tượng",
+      "en": "Wedding restaurant management project using Java language to learn object-oriented programming"
+    },
+    "tags": [
+      "Java"
+    ],
+    "source_code": "https://github.com/NHBKhang/QuanLySanhCuoi/"
+  },
+  {
+    "id": 3,
+    "name": "Vung Tau Travel Website",
+    "image": "https://nhbkhang.github.io/VungTauTravelWebsite/img/logo.png",
+    "description": {
+      "vi": "Website sử dụng cho môn thiết kế web. Website giới thiệu du lịch Vũng Tàu và các dịch vụ khác.",
+      "en": "Website used for web design. Website introduces Vung Tau tourism and other services."
+    },
+    "tags": [
+      "Html",
+      "Css",
+      "Javascript"
+    ],
+    "source_code": "https://github.com/NHBKhang/VungTauTravelWebsite",
+    "demo": "https://nhbkhang.github.io/VungTauTravelWebsite/"
+  },
+  {
+    "id": 4,
+    "name": "Electronic Sale App",
+    "image": "https://st.depositphotos.com/1000128/2454/i/450/depositphotos_24542943-stock-photo-mobile-devices-wireless-communication-technology.jpg",
+    "description": {
+      "vi": "Dự án demo đơn giản về trang web bán điện thoại trực tuyến sử dụng Flask framework.",
+      "en": "Simple demo project about online phone selling website using Flask framework."
+    },
+    "tags": [
+      "Html",
+      "Css",
+      "Javascript",
+      "Python",
+      "Flask",
+      "Bootstrap",
+      "MySQL"
+    ],
+    "source_code": "https://github.com/NHBKhang/SaleApp"
+  },
+  {
+    "id": 5,
+    "name": "Quantum Minds",
+    "image": "https://dntech.vn/uploads/details/2021/11/images/ai%20l%C3%A0%20g%C3%AC.jpg",
+    "description": {
+      "vi": "Game giải đố góc nhìn thứ nhất viết bằng engine Unity.",
+      "en": "First-person puzzle game written in Unity engine."
+    },
+    "tags": [
+      "C#",
+      "HLSL",
+      "Shaderlab",
+      "Unity3D"
+    ],
+    "source_code": "https://github.com/NHBKhang/QuantumMinds"
+  },
+  {
+    "id": 6,
+    "name": "Django Message App",
+    "image": "https://wallpapercave.com/wp/wp12510353.jpg",
+    "description": {
+      "vi": "Hệ thống nhắn tin trực tuyến áp dụng các thuật toán bảo mật an toàn thông tin.",
+      "en": "Online messaging system applies information security algorithms."
+    },
+    "tags": [
+      "Html",
+      "Css",
+      "Javascript",
+      "Python",
+      "Django",
+      "Tailwind",
+      "SQLite"
+    ],
+    "source_code": "https://github.com/NHBKhang/MessageApp"
+  },
+  {
+    "id": 7,
+    "name": "Bookstore Manager",
+    "image": "https://celadonbooks.com/wp-content/uploads/2019/09/memoir-definition.jpg",
+    "description": {
+      "vi": "Đồ án hệ thống quản lý nhà sách cho môn công nghệ phần mềm sử dụng Flask framework.",
+      "en": "Bookstore management system project for software technology subject using Flask framework."
+    },
+    "tags": [
+      "Html",
+      "Css",
+      "Javascript",
+      "Python",
+      "Flask",
+      "Bootstrap",
+      "MySQL"
+    ],
+    "source_code": "https://github.com/NHBKhang/BookstoreManager",
+    "demo": "https://nhbkhang12.pythonanywhere.com/"
+  },
+  {
+    "id": 8,
+    "name": "Course App",
+    "image": "https://www.studytienganh.vn/upload/2021/06/106292.jpg",
+    "description": {
+      "vi": "Dự án đơn giản về trang web học tập trực tuyến sử dụng Django framework, MySQL và React Native.",
+      "en": "Simple online learning website project using Django framework, MySQL and React Native."
+    },
+    "tags": [
+      "React Native",
+      "REST",
+      "Javascript",
+      "Python",
+      "Css",
+      "Html",
+      "Django",
+      "Ruby",
+      "Kotlin",
+      "Objective-C",
+      "MySQL"
+    ],
+    "source_code": "https://github.com/NHBKhang/SaleApp"
+  },
+  {
+    "id": 9,
+    "name": "Khang Vscode Portfolio",
+    "image": "https://i0.wp.com/www.alphr.com/wp-content/uploads/2021/04/How-to-Collapse-All-in-VS-Code.png?fit=1920%2C1080&ssl=1",
+    "description": {
+      "vi": "Trang web cá nhân theo chủ đề Visual Studio Code. Trang web giới thiệu thông tin về cá nhân tôi cũng các dự án hay các bài viết thú vị của tôi.",
+      "en": "Personal website with Visual Studio Code theme. The website introduces information about me as well as my interesting projects and articles."
+    },
+    "tags": [
+      "React",
+      "Next",
+      "Css",
+      "Javascript"
+    ],
+    "source_code": "https://github.com/NHBKhang/KhangPortfolio",
+    "demo": "https://khang-vss-portfolio.netlify.app/"
+  },
+  {
+    "id": 10,
+    "name": "Bookstore System V2",
+    "image": "https://img.freepik.com/premium-vector/book-shop-interior-illustration-various-books-shelves-cashier-desk-indoors-bookstore-with-girl-seller-no-buyers-inside-popular-new-items_109722-486.jpg?w=1380",
+    "description": {
+      "vi": "Đồ án cuối kỳ cho môn Lập trình Cơ sở dữ liệu và bài tập lớn cho môn Kiểm thử phần mềm. Dự án được làm lại hoàn thiện hơn với Django framework.",
+      "en": "Final project for Database Programming and major assignment for Software Testing. The project was remade to be more complete with Django framework."
+    },
+    "tags": [
+      "Python",
+      "Django",
+      "Html",
+      "Javascript",
+      "Css",
+      "Bootstrap",
+      "REST",
+      "MySQL"
+    ],
+    "source_code": "https://github.com/NHBKhang/BookstoreSystemV2"
+  },
+  {
+    "id": 11,
+    "name": "Subject Ouline Compiler",
+    "image": "https://uploads.heightsplatform.com/program/public/blogarticle/602/cover_image/original-04814f76e2e035a6a98528da9eff36c1.png",
+    "description": {
+      "vi": "Đồ án cuối kỳ cho môn Các công lập trình hiện đại. Đồ án sử dụng Django rest framework, MySQL và React Native để xây dựng phần mềm hoàn chỉnh trên thiết bị di động.",
+      "en": "Final project for Modern Programming Languages. The project uses Django rest framework, MySQL and React Native to build a complete software on mobile devices."
+    },
+    "tags": [
+      "Python",
+      "Javascript",
+      "Typescript",
+      "Css",
+      "Html",
+      "Ruby",
+      "Kotlin",
+      "REST",
+      "Objective-C",
+      "Objective-C++",
+      "Django",
+      "MySQL",
+      "Firebase",
+      "React Native"
+    ],
+    "source_code": "https://github.com/NHBKhang/SubjectOutline"
+  },
+  {
+    "id": 12,
+    "name": "Basic Equation",
+    "image": "https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths.webp",
+    "description": {
+      "vi": "Project đơn giản ôn tập thuật toán và cấu trúc dữ liệu. Project lập trình theo hướng cấu trúc sử dụng cho việc học lập trình căn bản.",
+      "en": "Simple project to review algorithms and data structures. Structured programming project used for learning basic programming."
+    },
+    "tags": [
+      "C/C++"
+    ],
+    "source_code": "https://github.com/NHBKhang/BasicEquation"
+  },
+  {
+    "id": 13,
+    "name": "Photo Gallery",
+    "image": "https://fontawesome.com/social/image-landscape?f=&s=",
+    "description": {
+      "vi": "Website Next.js cá nhân chứa các ảnh đã lưu trữ.",
+      "en": "Personal Next.js website containing hosted images."
+    },
+    "tags": [
+      "Typescript",
+      "Javascript",
+      "Css",
+      "Next",
+      "React",
+      "Tailwind"
+    ],
+    "source_code": "https://github.com/NHBKhang/PhotoGallery",
+    "demo": "https://nhbkhang-photo-gallery-k7vtb7j7q-nhbkhangs-projects.vercel.app/"
+  },
+  {
+    "id": 14,
+    "name": "My CV Template",
+    "image": "https://www.vietnamworks.com/hrinsider/wp-content/uploads/2021/07/shutterstock_1210613140.jpg",
+    "description": {
+      "vi": "Website template đơn giản chứa CV của tôi và CV có thể tải về được (Private vì thông tin cá nhân)",
+      "en": "Simple website template containing my CV and downloadable CV (Private for personal information)"
+    },
+    "tags": [
+      "Html",
+      "Javascript",
+      "Css",
+      "Scss",
+      "Bootstrap"
+    ],
+    "source_code": "https://github.com/NHBKhang/MyCVTemplate",
+    "demo": "https://nhbkhang.github.io/MyCVTemplate/"
+  },
+  {
+    "id": 15,
+    "name": "For You 💕",
+    "image": "https://cdn-icons-png.flaticon.com/512/9553/9553174.png",
+    "description": {
+      "vi": "Website là lá thư dành cho bạn 💌",
+      "en": "Website is a letter for you 💌"
+    },
+    "tags": [
+      "Html",
+      "Javascript",
+      "Css"
+    ],
+    "source_code": "https://github.com/NHBKhang/ForYou",
+    "demo": "https://nhbkhang.github.io/ForYou/"
+  },
+  {
+    "id": 16,
+    "name": "SoundScape Music Player",
+    "image": "https://res.cloudinary.com/dd0qzygo7/image/upload/v1727713607/My%20Folder/logo123_eoz3rc.png",
+    "description": {
+      "vi": "Website nghe nhạc trực tuyến mô phỏng SoundCloud với nhiều bài hát tích hợp nhiều công nghệ hiện đại như AWS S3. Đồ án ngành cuối cùng tổng kết cho 4 năm học.",
+      "en": "Online music listening website simulating SoundCloud with many songs integrating many modern technologies such as AWS S3. Final project summarizing 4 years of study."
+    },
+    "tags": [
+      "React",
+      "Django",
+      "REST",
+      "MySQL",
+      "Bootstrap",
+      "Python",
+      "Html",
+      "Javascript",
+      "Css"
+    ],
+    "source_code": "https://github.com/NHBKhang/MusicPlayer"
+  },
+  {
+    "id": 17,
+    "name": "Resource Management",
+    "image": "http://seofiles.s3.amazonaws.com/seo/media/uploads/2017/03/03/unit-22-practical-issues-in-human-resource-management-assignment.jpg",
+    "description": {
+      "vi": "Dự án demo được phát triển trong quá trình thực tập. Dự án quản lý nhân sự bao gồm các chức năng chính như quản lý nhân viên, chấm công và thống kê báo cáo.",
+      "en": "The demo project was developed during the internship. The human resource management project includes main functions such as employee management, attendance and statistics."
+    },
+    "tags": [
+      "React",
+      "Django",
+      "REST",
+      "MySQL",
+      "Python",
+      "Javascript",
+      "Css"
+    ],
+    "source_code": "https://github.com/NHBKhang/ResourceManagement"
+  },
+  {
+    "id": 18,
+    "name": "Odoo Project",
+    "image": "https://enmasys.com/web/image/5136-a4011140/maxresdefault.jpg?access_token=679292df-ae9a-4e8a-b5ad-dda4dd20357d",
+    "description": {
+      "vi": "Clone và chạy thử bộ ứng dụng quản lý doanh nghiệp mã nguồn mở Odoo để bắt đầu vào dự án trong công ty. Nghiên cứu và tạo một module mới về quản lý thư viện trò chơi.",
+      "en": "Clone and test run the Odoo open source business management application suite to get started on projects within the company. Research and create a new module on game library management."
+    },
+    "tags": [
+      "Odoo",
+      "PostgreSQL",
+      "Python",
+      "Javascript",
+      "Css",
+      "Scss"
+    ],
+    "source_code": "https://github.com/NHBKhang/OdooProject"
+  }
+]

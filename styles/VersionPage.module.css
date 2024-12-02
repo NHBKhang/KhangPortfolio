@@ -5,6 +5,37 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.infoWrapper {
+    position: absolute;
+}
+
+.infoIcon {
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: 30px;
+    left: calc(50% + 175px);
+    width: 400px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.infoWrapper:hover .tooltip {
+    display: block;
+    opacity: 1;
 }
 
 .title {
@@ -17,8 +48,7 @@
 .subtitle {
     font-size: 2em;
     color: var(--text-3rd-clr);
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -35,7 +65,7 @@
     font-size: 1em;
     line-height: 1.6;
     color: #888888;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
@@ -58,6 +88,64 @@
     font-weight: 500;
 }
 
+.navButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.button {
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prevButton {
+    background-color: #f3f4f6;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.nextButton {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #3d8b41;
+}
+
+.button:disabled {
+    background-color: #e0e0e0;
+    color: #999;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.button:not(:disabled):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+}
+
+.button:not(:disabled):active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navButtons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+}
+
 @media (max-width: 600px) {
     .title {
         font-size: 2em;
@@ -69,5 +157,11 @@
 
     .sectionTitle {
         font-size: 1.2em;
+    }
+
+    .tooltip {
+        left: calc(50% + 110px);
+        width: 250px;
+        font-size: 0.85rem;
     }
 }

@@ -33,6 +33,11 @@
   color: var(--accent-color);
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .stats {

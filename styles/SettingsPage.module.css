@@ -4,3 +4,54 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 1rem 0;
 }
+
+.settingsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  width: 95%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 45px;
+}
+
+.languageDropdown {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 1px solid var(--button-bg);
+  background: none;
+  color: var(--text-clr);
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  outline: none;
+}
+
+.select:hover {
+  border-color: var(--button-2nd-bg);
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+}
+
+.select:focus {
+  border-color: var(--button-2nd-bg);
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+}
+
+.select option {
+  padding: 10px;
+  background-color: whitesmoke;
+  color: rgb(50, 50, 50);
+}
+
+.select:focus-visible {
+  outline: none;
+  border-color: var(--button-2nd-bg);
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+}

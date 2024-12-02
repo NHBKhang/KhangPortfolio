@@ -1,10 +1,14 @@
 {
     "version": "Version",
-    "description": "This page provides detailed information about the software versions, including recent releases, release dates, and important release notes. Here, you will find information about new features, bug fixes, and performance improvements introduced in each version. If you want to learn about how the software has evolved over different versions, this is the ideal place to explore. Additionally, we provide links to the changelog for each version, where you can find detailed information about all changes made. This helps you gain a clearer understanding of the features that have been implemented and the issues that have been resolved.",
+    "description": "This page provides detailed information about the software versions, including recent releases, release dates, and important release notes. Here, you will find information about new features, bug fixes, and performance improvements introduced in each version.",
     "releaseNotes": "Release Notes",
     "currentVersion": "Current Version",
     "releaseDate": "Release Date",
     "notes": "Notes",
     "changelog": "Changelog",
-    "viewChangelog": "View Full Changelog"
+    "viewChangelog": "View Full Changelog",
+    "features": "Features",
+    "improvements": "Improvements",
+    "previous": "Previous",
+    "next": "Next"
 }

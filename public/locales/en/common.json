@@ -4,13 +4,24 @@
     "viewWork": "View Work",
     "contactMe": "Contact Me",
     "fullStackDeveloper": "Full Stack Developer",
-
     "description": "Nguyen Ha Bao Khang is an avid full stack web developer building websites and applications you'd love to use.",
     "keywords": "nguyen ha bao khang, nhbkhang, khang, web developer portfolio, nhbkhang web developer, nhbkhang developer, nhbkhang portfolio, vscode-portfolio",
     "ogTitle": "Bao Khang's Portfolio",
     "ogDescription": "A full-stack developer building websites that you'd like to use.",
-
     "pageNotFound": "Page Not Found",
     "notFoundMessage": "Sorry, the page you are looking for does not exist.",
-    "goBackHome": "Go Back Home"
+    "goBackHome": "Go Back Home",
+    "info": "Info",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "loading": "Loading...",
+    "botError": "Cannot send message!!",
+    "botComposing": "Composing a message...",
+    "botPlaceholder": "Enter your message...",
+    "sendButton": "Send",
+    "changeLanguage": "Change Language",
+    "enableChatbox": "Enable Chatbox",
+    "disableChatbox": "Disable Chatbox",
+    "settings": "Settings"
 }

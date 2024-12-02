@@ -32,7 +32,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       projects: sortedProjects,
-      ...(await serverSideTranslations(locale, ['projects'])),
+      ...(await serverSideTranslations(locale, ['projects', 'common'])),
     },
   };
 }

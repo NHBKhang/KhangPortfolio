@@ -98,7 +98,7 @@
 }
 
 .Javascript {
-  border: 2px solid rgb(21, 114, 182);
+  border: 2px solid rgb(111, 145, 19);
 }
 
 .Javascript:hover {
@@ -230,5 +230,21 @@
 }
 
 .Objective\-C\+\+:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.Odoo {
+  border: 0.1rem solid rgb(153, 0, 255);
+}
+
+.Odoo:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.PostgreSQL {
+  border: 0.1rem solid rgb(49, 120, 198);
+}
+
+.PostgreSQL:hover {
   background: rgba(82, 143, 240, 0.25);
 }

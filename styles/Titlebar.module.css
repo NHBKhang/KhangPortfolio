@@ -79,7 +79,7 @@
   z-index: 10;
   transition: opacity 0.2s ease-in-out;
   opacity: 0;
-  width: 300px;
+  width: 275px;
   padding: 4px;
   user-select: none;
 }
@@ -97,7 +97,7 @@
 }
 
 .dropdown div p {
-  padding: 3px 24px;
+  padding: 3px 15px;
   cursor: pointer;
   color: var(--text-clr);
   transition: background-color 0.2s ease;

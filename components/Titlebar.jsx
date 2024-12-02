@@ -3,11 +3,15 @@ import styles from '../styles/Titlebar.module.css';
 import { useState } from 'react';
 import { useGlobalContext } from '../configs/GlobalContext';
 import { useLanguage } from '../configs/LanguageContext';
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 const Titlebar = () => {
   const { chatboxHidden, setChatboxHidden } = useGlobalContext();
-  const { toggleLanguage, language } = useLanguage();
+  const { toggleLanguage } = useLanguage();
   const [isDropdownOpen, setDropdownOpen] = useState({});
+  const { t } = useTranslation('common');
+  const router = useRouter();
 
   const toggleDropdown = (key) => {
     setDropdownOpen(prev => ({ [key]: !prev[key] }));
@@ -19,33 +23,31 @@ const Titlebar = () => {
 
   const fileDropdown = [
     {
-      label: 'New File',
-      action: () => closeDropdown('file'),
-      shortcut: 'Key'
-    },
-    {
-      label: 'Open File',
-      action: () => closeDropdown('file'),
-    },
+      label: t('settings'),
+      action: () => {
+        router.push('/settings');
+        closeDropdown('file');
+      },
+    }
   ];
 
   const editDropdown = [
     {
-      label: 'Change Language',
+      label: t('changeLanguage'),
       action: () => {
         closeDropdown('edit');
         toggleLanguage();
       },
-      shortcut: language.toUpperCase()
+      shortcut: 'Alt+L'
     },
   ];
 
-  const viewDropdown = [
+  const runDropdown = [
     {
-      label: chatboxHidden ? 'Enable Chatbox' : 'Disable Chatbox',
+      label: chatboxHidden ? t('enableChatbox') : t('disableChatbox'),
       action: () => {
         setChatboxHidden(!chatboxHidden);
-        closeDropdown('view');
+        closeDropdown('run');
       },
       shortcut: 'Ctrl+Shift+C'
     },
@@ -78,7 +80,7 @@ const Titlebar = () => {
         <p onClick={() => toggleDropdown('edit')}>Edit</p>
         <div
           className={`${styles.dropdown} ${isDropdownOpen.edit && styles.show}`}
-          style={{ left: '65px' }}
+          style={{ left: '66px' }}
           onMouseLeave={() => closeDropdown('edit')}
         >
           {editDropdown.map((item, index) => (
@@ -95,17 +97,29 @@ const Titlebar = () => {
           style={{ left: '105px' }}
           onMouseLeave={() => closeDropdown('view')}
         >
-          {viewDropdown.map((item, index) => (
+        </div>
+
+        <p onClick={() => toggleDropdown('go')}>Go</p>
+        <div
+          className={`${styles.dropdown} ${isDropdownOpen.go && styles.show}`}
+          style={{ left: '150px' }}
+          onMouseLeave={() => closeDropdown('go')}
+        >
+        </div>
+
+        <p onClick={() => toggleDropdown('run')}>Run</p>
+        <div
+          className={`${styles.dropdown} ${isDropdownOpen.run && styles.show}`}
+          style={{ left: '180px' }}
+          onMouseLeave={() => closeDropdown('run')}
+        >
+          {runDropdown.map((item, index) => (
             <div key={index} onClick={() => item.action()}>
               <p>{item.label}</p>
               {item.shortcut && <p>{item.shortcut}</p>}
             </div>
           ))}
         </div>
-
-        <p>Go</p>
-
-        <p>Run</p>
 
         <p>Terminal</p>
 

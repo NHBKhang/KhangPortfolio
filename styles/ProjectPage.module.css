@@ -1,41 +1,112 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto 40px;
     padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(62, 62, 62, 0.1);
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .title {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-clr);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .description {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.techStack h3 {
     font-size: 1.1rem;
-    color: #555;
+    line-height: 1.8;
+    color: var(--text-2nd-clr);
+    text-align: justify;
 }
 
-.techStack ul {
-    padding-left: 20px;
-    list-style-type: disc;
+.languagesAndTechnologies {
+    text-align: center;
+    margin: 15px auto 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--text-clr);
 }
 
-.stats p {
-    font-size: 1rem;
-    color: #666;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: safe;
+    margin: 0.5rem 0 1rem;
+    gap: 15px;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
 }
 
-.viewRepo {
+.tag {
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.tag:hover {
+    transform: scale(1.05) translateY(-0.125rem);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 25px;
+}
+
+.sourceCodeLink,
+.liveDemoLink {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: #0070f3;
-    color: white;
     text-decoration: none;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 12px;
+}
+
+.sourceCodeLink:hover,
+.liveDemoLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px var(--text-clr);
+}
+
+.sourceCodeLink {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+}
+
+.sourceCodeLink:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.liveDemoLink {
+    background-color: var(--button-2nd-bg);
+    color: var(--text-color);
+}
+
+.liveDemoLink:hover {
+    background-color: var(--button-2nd-hover-bg);
+}
+
+@media screen and (max-width: 600px) {
+    .buttonGroup {
+        display: flex;
+        gap: 5px;
+    }
 }

@@ -26,6 +26,8 @@ module.exports = {
       'uploads.heightsplatform.com',
       'cdn-icons-png.flaticon.com',
       'media.hanoitimes.vn',
+      'seofiles.s3.amazonaws.com',
+      'enmasys.com'
     ],
   },
   async redirects() {

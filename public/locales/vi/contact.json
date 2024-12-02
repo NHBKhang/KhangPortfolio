@@ -1,11 +1,13 @@
 {
     "socialContact": "Liên hệ qua mạng xã hội",
-    "formContact": "Hoặc điền vào form này",
+    "formContact": "Hoặc điền vào biểu mẫu này",
     "nameLabel": "Tên",
     "emailLabel": "Email",
+    "countryLabel": "Quốc gia",
     "subjectLabel": "Tiêu đề",
     "messageLabel": "Nội dung",
     "sendButton": "Gửi",
-    "responseReceived": "Phản hồi của bạn đã được nhận!",
+    "responseSending": "Đang gửi tin nhắn...",
+    "responseReceived": "Đã nhận được phản hồi của bạn!",
     "errorResponse": "Có lỗi xảy ra. Vui lòng thử lại sau."
 }

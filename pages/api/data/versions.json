@@ -34,7 +34,34 @@
                     "type": "improvements",
                     "message": "Updated user interface for a more intuitive and engaging experience."
                 }
-            ]
+            ],
+            "description": "Version 1.0.0 introduces the first official release of the app, featuring a selection of themes, a new interactive chat feature, and several improvements for a smoother user experience."
+        },
+        {
+            "id": 2,
+            "version": "1.1.0",
+            "releaseDate": "December 5th, 2024",
+            "notes": [
+                "Fixed bugs and improved the user interface.",
+                "Added friendlier and clearer notifications.",
+                "Added more translation."
+            ],
+            "changelogDescription": "This version includes minor updates and bug fixes. Please refer to the official changelog for more details.",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Added dialog notifications for warnings, messages, errors, and more."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Added more translation for pages (contact, about, articles, projects,...) and functionalities."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Bug fixes and interface improvements for the project detail page."
+                }
+            ],
+            "description": "Version 1.0.1 is a minor update focused on bug fixes and UI enhancements. This version also introduces improved notifications and translation support for a more user-friendly experience."
         }
     ],
     "vi": [
@@ -72,7 +99,34 @@
                     "type": "improvements",
                     "message": "Cập nhật giao diện người dùng để mang lại trải nghiệm trực quan và hấp dẫn hơn."
                 }
-            ]
+            ],
+            "description": "Phiên bản 1.0.0 là bản phát hành chính thức đầu tiên của ứng dụng, với một loạt chủ đề, tính năng trò chuyện tương tác mới và nhiều cải tiến giúp trải nghiệm người dùng mượt mà hơn."
+        },
+        {
+            "id": 2,
+            "version": "1.1.0",
+            "releaseDate": "5 tháng 12, 2024",
+            "notes": [
+                "Sửa các lỗi và cải thiện giao diện người dùng.",
+                "Bổ sung thông báo thân thiện và rõ ràng hơn.",
+                "Bổ sung thêm dịch thuật."
+            ],
+            "changelogDescription": "Phiên bản này bao gồm các cập nhật nhỏ và sửa lỗi. Vui lòng xem chi tiết tại changelog chính thức.",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Thêm các hộp thoại thông báo để cảnh báo, thông báo, báo lỗi và nhiều chức năng khác."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Bổ sung thêm dịch thuật cho các trang (trang liên hệ, giới thiệu, bài đăng, dự án,...) và chức năng."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Sửa lỗi và cải thiện giao diện cho trang chi tiết dự án."
+                }
+            ],
+            "description": "Phiên bản 1.0.1 là một bản cập nhật nhỏ, tập trung vào sửa lỗi và cải thiện giao diện người dùng. Phiên bản này cũng bổ sung thông báo được cải tiến và hỗ trợ dịch thuật, mang lại trải nghiệm thân thiện hơn cho người dùng."
         }
     ]
 }

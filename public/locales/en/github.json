@@ -1,5 +1,6 @@
 {
     "repositories": "repositories",
     "followers": "followers",
-    "noRepos": "No repositories found."
+    "noRepos": "No repositories found.",
+    "githubErrorMessage": "Error fetching GitHub data!!"
 }

@@ -5,5 +5,6 @@
     "views": "Views",
     "reactions": "Reactions",
     "comments": "Comments",
-    "viewFullArticle": "View Full Article"
+    "viewFullArticle": "View Full Article",
+    "postedOn": "Posted on"
 }

@@ -4,10 +4,12 @@ import styles from '../../styles/ArticlePage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CustomHead from '../../components/Head';
+import { useLanguage } from '../../configs/LanguageContext';
+import moment from 'moment';
 
 const ArticlePage = ({ article }) => {
     const router = useRouter();
-    const { id } = router.query;
+    const { language } = useLanguage();
     const { t } = useTranslation('articles');
 
     if (router.isFallback) {
@@ -20,12 +22,15 @@ const ArticlePage = ({ article }) => {
 
     return (
         <>
-            <CustomHead page={'article'} params={{ id: id }} />
+            <CustomHead page={'article'} params={{ name: article.title[language] }} />
             <div className={styles.container}>
-                <h1 className={styles.title}>{article.title}</h1>
-                <p className={styles.description}>{article.description}</p>
+                <h1 className={styles.title}>{article.title[language] || article.title['en']}</h1>
+                <p className={styles.description}>{article.description[language]}</p>
                 <div className={styles.coverWrapper}>
                     <img className={styles.coverImage} src={article.cover_image} alt={t('articles:coverImageAlt')} />
+                </div>
+                <div className={styles.createdDate}>
+                    <p>{t('postedOn')} {moment(article.created_date).fromNow()}</p>
                 </div>
                 <div className={styles.stats}>
                     <p className={styles.stat}>{t('views')}: {article.page_views_count}</p>
@@ -45,7 +50,7 @@ export async function getStaticProps({ params, locale }) {
     return {
         props: {
             article: article || null,
-            ...(await serverSideTranslations(locale, ['articles'])),
+            ...(await serverSideTranslations(locale, ['articles', 'common'])),
         },
     };
 }

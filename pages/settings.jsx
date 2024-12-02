@@ -3,13 +3,31 @@ import styles from '../styles/SettingsPage.module.css';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import CustomHead from '../components/Head';
+import { useLanguage } from '../configs/LanguageContext';
 
 const SettingsPage = () => {
-  const { t } = useTranslation('settings');
+  const { t } = useTranslation(['settings', 'common']);
+  const { changeLanguage, language } = useLanguage();
+
+  const handleLanguageChange = (event) => changeLanguage(event.target.value)
 
   return (
     <>
       <CustomHead page={'settings'} />
+
+      <h2>{t('common:settings')}</h2>
+      <div className={styles.container}>
+        <div className={styles.settingsItem}>
+          <p>{t('changeLanguage')}</p>
+          <div className={styles.languageDropdown}>
+            <select className={styles.select} value={language} onChange={handleLanguageChange}>
+              <option value="en">English</option>
+              <option value="vi">Tiếng Việt</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
       <h2>{t('manageThemes')}</h2>
       <div className={styles.container}>
         <ThemeInfo
@@ -104,7 +122,7 @@ const SettingsPage = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['settings']))
+      ...(await serverSideTranslations(locale, ['settings', 'common']))
     },
   };
 }

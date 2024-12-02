@@ -25,7 +25,7 @@ const AboutPage = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['about'])),
+      ...(await serverSideTranslations(locale, ['about', 'common'])),
     },
   };
 }
