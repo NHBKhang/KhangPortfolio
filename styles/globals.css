@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+.disable-animation * {
+  transition-duration: 0s !important;
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+}
+
 /* Tags */
 .React {
   border: 0.1rem solid rgb(196, 88, 38);

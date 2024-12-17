@@ -9,9 +9,10 @@ import { useRouter } from 'next/router'
 import Chatbox from './Chatbox'
 import { useGlobalContext } from '../configs/GlobalContext'
 import { ToastContainer } from 'react-toastify'
+import { clsx } from 'clsx'
 
 const Layout = ({ children }) => {
-  const { chatboxHidden } = useGlobalContext();
+  const { chatboxHidden, explorerHidden, enableAnimation } = useGlobalContext();
   // set scroll to top of main content on url pathname change
   const router = useRouter()
   useEffect(() => {
@@ -27,13 +28,16 @@ const Layout = ({ children }) => {
         <Explorer />
         <div style={{ width: '100%' }}>
           <Tabsbar />
-          <main id="main-editor" className={styles.content}>
+          <main id="main-editor" className={clsx(
+            styles.content,
+            explorerHidden && styles.explorerHiddenContent
+          )}>
             {children}
           </main>
         </div>
       </div>
       <Bottombar />
-      
+
       <ToastContainer />
       {!chatboxHidden && <Chatbox />}
     </>

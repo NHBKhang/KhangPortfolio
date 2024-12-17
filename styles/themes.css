@@ -35,6 +35,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #007bff;
   --button-2nd-hover-bg: #0056b3;
+  --button-3nd-bg: #31eb1c;
+  --button-3nd-hover-bg: #26b516;
   --chatbox-bg: #39393b;
   --chatbox-input-bg: #24292f;
   --dropdown-bg: #2e363c;
@@ -73,6 +75,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #006cdf;
   --button-2nd-hover-bg: #00438a;
+  --button-3nd-bg: #3cd500;
+  --button-3nd-hover-bg: #2b9700;
   --chatbox-bg: #65656e;
   --chatbox-input-bg: #1d1e27;
   --dropdown-bg: #303140;
@@ -111,6 +115,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #aec100;
   --button-2nd-hover-bg: #7c8a00;
+  --button-3nd-bg: #00cad5;
+  --button-3nd-hover-bg: #00a2aa;
   --chatbox-bg: #353537;
   --chatbox-input-bg: #111822;
   --dropdown-bg: #31383e;
@@ -149,6 +155,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #aec100;
   --button-2nd-hover-bg: #7c8a00;
+  --button-3nd-bg: #00cad5;
+  --button-3nd-hover-bg: #00a2aa;
   --chatbox-bg: #373739;
   --chatbox-input-bg: #151820;
   --dropdown-bg: #2c3339;
@@ -187,6 +195,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #008ac1;
   --button-2nd-hover-bg: #00638b;
+  --button-3nd-bg: #00d543;
+  --button-3nd-hover-bg: #00a033;
   --chatbox-bg: #5a5a65;
   --chatbox-input-bg: #66748f;
   --dropdown-bg: #2d3439;
@@ -225,6 +235,8 @@ html {
   --text-3nd-clr: #eee;
   --button-2nd-bg: #0059ff;
   --button-2nd-hover-bg: #0046c7;
+  --button-3nd-bg: #04d500;
+  --button-3nd-hover-bg: #029500;
   --chatbox-bg: #102638;
   --chatbox-input-bg: #031727;
   --dropdown-bg: #011e35;
@@ -263,6 +275,8 @@ html {
   --text-3nd-clr: #333333;
   --button-2nd-bg: #00bfff;
   --button-2nd-hover-bg: #0098db;
+  --button-3nd-bg: #66c500;
+  --button-3nd-hover-bg: #4a8f00;
   --chatbox-bg: #eeeeee;
   --chatbox-input-bg: #cfcfcf;
   --dropdown-bg: #dfe1e8;
@@ -301,6 +315,8 @@ html {
   --text-3nd-clr: #333333;
   --button-2nd-bg: #00bfff;
   --button-2nd-hover-bg: #0098db;
+  --button-3nd-bg: #00ff00;
+  --button-3nd-hover-bg: #00a900;
   --chatbox-bg: #ffffff;
   --chatbox-input-bg: #e0e0e0;
   --dropdown-bg: #edf0ff;
@@ -339,6 +355,8 @@ html {
   --text-3nd-clr: #222222;
   --button-2nd-bg: #00a6ff;
   --button-2nd-hover-bg: #0056ea;
+  --button-3nd-bg: #32cd32;
+  --button-3nd-hover-bg: #228b22;
   --chatbox-bg: #cfcfcf;
   --chatbox-input-bg: #b1b1b1;
   --dropdown-bg: #d2dadc;
@@ -375,6 +393,8 @@ html {
   --text-3nd-clr: #808080;
   --button-2nd-bg: #32cd32;
   --button-2nd-hover-bg: #228b22;
+  --button-3nd-bg: #002fff;
+  --button-3nd-hover-bg: #0025ca;
   --chatbox-bg: #ffe4dc;
   --chatbox-input-bg: #ffdb86;
   --dropdown-bg: #ff9cac;
@@ -413,6 +433,8 @@ html {
   --text-3nd-clr: #222222;
   --button-2nd-bg: #ff4500;
   --button-2nd-hover-bg: #dc143c;
+  --button-3nd-bg: rgb(0, 200, 255);
+  --button-3nd-hover-bg: rgb(0, 159, 203);
   --chatbox-bg: #b3d4aa;
   --chatbox-input-bg: #8fa888;
   --dropdown-bg: linear-gradient(to right, #fff6a5, #d0ffb5);
@@ -450,6 +472,8 @@ html {
   --text-3nd-clr: rgb(240, 240, 240);
   --button-2nd-bg: rgb(0, 200, 255);
   --button-2nd-hover-bg: rgb(0, 159, 203);
+  --button-3nd-bg: rgb(216, 210, 44);
+  --button-3nd-hover-bg: rgb(164, 160, 32);
   --chatbox-bg: #2a2a2a;
   --chatbox-input-bg: #000000;
   --dropdown-bg: #2b2b2b;

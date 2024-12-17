@@ -6,7 +6,7 @@
     "ayuDark": "A simple theme with bright colors.",
     "ayuMirage": "A simple theme with bright colors.",
     "nord": "An arctic, north-bluish clean and elegant Visual Studio Code theme.",
-    "nightOwl": "A VS Code theme for the night owls out there.",
+    "nightOwl": "A VS Code tenable Animationheme for the night owls out there.",
     "softLight": "A visually appealing light theme inspired by Visual Studio Code.",
     "brightLight": "A vibrant and visually appealing light theme inspired by Visual Studio Code.",
     "mutedElegance": "A sophisticated theme that balances muted tones with elegant accents, creating a serene and visually pleasing workspace.",
@@ -14,5 +14,6 @@
     "colorful": "A vibrant theme bursting with various colors for a lively and energetic coding experience.",
     "soundscape": "An immersive theme that harmonizes vibrant colors to create a lively and energetic atmosphere for coding and creativity.",
     "setColor": "Set Color Theme",
-    "currentColor": "Active Theme"
+    "currentColor": "Active Theme",
+    "enableAnimation": "Enable Animation"
 }

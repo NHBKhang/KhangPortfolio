@@ -58,7 +58,7 @@ const contactItems = [
     social: 'Telegram',
     link: {
       vi: 'Quên rồi',
-      en: 'I Forget'
+      en: 'I Forgot'
     },
     href: '/',
   },
@@ -82,14 +82,17 @@ const contactItems = [
 
 const ContactCode = () => {
   const { language } = useLanguage();
+  const animationSpeed = 0.075;
 
   return (
     <div className={styles.code}>
-      <p className={styles.line}>
+      <p className={styles.line} style={{ animationDelay: `${animationSpeed}s` }}>
         <span className={styles.className}>.socials</span> &#123;
       </p>
       {contactItems.slice(0, 8).map((item, index) => (
-        <p className={styles.line} key={index}>
+        <p
+          className={styles.line} key={index}
+          style={{ animationDelay: `${index * animationSpeed + 0.075}s` }}>
           &nbsp;&nbsp;&nbsp;{typeof item.social === 'string' ? item.social : item.social[language]}:{' '}
           <a href={item.href} target="_blank" rel="noopener">
             {typeof item.link === 'string' ? item.link : item.link[language]}
@@ -98,7 +101,9 @@ const ContactCode = () => {
         </p>
       ))}
       {contactItems.slice(8, contactItems.length).map((item, index) => (
-        <p className={styles.line} key={index}>
+        <p
+          className={styles.line} key={index}
+          style={{ animationDelay: `${index * animationSpeed + 0.675}s` }}>
           &nbsp;&nbsp;{typeof item.social === 'string' ? item.social : item.social[language]}:{' '}
           <a href={item.href} target="_blank" rel="noopener">
             {typeof item.link === 'string' ? item.link : item.link[language]}
@@ -106,7 +111,10 @@ const ContactCode = () => {
           ;
         </p>
       ))}
-      <p className={styles.line}>&#125;</p>
+      <p
+        className={styles.line}
+        style={{ animationDelay: `${(contactItems.length + 1) * animationSpeed}s` }}
+      >&#125;</p>
     </div>
   );
 };

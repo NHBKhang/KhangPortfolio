@@ -2,7 +2,7 @@
   margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .underline {
@@ -24,6 +24,12 @@
 
 @media screen and (max-width: 900px) {
   .container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    grid-template-columns: 1fr;
   }
 }

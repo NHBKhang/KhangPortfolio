@@ -61,7 +61,7 @@
                     "message": "Bug fixes and interface improvements for the project detail page."
                 }
             ],
-            "description": "Version 1.0.1 is a minor update focused on bug fixes and UI enhancements. This version also introduces improved notifications and translation support for a more user-friendly experience."
+            "description": "Version 1.1.0 is a minor update focused on bug fixes and UI enhancements. This version also introduces improved notifications and translation support for a more user-friendly experience."
         }
     ],
     "vi": [
@@ -126,7 +126,7 @@
                     "message": "Sửa lỗi và cải thiện giao diện cho trang chi tiết dự án."
                 }
             ],
-            "description": "Phiên bản 1.0.1 là một bản cập nhật nhỏ, tập trung vào sửa lỗi và cải thiện giao diện người dùng. Phiên bản này cũng bổ sung thông báo được cải tiến và hỗ trợ dịch thuật, mang lại trải nghiệm thân thiện hơn cho người dùng."
+            "description": "Phiên bản 1.1.0 là một bản cập nhật nhỏ, tập trung vào sửa lỗi và cải thiện giao diện người dùng. Phiên bản này cũng bổ sung thông báo được cải tiến và hỗ trợ dịch thuật, mang lại trải nghiệm thân thiện hơn cho người dùng."
         }
     ]
 }

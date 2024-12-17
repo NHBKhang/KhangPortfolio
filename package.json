@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.14",
+    "aos": "^2.3.4",
     "axios": "^1.7.8",
+    "clsx": "^2.1.1",
     "dialogflow": "^1.2.0",
     "emailjs-com": "^3.2.0",
     "google-auth-library": "^9.14.2",

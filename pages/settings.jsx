@@ -4,12 +4,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import CustomHead from '../components/Head';
 import { useLanguage } from '../configs/LanguageContext';
+import { useGlobalContext } from '../configs/GlobalContext';
 
 const SettingsPage = () => {
   const { t } = useTranslation(['settings', 'common']);
   const { changeLanguage, language } = useLanguage();
+  const { enableAnimation, setEnableAnimation } = useGlobalContext();
 
   const handleLanguageChange = (event) => changeLanguage(event.target.value)
+  const toggleAnimation = () => setEnableAnimation(prevState => !prevState)
 
   return (
     <>
@@ -17,13 +20,26 @@ const SettingsPage = () => {
 
       <h2>{t('common:settings')}</h2>
       <div className={styles.container}>
-        <div className={styles.settingsItem}>
-          <p>{t('changeLanguage')}</p>
-          <div className={styles.languageDropdown}>
-            <select className={styles.select} value={language} onChange={handleLanguageChange}>
-              <option value="en">English</option>
-              <option value="vi">Tiếng Việt</option>
-            </select>
+        <div className={styles.settingsContainer}>
+          <div className={styles.settingsItem}>
+            <p>{t('changeLanguage')}</p>
+            <div className={styles.languageDropdown}>
+              <select className={styles.select} value={language} onChange={handleLanguageChange}>
+                <option value="en">English</option>
+                <option value="vi">Tiếng Việt</option>
+              </select>
+            </div>
+          </div>
+          <div className={styles.settingsItem}>
+            <p>{t('enableAnimation')}</p>
+            <label className={styles.switch}>
+              <input
+                type="checkbox"
+                checked={enableAnimation}
+                onChange={toggleAnimation}
+              />
+              <span className={styles.slider}></span>
+            </label>
           </div>
         </div>
       </div>

@@ -1,0 +1,39 @@
+.title {
+    color: red;
+    padding: 5;
+}
+
+.timelineContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline {
+    flex: 1;
+    min-width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.aboutLines {
+    padding: 15px;
+}
+
+.aboutLines p {
+    animation: slideInLeft 0.5s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
