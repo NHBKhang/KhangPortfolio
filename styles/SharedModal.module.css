@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.imageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationButtons {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.navigationButtons button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.navigationButtons button:hover {
+    opacity: 0.8;
+}

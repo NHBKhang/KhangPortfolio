@@ -13,7 +13,7 @@ const explorerItems = [
   { name: 'projects.js', path: '/projects', icon: 'js_icon.svg' },
   { name: 'articles.json', path: '/articles', icon: 'json_icon.svg' },
   { name: 'github.md', path: '/github', icon: 'markdown_icon.svg' },
-  { name: 'other-info.html', path: '/info', icon: 'html_icon.svg' },
+  { name: 'games.html', path: '/games', icon: 'html_icon.svg' },
   { name: 'version.xml', path: '/versions', icon: 'xml_icon.png' },
 ];
 

@@ -62,13 +62,34 @@
                 }
             ],
             "description": "Version 1.1.0 is a minor update focused on bug fixes and UI enhancements. This version also introduces improved notifications and translation support for a more user-friendly experience."
+        },
+        {
+            "id": 3,
+            "version": "1.2.0",
+            "releaseDate": "January 29, 2025",
+            "notes": [
+                "Exciting new animations!",
+                "Sleek and improved interface."
+            ],
+            "changelogDescription": "This version brings delightful updates and small but impactful improvements! Check out the official changelog for all the details!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Added lively animations to make the app more fun and engaging!"
+                },
+                {
+                    "type": "improvements",
+                    "message": "Enhanced skill charts to showcase your progress in a visually stunning way!"
+                }
+            ],
+            "description": "Version 1.2.0 is a small but joyful update! We’ve introduced vibrant animations and improved the interface to make everything look and feel delightful. Try it now and experience the magic!"
         }
     ],
     "vi": [
         {
             "id": 1,
             "version": "1.0.0",
-            "releaseDate": "1 tháng 11, 2024",
+            "releaseDate": "1 tháng 11, 2025",
             "notes": [
                 "Phát hành đầu tiên với các chức năng cơ bản.",
                 "Cải thiện hiệu suất và sửa một số lỗi nhỏ."
@@ -127,6 +148,27 @@
                 }
             ],
             "description": "Phiên bản 1.1.0 là một bản cập nhật nhỏ, tập trung vào sửa lỗi và cải thiện giao diện người dùng. Phiên bản này cũng bổ sung thông báo được cải tiến và hỗ trợ dịch thuật, mang lại trải nghiệm thân thiện hơn cho người dùng."
+        },
+        {
+            "id": 3,
+            "version": "1.2.0",
+            "releaseDate": "29 tháng 1, 2025",
+            "notes": [
+                "Hoạt ảnh mới thật sống động và thú vị!",
+                "Giao diện được cải thiện để trông bắt mắt và dễ sử dụng hơn."
+            ],
+            "changelogDescription": "Phiên bản này mang đến những điều nhỏ xinh nhưng đầy ấn tượng! Hãy khám phá ngay chi tiết tại changelog chính thức nhé!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Thêm các hoạt ảnh sống động, khiến ứng dụng trở nên vui nhộn hơn bao giờ hết!"
+                },
+                {
+                    "type": "improvements",
+                    "message": "Bổ sung biểu đồ kĩ năng siêu bắt mắt, giúp bạn thấy rõ hành trình 'level up' của mình!"
+                }
+            ],
+            "description": "Phiên bản 1.2.0 là một bản cập nhật nhỏ nhưng ngập tràn niềm vui! Chúng tôi đã thêm những hoạt ảnh cực kỳ sống động và cải thiện giao diện để mọi thứ trở nên lung linh, vui tươi hơn. Hãy thử ngay và cảm nhận sự khác biệt!"
         }
     ]
 }

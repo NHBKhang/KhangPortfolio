@@ -6,6 +6,38 @@ import Timeline from '../components/Timeline';
 import { useLanguage } from '../configs/LanguageContext';
 import { useEffect, useState } from 'react';
 import styles from '../styles/AboutPage.module.css';
+import ProgressPie from '../components/ProgressPie';
+
+const skills = [
+  {
+    "skill": "Python",
+    "percentage": 85,
+  },
+  {
+    "skill": "C#",
+    "percentage": 70,
+  },
+  {
+    "skill": "Javascript",
+    "percentage": 80,
+  },
+  {
+    "skill": "Typescript",
+    "percentage": 70,
+  },
+  {
+    "skill": "C/C++",
+    "percentage": 50,
+  },
+  {
+    "skill": "HTML/CSS",
+    "percentage": 82,
+  },
+  {
+    "skill": "Java",
+    "percentage": 40,
+  },
+]
 
 const AboutPage = () => {
   const { t } = useTranslation('about');
@@ -44,6 +76,19 @@ const AboutPage = () => {
       <div className={styles.aboutLines}>
         {aboutLines.map((line, index) =>
           <p style={{ animationDelay: `${index * 0.1}s` }}> - {line}</p>)}
+      </div>
+
+
+      <h3
+        className={styles.title}
+        data-aos="fade-right"
+      >
+        {t('skills')}
+      </h3>
+      <div className={styles.aboutLines}>
+        {skills.map(skill =>
+          <ProgressPie progress={skill} />
+        )}
       </div>
 
       <div className={styles.timelineContainer}>

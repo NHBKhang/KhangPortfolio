@@ -41,6 +41,7 @@ const ContactPage = () => {
       setSubject('');
       setMessage('');
       setEmail('');
+      setCountry('');
     } catch (error) {
       console.error(error);
       sendNotification({ message: t('errorResponse') }, 'error');

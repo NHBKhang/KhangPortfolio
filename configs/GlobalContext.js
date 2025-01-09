@@ -38,6 +38,7 @@ export const GlobalProvider = ({ children }) => {
     useEffect(() => {
         if (enableAnimation) {
             AOS.init({
+                offset: 25,
                 duration: 800,
                 easing: 'ease-in-out',
                 once: true,

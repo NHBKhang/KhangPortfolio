@@ -7,11 +7,16 @@ import CustomHead from '../../components/Head';
 import { useLanguage } from '../../configs/LanguageContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
+import Modal from '../../components/Modal';
 
 const ProjectPage = ({ project }) => {
     const router = useRouter();
     const { t } = useTranslation('projects');
     const { language } = useLanguage();
+
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     if (router.isFallback) {
         return <div>Loading...</div>;
@@ -20,6 +25,16 @@ const ProjectPage = ({ project }) => {
     if (!project) {
         return <div>{t('projectNotFound')}</div>;
     }
+
+    const openModal = (image) => {
+        setSelectedImage(image);
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+        setSelectedImage(null);
+    };
 
     return (
         <>
@@ -32,6 +47,7 @@ const ProjectPage = ({ project }) => {
                     alt={project.name}
                     width={800}
                     height={450}
+                    onClick={() => openModal(project.name)}
                     className={styles.image}
                 />
                 <p className={styles.description}>{project.description[language]}</p>
@@ -56,6 +72,13 @@ const ProjectPage = ({ project }) => {
                     </Link>}
                 </div>
             </div>
+
+            {isModalOpen && (
+                <Modal
+                    images={[{ src: project.image, alt: project.name }]}
+                    onClose={closeModal}
+                />
+            )}
         </>
     );
 };

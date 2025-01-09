@@ -37,6 +37,7 @@
     object-fit: cover;
     overflow: hidden;
     margin-bottom: 5px;
+    cursor: zoom-in !important;
 }
 
 .createdDate {

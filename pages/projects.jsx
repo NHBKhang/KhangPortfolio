@@ -11,9 +11,9 @@ const ProjectsPage = ({ projects }) => {
   return (
     <>
       <CustomHead page={'projects'} />
-      <h3>{t('title')}</h3>
+      <h3 data-aos="fade-right">{t('title')}</h3>
       {projects.length > 0 ? (
-        <div className={styles.container}>
+        <div className={styles.container} data-aos="slide-right">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

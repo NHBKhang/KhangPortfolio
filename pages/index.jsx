@@ -14,7 +14,9 @@ export default function HomePage() {
       </div>
       <div className={styles.foreground}>
         <div className={styles.content}>
-          <h1 className={styles.name}>Nguyễn Hà Bảo Khang</h1>
+          <h1 className={styles.name} data-aos="zoom-out">
+            Nguyễn Hà Bảo Khang
+          </h1>
           <h6 className={styles.bio}>{t('fullStackDeveloper')}</h6>
           <Link href="/projects">
             <button className={styles.button}>{t('viewWork')}</button>

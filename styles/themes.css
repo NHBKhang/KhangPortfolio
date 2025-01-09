@@ -404,7 +404,7 @@ html {
 [data-theme='colorful'] {
   --icon-fill-active: rgb(255, 100, 0);
   --icon-fill-inactive: rgb(128, 128, 128);
-  --main-bg: linear-gradient(to bottom right, #d1cca3, #e8c6c6, #cce2f8);
+  --main-bg: #aed6ef;
   --bg-text: linear-gradient(to right, #e0ffff, #fff8dc, #fff0f5);
   --text-color: rgb(255, 255, 255);
   --accent-color: rgb(81, 0, 139);
