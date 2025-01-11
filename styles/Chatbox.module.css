@@ -194,3 +194,20 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .toggleButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggleButton img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .toggleButton img.closeIcon {
+        width: 27px !important;
+        height: 27px !important;
+    }
+}

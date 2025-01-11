@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import styles from '../styles/ProjectCard.module.css';
+import styles from '../../styles/ProjectCard.module.css';
 import { useTranslation } from 'next-i18next';
-import { useLanguage } from '../configs/LanguageContext';
+import { useLanguage } from '../../configs/LanguageContext';
 
 const ProjectCard = ({ project }) => {
   const router = useRouter();

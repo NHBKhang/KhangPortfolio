@@ -8,7 +8,8 @@ import { useLanguage } from '../../configs/LanguageContext';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Modal from '../../components/Modal';
+import Modal from '../../components/photo/Modal';
+import BackButton from '../../components/buttons/BackButton';
 
 const ProjectPage = ({ project }) => {
     const router = useRouter();
@@ -39,7 +40,7 @@ const ProjectPage = ({ project }) => {
     return (
         <>
             <CustomHead page={'project'} params={{ name: project.name }} />
-
+            <BackButton pathname={'/projects'}/>
             <div className={styles.container}>
                 <h1 className={styles.title}>{project.name}</h1>
                 <Image
@@ -77,6 +78,7 @@ const ProjectPage = ({ project }) => {
                 <Modal
                     images={[{ src: project.image, alt: project.name }]}
                     onClose={closeModal}
+                    navigation={false}
                 />
             )}
         </>

@@ -1,4 +1,4 @@
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from '../components/cards/ArticleCard';
 import CustomHead from '../components/Head';
 import styles from '../styles/ArticlesPage.module.css';
 import { getArticles } from './api/articles';

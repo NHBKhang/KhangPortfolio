@@ -7,14 +7,14 @@ import { useRouter } from 'next/router';
 import { useGlobalContext } from '../configs/GlobalContext';
 
 const explorerItems = [
-  { name: 'home.jsx', path: '/', icon: 'react_icon.svg' },
-  { name: 'about.txt', path: '/about', icon: 'txt_icon.png' },
-  { name: 'contact.css', path: '/contact', icon: 'css_icon.svg' },
-  { name: 'projects.js', path: '/projects', icon: 'js_icon.svg' },
-  { name: 'articles.json', path: '/articles', icon: 'json_icon.svg' },
-  { name: 'github.md', path: '/github', icon: 'markdown_icon.svg' },
-  { name: 'games.html', path: '/games', icon: 'html_icon.svg' },
-  { name: 'version.xml', path: '/versions', icon: 'xml_icon.png' },
+  { name: 'home.jsx', path: '/', icon: 'icon/react_icon.svg' },
+  { name: 'about.txt', path: '/about', icon: 'icon/txt_icon.png' },
+  { name: 'contact.css', path: '/contact', icon: 'icon/css_icon.svg' },
+  { name: 'projects.js', path: '/projects', icon: 'icon/js_icon.svg' },
+  { name: 'articles.json', path: '/articles', icon: 'icon/json_icon.svg' },
+  { name: 'github.md', path: '/github', icon: 'icon/markdown_icon.svg' },
+  { name: 'games.html', path: '/games', icon: 'icon/html_icon.svg' },
+  { name: 'version.xml', path: '/versions', icon: 'icon/xml_icon.png' },
 ];
 
 const Explorer = () => {

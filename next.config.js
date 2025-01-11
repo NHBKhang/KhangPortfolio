@@ -12,7 +12,7 @@ module.exports = {
       'st.depositphotos.com',
       'wallpapercave.com',
       'www.studytienganh.vn',
-      'www.newshub.co.nz',
+      'i.pinimg.com',
       'i.kym-cdn.com',
       'cdn6.f-cdn.com',
       'img.weddingbazaar.com',

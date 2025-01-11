@@ -2,7 +2,9 @@
     {
         "id": 1,
         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
-        "cover_image": "https://www.newshub.co.nz/home/lifestyle/2019/08/the-top-five-cat-memes-of-all-time-rated/_jcr_content/par/video/image.dynimg.1280.q75.jpg/v1565234972425/KNOWYOURMEME-sad-cat-crying-1120.jpg",
+        "images": [
+            "https://i.pinimg.com/736x/1f/f7/4b/1ff74b5a68ff857ec39654e33a4306d3.jpg"
+        ],
         "title": {
             "vi": "Bài viết đầu tiên",
             "en": "First article"
@@ -19,7 +21,9 @@
     {
         "id": 2,
         "url": "https://www.youtube.com/watch?v=q9zKYh8sY_E&ab_channel=K391VEVO",
-        "cover_image": "https://i.kym-cdn.com/editorials/icons/original/000/005/802/1.jpg",
+        "images": [
+            "https://i.kym-cdn.com/editorials/icons/original/000/005/802/1.jpg"
+        ],
         "title": {
             "en": "What the helll oh my gahhh no wayyy"
         },
@@ -35,7 +39,9 @@
     {
         "id": 3,
         "url": "https://www.facebook.com/profile.php?id=100012165398049",
-        "cover_image": "https://i.imgflip.com/1tg4n9.jpg?a475224",
+        "images": [
+            "https://i.imgflip.com/1tg4n9.jpg?a475224"
+        ],
         "title": {
             "en": "The Waiting Car"
         },
@@ -51,7 +57,9 @@
     {
         "id": 4,
         "url": "https://giaophankontum.com/wp-content/uploads/2020/01/Rip.jpeg",
-        "cover_image": "https://media.licdn.com/dms/image/D4E12AQEAacpP3lb8IA/article-cover_image-shrink_720_1280/0/1654256014678?e=2147483647&v=beta&t=EgCejRSrxn5eayqunTm6oa1FCgb_8RszWQh6Q1j24Jw",
+        "images": [
+            "https://media.licdn.com/dms/image/D4E12AQEAacpP3lb8IA/article-cover_image-shrink_720_1280/0/1654256014678?e=2147483647&v=beta&t=EgCejRSrxn5eayqunTm6oa1FCgb_8RszWQh6Q1j24Jw"
+        ],
         "title": {
             "en": "Rest in peace"
         },
@@ -67,7 +75,11 @@
     {
         "id": 5,
         "url": "https://giaophankontum.com/wp-content/uploads/2020/01/Rip.jpeg",
-        "cover_image": "https://media.licdn.com/dms/image/v2/C511BAQGYygBCfAToAA/company-background_10000/company-background_10000/0/1586938740359/cong_ty_phan_mem_aegona_cover?e=2147483647&v=beta&t=EgH4sLWlTInEk2kfBTA5LXz1RpyO-6fNR3c2oJjDWGw",
+        "images": [
+            "https://media.licdn.com/dms/image/v2/C511BAQGYygBCfAToAA/company-background_10000/company-background_10000/0/1586938740359/cong_ty_phan_mem_aegona_cover?e=2147483647&v=beta&t=EgH4sLWlTInEk2kfBTA5LXz1RpyO-6fNR3c2oJjDWGw",
+            "/img/photo/agn_1.jpg",
+            "/img/photo/agn_2.jpg"
+        ],
         "title": {
             "vi": "Bắt đầu công việc đầu tiên",
             "en": "Start my first job"

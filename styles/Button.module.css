@@ -1,0 +1,31 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 16px;
+    background-color: inherit;
+    border: 1px solid var(--button-bg);
+    color: var(--text-2nd-clr);
+    border-radius: 5px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    border-color: var(--text-2nd-clr);
+    background-color: var(--button-hover-bg);
+}
+
+.backButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #9ca3af;
+}
+
+.backButton:active {
+    transform: scale(0.95);
+}
+
+.backButton .icon {
+    width: 20px;
+    height: 20px;
+}
