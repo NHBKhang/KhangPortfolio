@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Lottery Game",
-    "image": "https://cdn6.f-cdn.com/contestentries/1174780/11830557/5a02a124d3af3_thumb900.jpg",
+    "image": "/img/projects/project_1.webp",
     "description": {
       "vi": "Một dự án đơn giản sử dụng .Net Framework để thiết kế giao diện người dùng. Project mô phỏng lại game xổ số Vietlot",
       "en": "A simple project using .Net Framework to design the user interface. The project simulates the Vietlot lottery game."
@@ -45,7 +45,7 @@
   {
     "id": 4,
     "name": "Electronic Sale App",
-    "image": "https://st.depositphotos.com/1000128/2454/i/450/depositphotos_24542943-stock-photo-mobile-devices-wireless-communication-technology.jpg",
+    "image": "/img/projects/project_4.webp",
     "description": {
       "vi": "Dự án demo đơn giản về trang web bán điện thoại trực tuyến sử dụng Flask framework.",
       "en": "Simple demo project about online phone selling website using Flask framework."
@@ -64,7 +64,7 @@
   {
     "id": 5,
     "name": "Quantum Minds",
-    "image": "https://dntech.vn/uploads/details/2021/11/images/ai%20l%C3%A0%20g%C3%AC.jpg",
+    "image": "/img/projects/project_5.webp",
     "description": {
       "vi": "Game giải đố góc nhìn thứ nhất viết bằng engine Unity.",
       "en": "First-person puzzle game written in Unity engine."
@@ -80,7 +80,7 @@
   {
     "id": 6,
     "name": "Django Message App",
-    "image": "https://wallpapercave.com/wp/wp12510353.jpg",
+    "image": "/img/projects/project_6.webp",
     "description": {
       "vi": "Hệ thống nhắn tin trực tuyến áp dụng các thuật toán bảo mật an toàn thông tin.",
       "en": "Online messaging system applies information security algorithms."
@@ -119,7 +119,7 @@
   {
     "id": 8,
     "name": "Course App",
-    "image": "https://www.studytienganh.vn/upload/2021/06/106292.jpg",
+    "image": "/img/projects/project_8.webp",
     "description": {
       "vi": "Dự án đơn giản về trang web học tập trực tuyến sử dụng Django framework, MySQL và React Native.",
       "en": "Simple online learning website project using Django framework, MySQL and React Native."
@@ -159,7 +159,7 @@
   {
     "id": 10,
     "name": "Bookstore System V2",
-    "image": "https://img.freepik.com/premium-vector/book-shop-interior-illustration-various-books-shelves-cashier-desk-indoors-bookstore-with-girl-seller-no-buyers-inside-popular-new-items_109722-486.jpg?w=1380",
+    "image": "/img/projects/project_10.webp",
     "description": {
       "vi": "Đồ án cuối kỳ cho môn Lập trình Cơ sở dữ liệu và bài tập lớn cho môn Kiểm thử phần mềm. Dự án được làm lại hoàn thiện hơn với Django framework.",
       "en": "Final project for Database Programming and major assignment for Software Testing. The project was remade to be more complete with Django framework."
@@ -179,7 +179,7 @@
   {
     "id": 11,
     "name": "Subject Ouline Compiler",
-    "image": "https://uploads.heightsplatform.com/program/public/blogarticle/602/cover_image/original-04814f76e2e035a6a98528da9eff36c1.png",
+    "image": "/img/projects/project_11.webp",
     "description": {
       "vi": "Đồ án cuối kỳ cho môn Các công lập trình hiện đại. Đồ án sử dụng Django rest framework, MySQL và React Native để xây dựng phần mềm hoàn chỉnh trên thiết bị di động.",
       "en": "Final project for Modern Programming Languages. The project uses Django rest framework, MySQL and React Native to build a complete software on mobile devices."
@@ -205,7 +205,7 @@
   {
     "id": 12,
     "name": "Basic Equation",
-    "image": "https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths.webp",
+    "image": "/img/projects/project_12.webp",
     "description": {
       "vi": "Project đơn giản ôn tập thuật toán và cấu trúc dữ liệu. Project lập trình theo hướng cấu trúc sử dụng cho việc học lập trình căn bản.",
       "en": "Simple project to review algorithms and data structures. Structured programming project used for learning basic programming."
@@ -218,7 +218,7 @@
   {
     "id": 13,
     "name": "Photo Gallery",
-    "image": "https://fontawesome.com/social/image-landscape?f=&s=",
+    "image": "/img/projects/project_13.webp",
     "description": {
       "vi": "Website Next.js cá nhân chứa các ảnh đã lưu trữ.",
       "en": "Personal Next.js website containing hosted images."
@@ -292,7 +292,7 @@
   {
     "id": 17,
     "name": "Resource Management",
-    "image": "http://seofiles.s3.amazonaws.com/seo/media/uploads/2017/03/03/unit-22-practical-issues-in-human-resource-management-assignment.jpg",
+    "image": "/img/projects/project_17.webp",
     "description": {
       "vi": "Dự án demo được phát triển trong quá trình thực tập. Dự án quản lý nhân sự bao gồm các chức năng chính như quản lý nhân viên, chấm công và thống kê báo cáo.",
       "en": "The demo project was developed during the internship. The human resource management project includes main functions such as employee management, attendance and statistics."
@@ -311,7 +311,7 @@
   {
     "id": 18,
     "name": "Odoo Project",
-    "image": "https://enmasys.com/web/image/5136-a4011140/maxresdefault.jpg?access_token=679292df-ae9a-4e8a-b5ad-dda4dd20357d",
+    "image": "/img/projects/project_18.webp",
     "description": {
       "vi": "Clone và chạy thử bộ ứng dụng quản lý doanh nghiệp mã nguồn mở Odoo để bắt đầu vào dự án trong công ty. Nghiên cứu và tạo một module mới về quản lý thư viện trò chơi.",
       "en": "Clone and test run the Odoo open source business management application suite to get started on projects within the company. Research and create a new module on game library management."

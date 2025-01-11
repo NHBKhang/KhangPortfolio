@@ -3,7 +3,7 @@
         "id": 1,
         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
         "images": [
-            "https://i.pinimg.com/736x/1f/f7/4b/1ff74b5a68ff857ec39654e33a4306d3.jpg"
+            "/img/articles/article_1.jpg"
         ],
         "title": {
             "vi": "Bài viết đầu tiên",
@@ -20,9 +20,9 @@
     },
     {
         "id": 2,
-        "url": "https://www.youtube.com/watch?v=q9zKYh8sY_E&ab_channel=K391VEVO",
+        "url": "https://www.youtube.com/watch?v=q9zKYh8sY_E",
         "images": [
-            "https://i.kym-cdn.com/editorials/icons/original/000/005/802/1.jpg"
+            "/img/articles/article_2.webp"
         ],
         "title": {
             "en": "What the helll oh my gahhh no wayyy"
@@ -77,8 +77,8 @@
         "url": "https://giaophankontum.com/wp-content/uploads/2020/01/Rip.jpeg",
         "images": [
             "https://media.licdn.com/dms/image/v2/C511BAQGYygBCfAToAA/company-background_10000/company-background_10000/0/1586938740359/cong_ty_phan_mem_aegona_cover?e=2147483647&v=beta&t=EgH4sLWlTInEk2kfBTA5LXz1RpyO-6fNR3c2oJjDWGw",
-            "/img/photo/agn_1.jpg",
-            "/img/photo/agn_2.jpg"
+            "/img/articles/agn_1.jpg",
+            "/img/articles/agn_2.jpg"
         ],
         "title": {
             "vi": "Bắt đầu công việc đầu tiên",
