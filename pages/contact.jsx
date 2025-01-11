@@ -41,6 +41,7 @@ const ContactPage = () => {
       setSubject('');
       setMessage('');
       setEmail('');
+      setCountry('');
     } catch (error) {
       console.error(error);
       sendNotification({ message: t('errorResponse') }, 'error');
@@ -52,11 +53,17 @@ const ContactPage = () => {
       <CustomHead page="contact" />
       <div className={styles.container}>
         <div>
-          <h3 className={styles.heading}>{t('socialContact')}</h3>
+          <h3
+            className={styles.heading}
+            data-aos="fade-right"
+          >{t('socialContact')}</h3>
           <ContactCode />
         </div>
         <div>
-          <h3 className={styles.heading}>{t('formContact')}</h3>
+          <h3
+            className={styles.heading}
+            data-aos="fade-right"
+          >{t('formContact')}</h3>
           <form className={styles.form} onSubmit={submitForm}>
             <div className={styles.flex}>
               <div>

@@ -94,11 +94,11 @@ const Chatbox = () => {
                 className={styles.toggleButton}
                 aria-label={isOpen ? 'Đóng chat' : 'Mở chat'}>
                 <img
-                    className={`${styles.icon} ${isOpen ? styles.visible : styles.hidden}`}
-                    src='/img/close.png' alt='close' width={30} height={30} />
+                    className={`${styles.icon} ${isOpen ? styles.visible : styles.hidden} ${styles.closeIcon}`}
+                    src='/img/logo/close.png' alt='close' width={30} height={30} />
                 <img
                     className={`${styles.icon} ${isOpen ? styles.hidden : styles.visible}`}
-                    src='/img/coco.png' alt='open' width={37} height={37} />
+                    src='/img/logo/coco.png' alt='open' width={37} height={37} />
             </button>
 
             <div className={`${styles.chatbox} ${isOpen ? styles.open : ''}`}>

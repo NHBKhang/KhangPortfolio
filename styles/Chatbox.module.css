@@ -11,7 +11,7 @@
     flex-direction: column;
     background-color: var(--chatbox-bg);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 10;
     transform: translateY(150%);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -109,7 +109,7 @@
     color: white;
     border: 1px solid var(--accent-color);
     cursor: pointer;
-    z-index: 1001;
+    z-index: 10;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s, opacity 0.3s ease;
 }
@@ -192,5 +192,22 @@
     100% {
         opacity: 0;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .toggleButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggleButton img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .toggleButton img.closeIcon {
+        width: 27px !important;
+        height: 27px !important;
     }
 }

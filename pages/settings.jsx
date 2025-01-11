@@ -4,12 +4,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import CustomHead from '../components/Head';
 import { useLanguage } from '../configs/LanguageContext';
+import { useGlobalContext } from '../configs/GlobalContext';
 
 const SettingsPage = () => {
   const { t } = useTranslation(['settings', 'common']);
   const { changeLanguage, language } = useLanguage();
+  const { enableAnimation, setEnableAnimation } = useGlobalContext();
 
   const handleLanguageChange = (event) => changeLanguage(event.target.value)
+  const toggleAnimation = () => setEnableAnimation(prevState => !prevState)
 
   return (
     <>
@@ -17,13 +20,26 @@ const SettingsPage = () => {
 
       <h2>{t('common:settings')}</h2>
       <div className={styles.container}>
-        <div className={styles.settingsItem}>
-          <p>{t('changeLanguage')}</p>
-          <div className={styles.languageDropdown}>
-            <select className={styles.select} value={language} onChange={handleLanguageChange}>
-              <option value="en">English</option>
-              <option value="vi">Tiếng Việt</option>
-            </select>
+        <div className={styles.settingsContainer}>
+          <div className={styles.settingsItem}>
+            <p>{t('changeLanguage')}</p>
+            <div className={styles.languageDropdown}>
+              <select className={styles.select} value={language} onChange={handleLanguageChange}>
+                <option value="en">English</option>
+                <option value="vi">Tiếng Việt</option>
+              </select>
+            </div>
+          </div>
+          <div className={styles.settingsItem}>
+            <p>{t('enableAnimation')}</p>
+            <label className={styles.switch}>
+              <input
+                type="checkbox"
+                checked={enableAnimation}
+                onChange={toggleAnimation}
+              />
+              <span className={styles.slider}></span>
+            </label>
           </div>
         </div>
       </div>
@@ -32,84 +48,84 @@ const SettingsPage = () => {
       <div className={styles.container}>
         <ThemeInfo
           name="GitHub Dark"
-          icon="/img/github-dark.png"
+          icon="/img/logo/github-dark.png"
           publisher="GitHub"
           theme="github-dark"
           description={t('githubDark')}
         />
         <ThemeInfo
           name="Dracula"
-          icon="/img/dracula.png"
+          icon="/img/logo/dracula.png"
           publisher="Dracula Theme"
           theme="dracula"
           description={t('dracula')}
         />
         <ThemeInfo
           name="Ayu Dark"
-          icon="/img/ayu.png"
+          icon="/img/logo/ayu.png"
           publisher="teabyii"
           theme="ayu-dark"
           description={t('ayuDark')}
         />
         <ThemeInfo
           name="Ayu Mirage"
-          icon="/img/ayu.png"
+          icon="/img/logo/ayu.png"
           publisher="teabyii"
           theme="ayu-mirage"
           description={t('ayuMirage')}
         />
         <ThemeInfo
           name="Nord"
-          icon="/img/nord.png"
+          icon="/img/logo/nord.png"
           publisher="arcticicestudio"
           theme="nord"
           description={t('nord')}
         />
         <ThemeInfo
           name="Night Owl"
-          icon="/img/night-owl.png"
+          icon="/img/logo/night-owl.png"
           publisher="sarah.drasner"
           theme="night-owl"
           description={t('nightOwl')}
         />
         <ThemeInfo
           name="Soft Light"
-          icon="/img/light.png"
+          icon="/img/logo/light.png"
           publisher="Light Theme"
           theme="soft-light"
           description={t('softLight')}
         />
         <ThemeInfo
           name="Bright Light"
-          icon="/img/light.png"
+          icon="/img/logo/light.png"
           publisher="Light Theme"
           theme="bright-light"
           description={t('brightLight')}
         />
         <ThemeInfo
           name="Muted Elegance"
-          icon="/img/muted-elegance.png"
+          icon="/img/logo/muted-elegance.png"
           publisher="NHBKhang"
           theme="muted-elegance"
           description={t('mutedElegance')}
         />
         <ThemeInfo
           name="Pastel Dream"
-          icon="/img/pastel-dream.jpg"
+          icon="/img/logo/pastel-dream.jpg"
           publisher="NHBKhang"
           theme="pastel-dream"
           description={t('pastelDream')}
         />
         <ThemeInfo
           name="Colorful"
-          icon="/img/colorful.jpg"
+          icon="/img/logo/colorful.jpg"
           publisher="NHBKhang"
           theme="colorful"
           description={t('colorful')}
         />
         <ThemeInfo
           name="SoundScape"
-          icon="/img/soundscape.png"
+          icon="/img/logo/soundscape.png"
           publisher="SoundScape Theme"
           theme="soundscape"
           description={t('soundscape')}

@@ -1,0 +1,74 @@
+{
+    "education": {
+        "en": [
+            {
+                "title": "Bachelor's Degree in Computer Science",
+                "organization": "Ho Chi Minh City Open University",
+                "date": "2021 - Present",
+                "description": "Completed Bachelor's degree with a focus on software technology."
+            },
+            {
+                "title": "High School Diploma",
+                "organization": "Nguyen Huu Tho High School",
+                "date": "2017 - 2021",
+                "description": "Graduated with a focus on mathematics and sciences."
+            },
+            {
+                "title": "Middle School Education",
+                "organization": "Nguyen Trung Truc Secondary School",
+                "date": "2014 - 2017",
+                "description": "Completed middle school education with a focus on general subjects."
+            },
+            {
+                "title": "Elementary School Education",
+                "organization": "An Thanh Primary School",
+                "date": "2008 - 2014",
+                "description": "Completed elementary school education with a foundation in basic subjects."
+            }
+        ],
+        "vi": [
+            {
+                "title": "Cử nhân Công nghệ Thông tin",
+                "organization": "Đại học Mở thành phố Hồ Chí Minh",
+                "date": "2021 - Hiện tại",
+                "description": "Hoàn thành bằng cử nhân với chuyên ngành công nghệ phần mềm."
+            },
+            {
+                "title": "Bằng tốt nghiệp THPT",
+                "organization": "Trường THPT Nguyễn Hữu Thọ",
+                "date": "2017 - 2021",
+                "description": "Tốt nghiệp với chuyên ngành toán học và khoa học tự nhiên."
+            },
+            {
+                "title": "Học vấn Trung học Cơ sở",
+                "organization": "Trường THCS Nguyễn Trung Trực",
+                "date": "2014 - 2017",
+                "description": "Hoàn thành chương trình trung học cơ sở với các môn học tổng hợp."
+            },
+            {
+                "title": "Học vấn Tiểu học",
+                "organization": "Trường Tiểu học An Thạnh",
+                "date": "2008 - 2014",
+                "description": "Hoàn thành chương trình tiểu học với nền tảng các môn học cơ bản."
+            }
+        ]
+    },
+    "experience": {
+        "en": [
+            {
+                "title": "Intern Python Developer",
+                "organization": "Aegona Ltd.",
+                "date": "November 2024 - Present",
+                "description": "Developing web applications using Python. Working closely with the development team to deliver high-quality software solutions."
+            }
+        ],
+        "vi": [
+            {
+                "title": "Thực tập sinh Python Developer",
+                "organization": "Aegona Ltd.",
+                "date": "Tháng 11 2024 - Hiện tại",
+                "description": "Phát triển ứng dụng web sử dụng Python. Làm việc chặt chẽ với nhóm phát triển để cung cấp các giải pháp phần mềm chất lượng cao."
+            }
+        ]
+    }
+}

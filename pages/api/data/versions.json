@@ -61,17 +61,43 @@
                     "message": "Bug fixes and interface improvements for the project detail page."
                 }
             ],
-            "description": "Version 1.0.1 is a minor update focused on bug fixes and UI enhancements. This version also introduces improved notifications and translation support for a more user-friendly experience."
+            "description": "Version 1.1.0 is a minor update focused on bug fixes and UI enhancements. This version also introduces improved notifications and translation support for a more user-friendly experience."
+        },
+        {
+            "id": 3,
+            "version": "1.1.5",
+            "releaseDate": "January 11th, 2025",
+            "notes": [
+                "Exciting new animations!",
+                "Sleek and improved interface."
+            ],
+            "changelogDescription": "This version brings delightful updates and small but impactful improvements! Check out the official changelog for all the details!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Added lively animations to make the app more fun and engaging!"
+                },
+                {
+                    "type": "features",
+                    "message": "Supports viewing and browsing multiple images in the article, allowing detailed view of each image and easy downloading."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Enhanced skill charts to showcase your progress in a visually stunning way!"
+                }
+            ],
+            "description": "Version 1.1.5 is a small but joyful update! We’ve introduced vibrant animations and improved the interface to make everything look and feel delightful. Try it now and experience the magic!"
         }
     ],
     "vi": [
         {
             "id": 1,
             "version": "1.0.0",
-            "releaseDate": "1 tháng 11, 2024",
+            "releaseDate": "1 tháng 11, 2025",
             "notes": [
                 "Phát hành đầu tiên với các chức năng cơ bản.",
-                "Cải thiện hiệu suất và sửa một số lỗi nhỏ."
+                "Cải thiện hiệu suất và sửa một số lỗi nhỏ.",
+                "Effortlessly browse through multiple images in the article."
             ],
             "changelogDescription": "Phiên bản này bao gồm những cập nhật và cải tiến đáng kể. Vui lòng tham khảo changelog chính thức để biết thêm chi tiết.",
             "changelogs": [
@@ -126,7 +152,33 @@
                     "message": "Sửa lỗi và cải thiện giao diện cho trang chi tiết dự án."
                 }
             ],
-            "description": "Phiên bản 1.0.1 là một bản cập nhật nhỏ, tập trung vào sửa lỗi và cải thiện giao diện người dùng. Phiên bản này cũng bổ sung thông báo được cải tiến và hỗ trợ dịch thuật, mang lại trải nghiệm thân thiện hơn cho người dùng."
+            "description": "Phiên bản 1.1.0 là một bản cập nhật nhỏ, tập trung vào sửa lỗi và cải thiện giao diện người dùng. Phiên bản này cũng bổ sung thông báo được cải tiến và hỗ trợ dịch thuật, mang lại trải nghiệm thân thiện hơn cho người dùng."
+        },
+        {
+            "id": 3,
+            "version": "1.1.5",
+            "releaseDate": "11 tháng 1, 2025",
+            "notes": [
+                "Hoạt ảnh mới thật sống động và thú vị!",
+                "Giao diện được cải thiện để trông bắt mắt và dễ sử dụng hơn.",
+                "Dễ dàng duyệt qua nhiều hình ảnh trong bài viết."
+            ],
+            "changelogDescription": "Phiên bản này mang đến những điều nhỏ xinh nhưng đầy ấn tượng! Hãy khám phá ngay chi tiết tại changelog chính thức nhé!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "Thêm các hoạt ảnh sống động, khiến ứng dụng trở nên vui nhộn hơn bao giờ hết!"
+                },
+                {
+                    "type": "features",
+                    "message": "Hỗ trợ xem và duyệt qua nhiều hình ảnh trong bài viết, cho phép xem chi tiết từng ảnh và tải ảnh dễ dàng."
+                },
+                {
+                    "type": "improvements",
+                    "message": "Bổ sung biểu đồ kĩ năng siêu bắt mắt, giúp bạn thấy rõ hành trình 'level up' của mình!"
+                }
+            ],
+            "description": "Phiên bản 1.1.5 là một bản cập nhật nhỏ nhưng ngập tràn niềm vui! Chúng tôi đã thêm những hoạt ảnh cực kỳ sống động và cải thiện giao diện để mọi thứ trở nên lung linh, vui tươi hơn. Hãy thử ngay và cảm nhận sự khác biệt!"
         }
     ]
 }

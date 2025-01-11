@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import EyeIcon from '../components/icons/EyeIcon';
-import HeartIcon from '../components/icons/HeartIcon';
-import CommentIcon from '../components/icons/CommentIcon';
-import styles from '../styles/ArticleCard.module.css';
-import { useLanguage } from '../configs/LanguageContext';
+import EyeIcon from '../icons/EyeIcon';
+import HeartIcon from '../icons/HeartIcon';
+import CommentIcon from '../icons/CommentIcon';
+import styles from '../../styles/ArticleCard.module.css';
+import { useLanguage } from '../../configs/LanguageContext';
 
 const ArticleCard = ({ article }) => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const ArticleCard = ({ article }) => {
       onKeyPress={(e) => e.key === 'Enter' && handleCardClick()}
     >
       <div style={{ width: '100%', height: 180, position: 'relative' }}>
-        <Image src={article.cover_image} alt={article.title} layout="fill" objectFit="cover" />
+        <Image src={article.images[0]} alt={article.title} layout="fill" objectFit="cover" />
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{article.title[language] || article.title['en']}</h3>

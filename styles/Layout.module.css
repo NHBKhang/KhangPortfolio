@@ -34,8 +34,118 @@
   border-left: 1px solid #1e1f29;
 }
 
+.explorerHiddenContent {
+  margin-right: 3.15rem;
+  width: auto !important;
+}
+
+@media screen and (max-width: 980px) {
+  .content {
+    width: 77vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    width: 76.5vw;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .content {
+    width: 76vw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .content {
+    width: 75.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .content {
+    width: 74.4vw;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .content {
+    width: 73.8vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .content {
+    width: 73.25vw;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .content {
+    width: 72.55vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 71.85vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .content {
+    width: 71.2vw;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .content {
+    width: 70.4vw;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .content {
+    width: 69.69vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    width: 69vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    width: 67.85vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    width: 67.31vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .content {
     padding: 2rem 1rem;
+    width: auto;
+  }
+
+  .content {
+    scrollbar-width: 5px;
+  }
+  
+  .content::-webkit-scrollbar {
+    width: 10px;
   }
 }

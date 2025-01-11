@@ -1,4 +1,4 @@
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from '../components/cards/ArticleCard';
 import CustomHead from '../components/Head';
 import styles from '../styles/ArticlesPage.module.css';
 import { getArticles } from './api/articles';
@@ -11,7 +11,7 @@ const ArticlesPage = ({ articles }) => {
   return (
     <>
       <CustomHead page={'articles'} />
-      <h3>
+      <h3 data-aos="fade-right">
         {t('recentPosts')} {' '}
         <a
           href={'/articles'}
@@ -21,7 +21,7 @@ const ArticlesPage = ({ articles }) => {
           khang.github.io
         </a>
       </h3>
-      <div className={styles.container}>
+      <div className={styles.container} data-aos="slide-right">
         {articles.length > 0 ? (
           articles.map((article) => (
             <ArticleCard key={article.id} article={article} />

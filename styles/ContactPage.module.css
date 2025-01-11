@@ -22,6 +22,10 @@
   gap: 1rem;
 }
 
+.form {
+  animation: slideInLeft 1s ease-out;
+}
+
 .form label {
   display: block;
   margin-bottom: 0.5rem;
@@ -81,5 +85,17 @@
 
   .form input {
     font-size: 0.85rem;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

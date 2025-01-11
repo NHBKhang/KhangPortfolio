@@ -1,9 +1,9 @@
-import WatchIcon from '../components/icons/WatchIcon';
-import ForkIcon from '../components/icons/ForkIcon';
-import StarIcon from '../components/icons/StarIcon';
-import GithubIcon from '../components/icons/GithubIcon';
-import LinkIcon from '../components/icons/LinkIcon';
-import styles from '../styles/RepoCard.module.css';
+import WatchIcon from '../icons/WatchIcon';
+import ForkIcon from '../icons/ForkIcon';
+import StarIcon from '../icons/StarIcon';
+import GithubIcon from '../icons/GithubIcon';
+import LinkIcon from '../icons/LinkIcon';
+import styles from '../../styles/RepoCard.module.css';
 
 const RepoCard = ({ repo }) => {
   return (
