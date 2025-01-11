@@ -12,6 +12,7 @@ import {
     ChevronRightIcon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
+import axios from "axios";
 
 const SharedModal = ({
     index,
@@ -32,6 +33,33 @@ const SharedModal = ({
         },
         trackMouse: true,
     });
+
+    const forceDownload = (blobUrl, filename) => {
+        let a = document.createElement("a");
+        a.download = filename;
+        a.href = blobUrl;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+    }
+
+    const downloadPhoto = async (url, filename) => {
+        if (!filename) filename = url.split("\\").pop().split("/").pop();
+
+        try {
+            const response = await axios.get(url, {
+                responseType: 'blob',
+                headers: {
+                    'Origin': location.origin,
+                },
+            });
+
+            const blobUrl = window.URL.createObjectURL(response.data);
+            forceDownload(blobUrl, filename);
+        } catch (e) {
+            console.error(e);
+        }
+    }
 
     const currentImage = images[index];
 
