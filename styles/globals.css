@@ -19,238 +19,174 @@
   border: 0.1rem solid rgb(196, 88, 38);
 }
 
-.React:hover {
-  background: rgba(97, 218, 251, 0.25);
-}
-
 .node {
   border: 0.1rem solid rgb(131, 205, 41);
-}
-
-.node:hover {
-  background: rgba(131, 205, 41, 0.25);
 }
 
 .Flask {
   border: 0.1rem solid rgb(56, 175, 23);
 }
 
-.Flask:hover {
-  background: rgba(67, 153, 52, 0.25);
-}
-
 .Css {
   border: 0.1rem solid rgb(118, 74, 188);
-}
-
-.Css:hover {
-  background: rgba(118, 74, 188, 0.25);
 }
 
 .Scss {
   border: 0.1rem solid rgb(168, 25, 99);
 }
 
-.Scss:hover {
-  background: rgba(118, 74, 188, 0.25);
-}
-
 .Html {
   border: 0.1rem solid rgb(82, 143, 240);
-}
-
-.Html:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Java {
   border: 0.1rem solid rgb(125, 70, 38);
 }
 
-.Java:hover {
-  background: rgba(25, 118, 210, 0.25);
-}
-
 .\.Net {
   border: 0.1rem solid rgb(0, 209, 178);
-}
-
-.\.Net:hover {
-  background: rgb(0, 209, 178, 0.25);
 }
 
 .Next {
   border: 2px solid rgb(0, 112, 243);
 }
 
-.Next:hover {
-  background: rgba(0, 112, 243, 0.25);
-}
-
 .Tailwind {
   border: 2px solid rgb(6, 182, 212);
-}
-
-.Tailwind:hover {
-  background: rgba(6, 182, 212, 0.25);
 }
 
 .Python {
   border: 2px solid rgb(255, 65, 84);
 }
 
-.Python:hover {
-  background: rgba(255, 65, 84, 0.25);
-}
-
 .Javascript {
   border: 2px solid rgb(111, 145, 19);
-}
-
-.Javascript:hover {
-  background: rgba(21, 114, 182, 0.25);
 }
 
 .Typescript {
   border: 2px solid rgb(45, 135, 142);
 }
 
-.Typescript:hover {
-  background: rgba(21, 114, 182, 0.25);
-}
-
 .C\# {
   border: 2px solid rgb(21, 114, 182);
-}
-
-.C\#:hover {
-  background: rgba(21, 114, 182, 0.25);
 }
 
 .Bootstrap {
   border: 0.1rem solid rgb(240, 158, 82);
 }
 
-.Bootstrap:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .HLSL {
   border: 0.1rem solid rgb(39, 109, 89);
-}
-
-.HLSL:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Shaderlab {
   border: 0.1rem solid rgb(111, 208, 14);
 }
 
-.Shaderlab:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .Unity3D {
   border: 0.1rem solid rgb(51, 19, 197);
-}
-
-.Unity3D:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Django {
   border: 0.1rem solid rgb(197, 19, 120);
 }
 
-.Django:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .MySQL {
   border: 0.1rem solid rgb(214, 214, 8);
-}
-
-.MySQL:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .SQLite {
   border: 0.1rem solid rgb(99, 133, 7);
 }
 
-.MySQLite:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .REST {
   border: 0.1rem solid rgb(134, 121, 31);
-}
-
-.REST:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Firebase {
   border: 0.1rem solid rgb(152, 181, 8);
 }
 
-.Firebase:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .C\/C\+\+ {
   border: 0.1rem solid rgb(211, 21, 211);
-}
-
-.C\/C\+\+:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Ruby {
   border: 0.1rem solid rgb(78, 8, 79);
 }
 
-.Ruby:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .Kotlin {
   border: 0.1rem solid rgb(179, 255, 144);
-}
-
-.Kotlin:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Objective\-C {
   border: 0.1rem solid rgb(241, 149, 255);
 }
 
-.Objective\-C:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .Objective\-C\+\+ {
   border: 0.1rem solid rgb(178, 67, 218);
-}
-
-.Objective\-C\+\+:hover {
-  background: rgba(82, 143, 240, 0.25);
 }
 
 .Odoo {
   border: 0.1rem solid rgb(153, 0, 255);
 }
 
-.Odoo:hover {
-  background: rgba(82, 143, 240, 0.25);
-}
-
 .PostgreSQL {
   border: 0.1rem solid rgb(49, 120, 198);
 }
 
-.PostgreSQL:hover {
+.PostgreSQL:hover,
+.\.Net:hover,
+.Next:hover,
+.Tailwind:hover,
+.Python:hover,
+.C\#:hover ,
+.Objective\-C\+\+:hover,
+.Objective\-C:hover,
+.Javascript:hover,
+.Kotlin:hover,
+.Ruby:hover,
+.Typescript:hover,
+.Firebase:hover,
+.C\/C\+\+:hover,
+.REST:hover,
+.MySQLite:hover,
+.Django:hover,
+.MySQL:hover,
+.Unity3D:hover,
+.Shaderlab:hover,
+.HLSL:hover,
+.Bootstrap:hover,
+.Html:hover,
+.Java:hover,
+.Css:hover,
+.Scss:hover,
+.Flask:hover,
+.node:hover,
+.React:hover,
+.Odoo:hover {
+  background: rgba(82, 143, 240, 0.25);
+}
+
+.Logic {
+  border: 0.1rem solid rgb(49, 120, 198);
+}
+
+.Puzzle {
+  border: 0.1rem solid rgb(145, 42, 213);
+}
+
+.Creative {
+  border: 0.1rem solid rgb(179, 255, 144);
+}
+
+.Fun {
+  border: 0.1rem solid rgb(240, 158, 82);
+}
+
+.Logic:hover,
+.Puzzle:hover,
+.Creative:hover,
+.Fun:hover {
   background: rgba(82, 143, 240, 0.25);
 }

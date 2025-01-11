@@ -10,10 +10,12 @@ export const getPageTitle = (locale, title, params = {}) => {
             home: 'Home',
             articles: 'Articles',
             projects: 'Projects',
+            games: 'Games',
             settings: 'Settings',
             github: 'Github',
             article: `Article ${params.name || ''}`,
             project: `Project ${params.name || ''}`,
+            game: `${params.name || ''}`,
             version: 'Version'
         },
         vi: {
@@ -23,15 +25,17 @@ export const getPageTitle = (locale, title, params = {}) => {
             about: 'Giới thiệu',
             articles: 'Bài đăng',
             projects: 'Dự án',
+            games: 'Trò chơi',
             home: 'Trang chủ',
             settings: 'Cài đặt',
             github: 'Github',
             article: `Bài đăng ${params.name || ''}`,
             project: `Dự án ${params.name || ''}`,
+            game: `${params.name || ''}`,
             version: 'Phiên bản'
         },
     };
 
     const titlePart = titles[locale][title] || titles[locale].default;
-    return `${titles[locale].base} | ${titlePart}`;
+    return `${titlePart} | ${titles[locale].base}`;
 };

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "vi": "Trò chơi mật khẩu",
+            "en": "Password Game"
+        },
+        "image": "/img/games/game_1.webp",
+        "description": {
+            "vi": "Password Game là một trò chơi thách thức tư duy và sáng tạo. Nhiệm vụ của bạn là tạo mật khẩu đáp ứng tất cả các quy tắc phức tạp mà trò chơi đưa ra.",
+            "en": "Password Game is a challenging game that tests your thinking and creativity. Your mission is to create passwords that meet all the complex rules provided by the game."
+        },
+        "tags": [
+            "Logic",
+            "Puzzle",
+            "Creative",
+            "Fun"
+        ],
+        "version": "1.0",
+        "releaseDate": "29/01/2025"
+    }
+]

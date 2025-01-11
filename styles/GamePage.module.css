@@ -1,0 +1,124 @@
+.container {
+    max-width: 850px;
+    width: 100%;
+    margin: 15px 0 40px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(62, 62, 62, 0.1);
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.wrapper .image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto 25px;
+    padding: 0 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: zoom-in;
+}
+
+.wrapper .infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .tagsLabel {
+    margin-bottom: 12px;
+    padding-top: 3px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-bottom: 1px double var(--text-clr);
+}
+
+.wrapper .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: safe;
+    margin: 0;
+    gap: 7px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.wrapper .tag {
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.wrapper .tag:hover {
+    transform: scale(1.05) translateY(-0.125rem);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.wrapper .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 7px;
+}
+
+.row p {
+    border-bottom: 1px double var(--text-clr);
+    font-weight: 600;
+    width: auto;
+    display: inline;
+    font-size: 1.05rem;
+}
+
+.description {
+    font-size: 1rem;
+    margin-top: 3px;
+    line-height: 1.8;
+    color: var(--text-2nd-clr);
+    text-align: justify;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 25px;
+}
+
+.buttonGroup .playGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    padding: 7px 12px;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: var(--button-3nd-bg);
+    color: var(--text--2nd-color);
+}
+
+.buttonGroup .playGame svg {
+    width: 25px;
+}
+
+.buttonGroup .playGame:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px var(--text-clr);
+}

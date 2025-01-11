@@ -17,7 +17,6 @@ const ProjectPage = ({ project }) => {
     const { language } = useLanguage();
 
     const [isModalOpen, setModalOpen] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null);
 
     if (router.isFallback) {
         return <div>Loading...</div>;
@@ -27,14 +26,12 @@ const ProjectPage = ({ project }) => {
         return <div>{t('projectNotFound')}</div>;
     }
 
-    const openModal = (image) => {
-        setSelectedImage(image);
+    const openModal = () => {
         setModalOpen(true);
     };
 
     const closeModal = () => {
         setModalOpen(false);
-        setSelectedImage(null);
     };
 
     return (
@@ -48,7 +45,7 @@ const ProjectPage = ({ project }) => {
                     alt={project.name}
                     width={800}
                     height={450}
-                    onClick={() => openModal(project.name)}
+                    onClick={openModal}
                     className={styles.image}
                 />
                 <p className={styles.description}>{project.description[language]}</p>
