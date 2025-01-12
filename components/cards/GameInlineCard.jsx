@@ -21,6 +21,7 @@ const GameInlineCard = ({ game }) => {
             role="button"
             tabIndex={0}
             onKeyPress={(e) => e.key === 'Enter' && handleCardClick()}
+            title={game.name[language]}
         >
             <div className={styles.inlineImageContainer}>
                 <Image src={game.image} alt={game.name[language]} layout="fill" objectFit="fill" />

@@ -6,15 +6,21 @@ import GameCard from "../components/cards/GameCard";
 import { getGames } from "./api/games";
 import { useState } from "react";
 import GameInlineCard from "../components/cards/GameInlineCard";
+import ViewToggleButton from "../components/buttons/ViewToggleButton";
 
 const GamesPage = ({ games }) => {
     const { t } = useTranslation('games');
-    const [currentView, setCurrentView] = useState(1)
+    const [currentView, setCurrentView] = useState(0)
 
     return (
         <>
             <CustomHead page="games" />
-            <h3 data-aos="fade-right">{t('title')}</h3>
+            <div className={styles.header}>
+                <h3 data-aos="fade-right">{t('title')}</h3>
+                <div className={styles.viewButton}>
+                    <ViewToggleButton currentView={currentView} setCurrentView={setCurrentView} />
+                </div>
+            </div>
             <div className={styles.container} data-aos="slide-right">
                 {games.length > 0 ? (
                     games.map((game) => (

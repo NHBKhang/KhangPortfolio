@@ -79,7 +79,7 @@ const GamePage = ({ game }) => {
 
                 <div className={styles.buttonGroup}>
                     <Link className={styles.playGame}
-                        href={'/'}>
+                        href={game.href}>
                         <PlayIcon />
                         <span>{t('play')}</span>
                     </Link>

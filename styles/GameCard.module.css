@@ -5,17 +5,13 @@
     flex-direction: column;
     border-radius: 20px;
     cursor: pointer;
-    max-width: 350px;
+    max-width: 325px;
     width: auto;
     padding: 10px;
 }
 
 .card:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-    border-radius: 12px;
 }
 
 .title {
@@ -44,7 +40,13 @@
 
 .imageContainer {
     width: 100%;
-    position: relative;
+}
+
+.imageContainer img {
+    border-radius: 12px;
+    height: auto !important;
+    max-height: 250px;
+    position: relative !important;
 }
 
 .tags {
@@ -106,8 +108,8 @@
 }
 
 .inlineImageContainer {
-    min-width: 10rem;
-    height: 10rem;
+    min-width: 7.5rem;
+    height: 7.5rem;
     position: relative;
 }
 
@@ -131,24 +133,43 @@
     border-color: var(--accent-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+    .card {
+        max-width: 200px;
+    }
+
+    .imageContainer img {
+        max-height: 150px;
+    }
+
     .inlineImageContainer {
-        min-width: 7.5rem;
-        height: 7.5rem;
+        min-width: 5rem;
+        height: 5rem;
+    }
+
+    .inlineContent p {
+        -webkit-line-clamp: 2;
+    }
+
+    .inlineTags {
+        margin-top: 0.1rem;
     }
 
     .inlineTitle,
     .title {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .inlineContent p,
     .content p {
-        font-size: 12px;
+        font-size: 0.65rem !important;
+        margin-top: 0.2rem;
     }
 
     .inlineTags span,
     .tags span {
-        font-size: 10px;
+        font-size: 0.55rem !important;
+        margin: 0.25rem 0.5rem 0 0;
+        padding: 0.2rem 0.5rem !important;
     }
 }

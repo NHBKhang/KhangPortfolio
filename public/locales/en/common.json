@@ -24,5 +24,9 @@
     "enableChatbox": "Enable Chatbox",
     "disableChatbox": "Disable Chatbox",
     "settings": "Settings",
-    "back": "Back"
+    "back": "Back",
+    "no": "No, I'm not",
+    "next": "Next",
+    "skip": "Skip",
+    "done": "Let's go!"
 }

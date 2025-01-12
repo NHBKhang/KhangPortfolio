@@ -21,6 +21,7 @@ const ProjectCard = ({ project }) => {
       role="button"
       tabIndex={0}
       onKeyPress={(e) => e.key === 'Enter' && handleCardClick()}
+      title={project.name}
     >
       <div style={{ width: '100%', height: 200, position: 'relative', background: 'skyblue' }}>
         <Image src={project.image} alt={project.name} layout="fill" objectFit="fill" />

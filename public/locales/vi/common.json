@@ -24,5 +24,9 @@
     "enableChatbox": "Bật hộp trò chuyện",
     "disableChatbox": "Tắt hộp trò chuyện",
     "settings": "Cài đặt",
-    "back": "Trở lại"
+    "back": "Trở lại",
+    "no": "Chưa",
+    "next": "Tiếp theo",
+    "skip": "Bỏ qua",
+    "done": "Bắt đầu thôi!"
 }
