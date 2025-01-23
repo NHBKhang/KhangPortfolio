@@ -3,7 +3,10 @@ import { ArrowUturnLeftIcon } from "@heroicons/react/24/outline";
 import styles from "../../styles/Button.module.css";
 import { useTranslation } from "next-i18next";
 
-const BackButton = ({ pathname = null }) => {
+const BackButton = ({ 
+    pathname = null, 
+    callback = () => {} 
+}) => {
     const router = useRouter();
     const { t } = useTranslation('common');
 
@@ -13,6 +16,7 @@ const BackButton = ({ pathname = null }) => {
         } else {
             router.back();
         }
+        callback();
     };
 
     return (

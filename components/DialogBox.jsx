@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/DialogBox.module.css';
 import { useTranslation } from 'next-i18next';
 
-const DialogBox = ({ text, onNext, onSkip, onCancel, isNext = true }) => {
+const DialogBox = ({ text, onNext, onSkip, onCancel, isNext = true, hideCancel = false }) => {
     const { t } = useTranslation('common');
 
     return (
@@ -12,9 +12,10 @@ const DialogBox = ({ text, onNext, onSkip, onCancel, isNext = true }) => {
                     <p>{text}</p>
                 </div>
                 <div className={styles.buttonGroup}>
-                    <button className={styles.noButton} onClick={onCancel}>
-                        {t('no')}
-                    </button>
+                    {hideCancel ? <div /> :
+                        <button className={styles.noButton} onClick={onCancel}>
+                            {t('no')}
+                        </button>}
                     <div>
                         {isNext &&
                             <button className={styles.nextButton} onClick={onNext}>
