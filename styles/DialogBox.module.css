@@ -1,6 +1,6 @@
 .container {
     width: calc(100% - 3rem);
-    height: calc(100% - 5.5rem);
+    height: calc(100% - 2rem);
     margin-top: -4rem;
     margin-left: -3.5rem;
     display: flex;

@@ -410,48 +410,6 @@ html {
   --dropdown-bg: #ff9cac;
 }
 
-/* Colorful */
-[data-theme='colorful'] {
-  --icon-fill-active: rgb(255, 100, 0);
-  --icon-fill-inactive: rgb(128, 128, 128);
-  --main-bg: #aed6ef;
-  --bg-text: linear-gradient(to right, #e0ffff, #fff8dc, #fff0f5);
-  --text-color: rgb(255, 255, 255);
-  --accent-color: rgb(81, 0, 139);
-  --titlebar-bg: linear-gradient(to right, #64b6ff, #a9d6ff, #d1e8ff);
-  --sidebar-bg: linear-gradient(to right, #ffb6c1, #ff78bb);
-  --sidebar-hover-bg: linear-gradient(to right, #ff79bc, #ff2e9d);
-  --explorer-bg: linear-gradient(to right, #add8e6, #87ceeb, #b0e0e6);
-  --explorer-hover-bg: #7cbdd7;
-  --explorer-active-bg: #00944a57;
-  --explorer-border: rgba(0, 0, 0, 0.2);
-  --tabs-bg: linear-gradient(to right, #f0f8ff, #e6e6fa);
-  --tab-bg: rgb(224, 255, 255);
-  --tab-active-bg: linear-gradient(to right, #adff2f, #98fb98);
-  --tab-border: rgb(255, 115, 0);
-  --bottombar-bg: linear-gradient(to right, #ffd700, #ffec40);
-  --bottombar-border: #ffd700;
-  --button-bg: rgb(34, 139, 34);
-  --button-hover-bg: rgb(23, 96, 23);
-  --button-text: #ffffff;
-  --bottombar-hover-bg: linear-gradient(to right, #fffacd, #ffe4b5);
-  --scrollbar-track-bg: rgb(255, 228, 225);
-  --scrollbar-thumb-bg: linear-gradient(to right, #dda0dd, #ffb6c1);
-  --article-bg: linear-gradient(to right, #dcc9ac, #ffe4e1);
-  --text-clr: #000000;
-  --text-2nd-clr: rgb(20, 20, 20);
-  --text-3nd-clr: #222222;
-  --button-2nd-bg: #ff4500;
-  --button-2nd-hover-bg: #dc143c;
-  --button-3nd-bg: rgb(0, 200, 255);
-  --button-3nd-hover-bg: rgb(0, 159, 203);
-  --button-text: white;
-  --button-text: white;
-  --chatbox-bg: #b3d4aa;
-  --chatbox-input-bg: #8fa888;
-  --dropdown-bg: linear-gradient(to right, #fff6a5, #d0ffb5);
-}
-
 [data-theme='soundscape'] {
   --icon-fill-active: #1db954;
   --icon-fill-inactive: rgba(255, 255, 255, 0.7);
@@ -490,4 +448,43 @@ html {
   --chatbox-bg: #2a2a2a;
   --chatbox-input-bg: #000000;
   --dropdown-bg: #2b2b2b;
+}
+
+[data-theme='ethereal-glow'] {
+  --icon-fill-active: #ffd700;
+  --icon-fill-inactive: rgba(255, 255, 255, 0.6);
+  --main-bg: #00303c;
+  --bg-text: rgba(173, 216, 230, 0.2);
+  --text-color: #ffffff;
+  --accent-color: #ffd700;
+  --titlebar-bg: #00384b;
+  --sidebar-bg: #003546;
+  --sidebar-hover-bg: #005c73;
+  --explorer-bg: #003d52;
+  --explorer-hover-bg: #006d84;
+  --explorer-active-bg: #007565;
+  --explorer-border: rgba(255, 255, 255, 0.2);
+  --tabs-bg: #003d52;
+  --tab-bg: #005f72;
+  --tab-active-bg: #007a8c;
+  --tab-border: #00d1b2;
+  --bottombar-bg: #002b36;
+  --bottombar-border: rgba(255, 255, 255, 0.2);
+  --button-bg: #ffd700;
+  --button-hover-bg: #e6c300;
+  --button-text: #002b36;
+  --bottombar-hover-bg: rgba(0, 191, 165, 0.3);
+  --scrollbar-track-bg: rgba(0, 43, 54, 0.6);
+  --scrollbar-thumb-bg: rgba(255, 215, 0, 0.5);
+  --article-bg: #004d66;
+  --text-clr: #00c8ff;
+  --text-2nd-clr: #24e0c7;
+  --text-3nd-clr: #e6e6e6;
+  --button-2nd-bg: #005f72;
+  --button-2nd-hover-bg: #007a8c;
+  --button-3nd-bg: #00bfa5;
+  --button-3nd-hover-bg: #009e8a;
+  --chatbox-bg: #003d52;
+  --chatbox-input-bg: #002b36;
+  --dropdown-bg: #004d66;
 }

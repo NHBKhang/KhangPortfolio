@@ -19,7 +19,7 @@ const CustomHead = ({ page, params = {} }) => {
       <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
       <meta property="og:url" content="https://vscode-portfolio.vercel.app" />
       <meta name="twitter:card" content="summary_large_image" />
-      <link rel="icon" href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" />
+      <link rel="icon" href="/img/icon/vscode_icon.svg" />
     </Head>
   );
 };

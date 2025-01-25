@@ -3,6 +3,7 @@
 .main {
   display: flex;
   background: var(--main-bg);
+  position: relative;
 }
 
 .content {

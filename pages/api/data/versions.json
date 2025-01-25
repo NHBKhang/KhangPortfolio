@@ -179,6 +179,27 @@
                 }
             ],
             "description": "Phiên bản 1.1.5 là một bản cập nhật nhỏ nhưng ngập tràn niềm vui! Chúng tôi đã thêm những hoạt ảnh cực kỳ sống động và cải thiện giao diện để mọi thứ trở nên lung linh, vui tươi hơn. Hãy thử ngay và cảm nhận sự khác biệt!"
+        },
+        {
+            "id": 4,
+            "version": "1.2.0",
+            "releaseDate": "29 tháng 1, 2025",
+            "notes": [
+                "✨ Bổ sung danh sách trò chơi đa dạng và đầy màu sắc!",
+                "🎉 Thêm trò chơi mới: \"Trò chơi mật khẩu\" – thử thách trí thông minh và kỹ năng giải mã của bạn!"
+            ],
+            "changelogDescription": "Hãy khám phá ngay những điểm mới thú vị trong bản cập nhật này tại changelog chính thức nhé! 🚀",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "📜 Bổ sung danh sách trò chơi mới lạ và hấp dẫn!"
+                },
+                {
+                    "type": "features",
+                    "message": "🔐 Thêm \"Trò chơi mật khẩu\" – sẵn sàng để bạn khám phá và chinh phục!"
+                }
+            ],
+            "description": "Phiên bản 1.2.0 là một bản cập nhật nhỏ nhưng chứa đựng niềm vui bất ngờ! Hãy sẵn sàng để khám phá và thử thách bản thân với những nội dung mới tuyệt vời! 🌟"
         }
     ]
 }

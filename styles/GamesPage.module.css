@@ -6,6 +6,7 @@
     flex-wrap: nowrap;
     gap: 20px;
     width: 100%;
+    padding-right: 0.5rem;
 }
 
 .container {

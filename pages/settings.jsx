@@ -117,18 +117,18 @@ const SettingsPage = () => {
           description={t('pastelDream')}
         />
         <ThemeInfo
-          name="Colorful"
-          icon="/img/logo/colorful.jpg"
-          publisher="NHBKhang"
-          theme="colorful"
-          description={t('colorful')}
-        />
-        <ThemeInfo
           name="SoundScape"
           icon="/img/logo/soundscape.png"
           publisher="SoundScape Theme"
           theme="soundscape"
           description={t('soundscape')}
+        />
+        <ThemeInfo
+          name="Ethereal Glow"
+          icon="/img/logo/ethereal-glow.png"
+          publisher="NHBKhang"
+          theme="ethereal-glow"
+          description={t('ethereal-glow')}
         />
       </div>
     </>
