@@ -23,5 +23,10 @@
     "changeLanguage": "Change Language",
     "enableChatbox": "Enable Chatbox",
     "disableChatbox": "Disable Chatbox",
-    "settings": "Settings"
+    "settings": "Settings",
+    "back": "Back",
+    "no": "Go back",
+    "next": "Next",
+    "skip": "Skip",
+    "done": "Let's go!"
 }

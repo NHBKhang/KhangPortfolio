@@ -21,6 +21,7 @@ const ArticleCard = ({ article }) => {
       role="button"
       tabIndex={0}
       onKeyPress={(e) => e.key === 'Enter' && handleCardClick()}
+      title={article.title[language]}
     >
       <div style={{ width: '100%', height: 180, position: 'relative' }}>
         <Image src={article.images[0]} alt={article.title} layout="fill" objectFit="cover" />

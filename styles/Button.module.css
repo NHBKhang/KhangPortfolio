@@ -29,3 +29,64 @@
     width: 20px;
     height: 20px;
 }
+
+/* Nút chuyển đổi */
+.toggleContainer {
+    width: 100%;
+    text-align: right;
+}
+
+.toggleButtons {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    padding: 3px;
+    background-color: var(--article-bg);
+}
+
+.toggleButtons .button {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem !important;
+    border: none;
+    background-color: #f0f0f0;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggleButtons .button:hover {
+    background-color: #d6d6d6;
+}
+
+.toggleButtons .active {
+    background-color: var(--button-bg);
+    color: var(--text-clr);
+}
+
+.toggleButtons .gridView {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.toggleButtons .listView {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.toggleButtons .item {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.toggleButtons .item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
