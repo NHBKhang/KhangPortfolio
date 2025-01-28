@@ -87,6 +87,32 @@
                 }
             ],
             "description": "Version 1.1.5 is a small but joyful update! We’ve introduced vibrant animations and improved the interface to make everything look and feel delightful. Try it now and experience the magic!"
+        },
+        {
+            "id": 4,
+            "version": "1.2.0",
+            "releaseDate": "January 29, 2025",
+            "notes": [
+                "✨ Added a diverse and colorful game list! 🌈",
+                "🎉 New game added: \"Password Game\" – challenge your intelligence and decoding skills! 🔐",
+                "🎨 New theme colors added – brighten up your experience!"
+            ],
+            "changelogDescription": "🚀 Discover all the exciting updates in this version by checking out the official changelog!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "📜 Added a list of unique and captivating games!"
+                },
+                {
+                    "type": "features",
+                    "message": "🔐 Introduced the \"Password Game\" – ready for you to explore and conquer!"
+                },
+                {
+                    "type": "improvements",
+                    "message": "🎨 Added the new theme \"Ethereal Glow\" – modern and creative style. 🌓 Removed the \"Colorful\" theme to enhance the overall experience. 🔄"
+                }
+            ],
+            "description": "🌟 Version 1.2.0 is a small update packed with delightful surprises! Get ready to explore and challenge yourself with exciting new content!"
         }
     ],
     "vi": [
@@ -96,8 +122,7 @@
             "releaseDate": "1 tháng 11, 2025",
             "notes": [
                 "Phát hành đầu tiên với các chức năng cơ bản.",
-                "Cải thiện hiệu suất và sửa một số lỗi nhỏ.",
-                "Effortlessly browse through multiple images in the article."
+                "Cải thiện hiệu suất và sửa một số lỗi nhỏ."
             ],
             "changelogDescription": "Phiên bản này bao gồm những cập nhật và cải tiến đáng kể. Vui lòng tham khảo changelog chính thức để biết thêm chi tiết.",
             "changelogs": [
@@ -185,10 +210,11 @@
             "version": "1.2.0",
             "releaseDate": "29 tháng 1, 2025",
             "notes": [
-                "✨ Bổ sung danh sách trò chơi đa dạng và đầy màu sắc!",
-                "🎉 Thêm trò chơi mới: \"Trò chơi mật khẩu\" – thử thách trí thông minh và kỹ năng giải mã của bạn!"
+                "✨ Bổ sung danh sách trò chơi đa dạng và đầy màu sắc! 🌈",
+                "🎉 Thêm trò chơi mới: \"Trò chơi mật khẩu\" – thử thách trí thông minh và kỹ năng giải mã của bạn! 🔐",
+                "🎨 Thêm màu chủ đề mới – làm sáng bừng trải nghiệm của bạn!"
             ],
-            "changelogDescription": "Hãy khám phá ngay những điểm mới thú vị trong bản cập nhật này tại changelog chính thức nhé! 🚀",
+            "changelogDescription": "🚀 Hãy khám phá ngay những điểm mới thú vị trong bản cập nhật này tại changelog chính thức nhé!",
             "changelogs": [
                 {
                     "type": "features",
@@ -197,9 +223,13 @@
                 {
                     "type": "features",
                     "message": "🔐 Thêm \"Trò chơi mật khẩu\" – sẵn sàng để bạn khám phá và chinh phục!"
+                },
+                {
+                    "type": "improvements",
+                    "message": "🎨 Thêm chủ đề mới \"Ethereal Glow\" – phong cách hiện đại và sáng tạo. 🌓 Gỡ bỏ chủ đề \"Colorful\" để tối ưu hóa trải nghiệm. 🔄"
                 }
             ],
-            "description": "Phiên bản 1.2.0 là một bản cập nhật nhỏ nhưng chứa đựng niềm vui bất ngờ! Hãy sẵn sàng để khám phá và thử thách bản thân với những nội dung mới tuyệt vời! 🌟"
+            "description": "🌟 Phiên bản 1.2.0 là một bản cập nhật nhỏ nhưng chứa đựng niềm vui bất ngờ! Hãy sẵn sàng để khám phá và thử thách bản thân với những nội dung mới tuyệt vời!"
         }
     ]
 }

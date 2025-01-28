@@ -7,7 +7,7 @@ export const HolidayProvider = ({ children }) => {
 
     useEffect(() => {
         const today = new Date();
-        const birthday = { day: 25, month: 0 }; // Ngày và tháng sinh
+        const birthday = { day: 29, month: 0 }; // Ngày và tháng sinh
         if (today.getDate() === birthday.day && today.getMonth() === birthday.month) {
             setIsBirthday(true);
         }
