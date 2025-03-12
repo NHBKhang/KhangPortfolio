@@ -50,17 +50,25 @@
     color: #ababab;
 }
 
+.panel {
+}
+
 .stats {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
     border: 1px solid rgba(245, 245, 245, 0.25);
+    margin-top: 12px;
     padding: 7px;
 }
 
 .stat {
     font-size: 14px;
     color: #ababab;
+}
+
+.actions {
+    padding: 5px;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.25);
 }
 
 .viewFullArticle {

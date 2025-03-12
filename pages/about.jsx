@@ -30,7 +30,7 @@ const skills = [
     "percentage": 50,
   },
   {
-    "skill": "HTML",
+    "skill": "HTML/XML",
     "percentage": 87,
   },
   {

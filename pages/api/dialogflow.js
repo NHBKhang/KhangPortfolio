@@ -4,17 +4,17 @@ import path from 'path';
 let sessionClient;
 
 if (process.env.NODE_ENV === 'production') {
-    const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
+    const credentials = JSON.parse(process.env.NEXT_PUBLIC_GOOGLE_APPLICATION_CREDENTIALS_JSON);
     sessionClient = new dialogflow.SessionsClient({
         credentials,
     });
 } else {
     sessionClient = new dialogflow.SessionsClient({
-        keyFilename: path.join(process.cwd(), process.env.GOOGLE_APPLICATION_CREDENTIALS),
+        keyFilename: path.join(process.cwd(), process.env.NEXT_PUBLIC_GOOGLE_APPLICATION_CREDENTIALS),
     });
 }
 
-const projectId = process.env.DIALOGFLOW_PROJECT_ID;
+const projectId = process.env.NEXT_PUBLIC_DIALOGFLOW_PROJECT_ID;
 
 export default async (req, res) => {
     if (req.method === 'POST') {

@@ -6,7 +6,7 @@ import BackButton from "../../components/buttons/BackButton";
 import CustomHead from "../../components/Head";
 import { getGame } from "../api/games";
 import { useLanguage } from "../../configs/LanguageContext";
-import DialogBox from "../../components/DialogBox";
+import DialogBox from "../../components/boxes/DialogBox";
 import { useGlobalContext } from "../../configs/GlobalContext";
 
 

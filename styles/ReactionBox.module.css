@@ -1,0 +1,39 @@
+.action {
+    display: flex;
+    gap: 15px;
+}
+
+.react {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reactionBtn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    filter: drop-shadow(0 0 3px transparent);
+    padding: 3px;
+}
+
+.reactionBtn:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.reactionBtn.selected {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+@media screen and (max-width: 600px) {
+    .reactionBtn {
+        font-size: 1.2rem;
+    }
+
+    .react p {
+        font-size: 0.8rem;
+    }
+}
