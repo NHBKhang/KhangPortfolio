@@ -21,9 +21,9 @@ const ContactPage = () => {
 
     const contactData = { name, email, subject, message, country };
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
-    const userId = process.env.NEXT_PUBLIC_EMAIL_USER_ID;
+    const serviceId = process.env.EMAIL_SERVICE_ID;
+    const templateId = process.env.EMAIL_TEMPLATE_ID;
+    const userId = process.env.EMAIL_USER_ID;
 
 
     try {
