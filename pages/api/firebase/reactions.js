@@ -26,7 +26,10 @@ export default async function handler(req, res) {
                 totalReactions: currentTotalCount + 1
             });
 
-            return res.status(200).json({ message: "Reaction added!", reactionType });
+            return res.status(200).json({
+                message: "Reaction added!",
+                data: { reactionType }
+            });
         }
 
         return res.status(405).json({ message: "Method Not Allowed" });

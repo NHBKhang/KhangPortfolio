@@ -10,7 +10,7 @@ const reactions = [
     { id: "5", icon: "😢", label: "Sad" }
 ];
 
-const ReactionBox = ({ onReact, react }) => {
+const ReactionBox = ({ onReact, react, blockedReactions = [] }) => {
     const [selectedReaction, setSelectedReaction] = useState(null);
 
     const handleReaction = async (id) => {
@@ -20,9 +20,13 @@ const ReactionBox = ({ onReact, react }) => {
             await onReact(id);
     };
 
+    const filteredReactions = reactions.filter(
+        (reaction) => !blockedReactions?.includes(reaction.id)
+    );
+
     return (
         <div className={styles.action}>
-            {reactions.map((reaction) => (
+            {filteredReactions.map((reaction) => (
                 <div className={styles.react}>
                     <button
                         title={reaction.label}

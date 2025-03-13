@@ -58,7 +58,9 @@
             "vi": "Chỉ là bài viết để tưởng nhớ đến ông bà ngoại. Mong ông bà ngoại ra đi thanh thản.",
             "en": "Just an article to remember of my grandparents. Hope they rest in peace."
         },
-        "created_date": "2024-04-08 9:00"
+        "created_date": "2024-04-08 9:00",
+        "blocked_reactions": ["3", "4"],
+        "blocked_comments": true
     },
     {
         "id": 5,

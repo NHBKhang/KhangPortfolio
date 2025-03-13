@@ -20,7 +20,7 @@ export default async function handler(req, res) {
                 views: currentViews + 1
             });
 
-            return res.status(200).json({ message: "View added!", postId });
+            return res.status(200).json({ message: "View added!" });
         }
 
         return res.status(405).json({ message: "Method Not Allowed" });

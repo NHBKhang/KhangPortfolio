@@ -6,5 +6,8 @@
     "reactions": "Reactions",
     "comments": "Comments",
     "viewFullArticle": "View Full Article",
-    "postedOn": "Posted on"
+    "postedOn": "Posted on",
+    "errorReaction": "Failed to send reaction",
+    "errorComment": "Failed to send comment",
+    "blockedComments": "Comments have been disabled for this article."
 }

@@ -15,11 +15,17 @@ export default async function handler(req, res) {
                     results[id] = await getPostStat(id);
                 }
 
-                return res.status(200).json(results);
+                return res.status(200).json({
+                    message: "Post metrics loaded!",
+                    data: results
+                });
             }
 
             if (postId) {
-                return res.status(200).json(await getPostStat(postId));
+                return res.status(200).json({
+                    message: "Post metrics loaded!",
+                    data: await getPostStat(postId)
+                });
             }
 
             return res.status(400).json({ error: "Missing postId or postIds" });

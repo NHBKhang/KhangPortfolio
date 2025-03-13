@@ -15,7 +15,7 @@ const ArticlesPage = ({ articles, articleIds }) => {
     const loadStats = async () => {
       try {
         let res = await getPostsMetrics(articleIds);
-        setStats(res);
+        setStats(res.data);
       } catch (error) {
         console.error(error);
       }
