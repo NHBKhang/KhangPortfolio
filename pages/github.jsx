@@ -9,7 +9,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useNotification } from '../utils/toast';
 import axios from 'axios';
 
-const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+const token = process.env.GITHUB_TOKEN;
 
 const GithubPage = () => {
   const { t } = useTranslation(['github', 'common']);
