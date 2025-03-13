@@ -22,7 +22,7 @@
 }
 
 .content::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
 }
 
 .content::-webkit-scrollbar-track {
@@ -126,13 +126,13 @@
 
 @media screen and (max-width: 700px) {
   .content {
-    width: 67.85vw;
+    width: 93vw;
   }
 }
 
 @media screen and (max-width: 650px) {
   .content {
-    width: 67.31vw;
+    width: 92.5vw;
   }
 }
 

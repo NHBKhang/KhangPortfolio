@@ -28,5 +28,8 @@
     "no": "Quay lại",
     "next": "Tiếp theo",
     "skip": "Bỏ qua",
-    "done": "Bắt đầu thôi!"
+    "done": "Bắt đầu thôi!",
+    "commentPlaceholder": "Viết bình luận...",
+    "post": "Đăng",
+    "emptyComment": "Nhập bình luận vô bạn ơi!"
 }

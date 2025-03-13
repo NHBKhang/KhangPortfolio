@@ -28,5 +28,8 @@
     "no": "Go back",
     "next": "Next",
     "skip": "Skip",
-    "done": "Let's go!"
+    "done": "Let's go!",
+    "commentPlaceholder": "Write a comment...",
+    "post": "Post",
+    "emptyComment": "Enter your comment buddy!"
 }

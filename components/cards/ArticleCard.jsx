@@ -6,7 +6,7 @@ import CommentIcon from '../icons/CommentIcon';
 import styles from '../../styles/ArticleCard.module.css';
 import { useLanguage } from '../../configs/LanguageContext';
 
-const ArticleCard = ({ article }) => {
+const ArticleCard = ({ article, stat = {} }) => {
   const router = useRouter();
   const { language } = useLanguage();
 
@@ -32,13 +32,13 @@ const ArticleCard = ({ article }) => {
       </div>
       <div className={styles.stats}>
         <div className={styles.stat}>
-          <EyeIcon className={styles.icon} /> {article.page_views_count}
+          <HeartIcon className={styles.icon} /> {stat?.totalReactions || 0}
         </div>
         <div className={styles.stat}>
-          <HeartIcon className={styles.icon} /> {article.public_reactions_count}
+          <EyeIcon className={styles.icon} /> {stat?.views || 0}
         </div>
         <div className={styles.stat}>
-          <CommentIcon className={styles.icon} /> {article.comments_count}
+          <CommentIcon className={styles.icon} /> {stat?.totalComments || 0}
         </div>
       </div>
     </div>

@@ -56,17 +56,29 @@
     "experience": {
         "en": [
             {
+                "title": "Software Developer",
+                "organization": "Aegona Ltd.",
+                "date": "February 2025 - Present",
+                "description": "Develop software applications using multiple languages ​​such as Python, Javascript, HTML/XML and CSS. Use open source systems such as Odoo or InvenTree."
+            },
+            {
                 "title": "Intern Python Developer",
                 "organization": "Aegona Ltd.",
-                "date": "November 2024 - Present",
+                "date": "November 2024 - February 2025",
                 "description": "Developing web applications using Python. Working closely with the development team to deliver high-quality software solutions."
             }
         ],
         "vi": [
             {
+                "title": "Software Developer",
+                "organization": "Aegona Ltd.",
+                "date": "Tháng 2 2025 - Hiện tại",
+                "description": "Phát triển ứng dụng phần mềm sử dụng nhiều ngôn ngữ như Python, Javascript, HTML/XML và CSS. Sử dụng các hệ thống mã nguồn mở như Odoo hay InvenTree."
+            },
+            {
                 "title": "Thực tập sinh Python Developer",
                 "organization": "Aegona Ltd.",
-                "date": "Tháng 11 2024 - Hiện tại",
+                "date": "Tháng 11 2024 - Tháng 2 2025",
                 "description": "Phát triển ứng dụng web sử dụng Python. Làm việc chặt chẽ với nhóm phát triển để cung cấp các giải pháp phần mềm chất lượng cao."
             }
         ]

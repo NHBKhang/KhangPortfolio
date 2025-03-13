@@ -6,7 +6,7 @@ import Tabsbar from './Tabsbar';
 import styles from '../styles/Layout.module.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Chatbox from './Chatbox';
+import Chatbox from './boxes/Chatbox';
 import { useGlobalContext } from '../configs/GlobalContext';
 import { ToastContainer } from 'react-toastify';
 import { clsx } from 'clsx';

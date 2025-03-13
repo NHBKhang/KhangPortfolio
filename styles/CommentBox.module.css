@@ -1,0 +1,79 @@
+.container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputArea {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+}
+
+.container button {
+    align-self: flex-end;
+    padding: 8px 12px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.container button:hover {
+    background: var(--button-hover-bg);
+}
+
+.commentList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.commentList li {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.commentList li>div>p {
+    font-size: 0.6rem;
+    color: var(--text-2nd-clr);
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.commentList li div.content {
+    background: var(--article-bg);
+    padding: 7px 12px;
+    padding-right: 15px;
+    border-radius: 7px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.content>strong {
+    font-size: 0.85rem;
+}
+
+.content>p {
+    font-size: 1rem;
+}

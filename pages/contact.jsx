@@ -43,7 +43,6 @@ const ContactPage = () => {
       setEmail('');
       setCountry('');
     } catch (error) {
-      console.error(error);
       sendNotification({ message: t('errorResponse') }, 'error');
     }
   };

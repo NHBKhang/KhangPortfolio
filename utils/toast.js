@@ -13,13 +13,16 @@ const defaultConfig = {
     theme: "dark",                // Giao diện (light, dark, colored)
 };
 
-const ToastContent = ({ message, title = null }) => (
+const ToastContent = ({ message, title = null, icon = null }) => (
     title ? (
-        <div>
-            <strong style={{ display: 'block', marginBottom: '5px' }}>
-                {title}
-            </strong>
-            <span>{message}</span>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            {icon && <span style={{ fontSize: "20px" }}>{icon}</span>}
+            <div>
+                <strong style={{ display: 'block', marginBottom: '5px' }}>
+                    {title}
+                </strong>
+                <span>{message}</span>
+            </div>
         </div>
     ) : (
         <span>{message}</span>
@@ -29,33 +32,43 @@ const ToastContent = ({ message, title = null }) => (
 const notify = {
     info: (content, config = {}) => {
         toast.info(<ToastContent {...content} />, {
+            icon: content.icon,
             ...defaultConfig,
             ...config,
         });
     },
     success: (content, config = {}) => {
         toast.success(<ToastContent {...content} />, {
+            icon: content.icon,
             ...defaultConfig,
             ...config,
         });
     },
     warning: (content, config = {}) => {
         toast.warning(<ToastContent {...content} />, {
+            icon: content.icon,
             ...defaultConfig,
             ...config,
         });
     },
     error: (content, config = {}) => {
         toast.error(<ToastContent {...content} />, {
+            icon: content.icon,
             ...defaultConfig,
             ...config,
         });
     },
     default: (content, config = {}) => {
         toast(<ToastContent {...content} />, {
+            icon: content.icon,
             ...defaultConfig,
             ...config,
         });
+    },
+    custom: (content) => {
+        toast(<ToastContent {...content} />, {
+            icon: content.icon,
+        })
     },
     promise: async (
         promise,
@@ -80,12 +93,12 @@ const useNotification = () => {
     const { t } = useTranslation('common');
 
     const sendNotification = (
-        { message = "", title = null },
+        { message = "", title = null, icon = null },
         type = '',
         config = {}
     ) => {
         const resolvedTitle = title || t(type, { defaultValue: null });
-        const resolvedContent = { message: message, title: resolvedTitle };
+        const resolvedContent = { message: message, title: resolvedTitle, icon: icon };
 
         switch (type) {
             case 'info':
@@ -101,7 +114,10 @@ const useNotification = () => {
                 notify.error(resolvedContent, config);
                 break;
             default:
-                notify.default(resolvedContent, config);
+                if (config.custom)
+                    notify.custom(resolvedContent);
+                else
+                    notify.default(resolvedContent, config);
         }
     };
 

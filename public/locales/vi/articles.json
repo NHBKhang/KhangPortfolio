@@ -3,8 +3,11 @@
     "noArticles": "Không có bài đăng nào.",
     "articleNotFound": "Không tìm thấy bài đăng",
     "views": "Lượt xem",
-    "reactions": "Phản ứng",
+    "reactions": "Cảm xúc",
     "comments": "Bình luận",
     "viewFullArticle": "Xem toàn bộ bài đăng",
-    "postedOn": "Được đăng vào"
+    "postedOn": "Được đăng vào",
+    "errorReaction": "Không thể gửi cảm xúc",
+    "errorComment": "Khổng thể gửi bình luận",
+    "blockedComments": "Bình luận đã bị vô hiệu hóa cho bài viết này."
 }

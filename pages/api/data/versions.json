@@ -91,7 +91,7 @@
         {
             "id": 4,
             "version": "1.2.0",
-            "releaseDate": "January 29, 2025",
+            "releaseDate": "January 29th, 2025",
             "notes": [
                 "✨ Added a diverse and colorful game list! 🌈",
                 "🎉 New game added: \"Password Game\" – challenge your intelligence and decoding skills! 🔐",
@@ -113,6 +113,36 @@
                 }
             ],
             "description": "🌟 Version 1.2.0 is a small update packed with delightful surprises! Get ready to explore and challenge yourself with exciting new content!"
+        },
+        {
+            "id": 5,
+            "version": "1.3.0",
+            "releaseDate": "March 13th, 2025",
+            "notes": [
+                "🔥 Real-time connection with Firebase – seamless experience with zero lag!",
+                "💬 Added comment and post interaction features – engage like never before!",
+                "🐞 Fixed message-sending issues in chatbox and optimized overall performance!"
+            ],
+            "changelogDescription": "🚀 This update enhances your connectivity, makes interactions smoother, and delivers a seamless experience like never before!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "💡 Brand-new comment system! Discuss posts effortlessly and stay engaged!"
+                },
+                {
+                    "type": "features",
+                    "message": "🔄 Firebase Realtime integration – instant updates and interactions, no waiting time!"
+                },
+                {
+                    "type": "improvements",
+                    "message": "⚡ Optimized chatbox messaging speed for lightning-fast responses!"
+                },
+                {
+                    "type": "fixes",
+                    "message": "🔧 Minor bug fixes to ensure a more stable and smooth experience!"
+                }
+            ],
+            "description": "✨ Version 1.3.0 brings an exciting new experience with real-time comments and seamless interactions! Try it now and feel the difference! 🚀"
         }
     ],
     "vi": [
@@ -230,6 +260,36 @@
                 }
             ],
             "description": "🌟 Phiên bản 1.2.0 là một bản cập nhật nhỏ nhưng chứa đựng niềm vui bất ngờ! Hãy sẵn sàng để khám phá và thử thách bản thân với những nội dung mới tuyệt vời!"
+        },
+        {
+            "id": 5,
+            "version": "1.3.0",
+            "releaseDate": "13 tháng 3, 2025",
+            "notes": [
+                "🔥 Kết nối thời gian thực với Firebase – trải nghiệm mượt mà, không độ trễ!",
+                "💬 Bổ sung tính năng bình luận và tương tác bài viết – giao lưu thả ga!",
+                "🐞 Vá lỗi gửi tin nhắn trong chatbox và tối ưu hiệu suất toàn hệ thống!"
+            ],
+            "changelogDescription": "🚀 Cập nhật mới giúp bạn kết nối nhanh hơn, tương tác dễ dàng hơn và tận hưởng trải nghiệm mượt mà hơn bao giờ hết!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "💡 Hệ thống bình luận hoàn toàn mới! Giờ đây bạn có thể thảo luận trực tiếp trên bài viết một cách dễ dàng!"
+                },
+                {
+                    "type": "features",
+                    "message": "🔄 Firebase Realtime đã được tích hợp – tương tác và cập nhật tức thời, không còn chờ đợi!"
+                },
+                {
+                    "type": "improvements",
+                    "message": "⚡ Tối ưu tốc độ gửi tin nhắn trong chatbox, đảm bảo phản hồi nhanh như chớp!"
+                },
+                {
+                    "type": "fixes",
+                    "message": "🔧 Sửa lỗi nhỏ giúp hệ thống hoạt động ổn định và trơn tru hơn!"
+                }
+            ],
+            "description": "✨ Phiên bản 1.3.0 mang đến một trải nghiệm mới đầy thú vị với bình luận trực tiếp và cập nhật theo thời gian thực! Hãy thử ngay để cảm nhận sự khác biệt! 🚀"
         }
     ]
 }
