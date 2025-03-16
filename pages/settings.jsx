@@ -1,8 +1,8 @@
-import ThemeInfo from '../components/ThemeInfo';
+import ThemeInfo from '../components/cards/ThemeInfo';
 import styles from '../styles/SettingsPage.module.css';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import CustomHead from '../components/Head';
+import CustomHead from '../components/base/Head';
 import { useLanguage } from '../configs/LanguageContext';
 import { useGlobalContext } from '../configs/GlobalContext';
 

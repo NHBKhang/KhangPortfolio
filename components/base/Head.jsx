@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
-import { useLanguage } from '../configs/LanguageContext';
-import { getPageTitle } from '../utils/getPageTitle';
+import { useLanguage } from '../../configs/LanguageContext';
+import { getPageTitle } from '../../utils/getPageTitle';
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
 
 const CustomHead = ({ page, params = {} }) => {
   const { t } = useTranslation('common');

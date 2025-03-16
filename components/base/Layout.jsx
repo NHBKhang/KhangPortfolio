@@ -1,17 +1,17 @@
-import Titlebar from '../components/Titlebar';
-import Sidebar from '../components/Sidebar';
-import Explorer from '../components/Explorer';
-import Bottombar from '../components/Bottombar';
+import Titlebar from './Titlebar';
+import Sidebar from './Sidebar';
+import Explorer from './Explorer';
+import Bottombar from './Bottombar';
 import Tabsbar from './Tabsbar';
-import styles from '../styles/Layout.module.css';
+import styles from '../../styles/Layout.module.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Chatbox from './boxes/Chatbox';
-import { useGlobalContext } from '../configs/GlobalContext';
+import Chatbox from '../boxes/Chatbox';
+import { useGlobalContext } from '../../configs/GlobalContext';
 import { ToastContainer } from 'react-toastify';
 import { clsx } from 'clsx';
-import BirthdayConfetti from "./holidays/BirthdayConfetti";
-import { useHoliday } from '../configs/HolidayContext';
+import BirthdayConfetti from "../holidays/BirthdayConfetti";
+import { useHoliday } from '../../configs/HolidayContext';
 
 const Layout = ({ children }) => {
   const { chatboxHidden, explorerHidden } = useGlobalContext();
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const main = document.getElementById('main-editor')
     main.scrollTop = 0
-  }, [router.pathname]);
+  }, [router.pathname, router.query]);
 
   return (
     <>

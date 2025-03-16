@@ -325,5 +325,23 @@
       "Scss"
     ],
     "source_code": "https://github.com/NHBKhang/OdooProject"
+  },
+  {
+    "id": 19,
+    "name": "Spring Sale App",
+    "image": "https://du0ulnyus7r80.cloudfront.net/wp-content/uploads/2020/02/spring-boot-logo-png-4-transparent.png",
+    "description": {
+      "vi": "Ứng dụng web bán hàng viết bằng Java Spring Boot và Hibernate. Đây là một dự án demo môn phát triển hệ thống web dùng giúp làm quen với công nghệ mới kết hợp với React.",
+      "en": "Sales web application written in Java Spring Boot and Hibernate. This is a demo project for web system development to help get acquainted with new technology combined with React."
+    },
+    "tags": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "React",
+      "Javascript",
+      "Css"
+    ],
+    "source_code": "https://github.com/NHBKhang/SpringSaleApp"
   }
 ]

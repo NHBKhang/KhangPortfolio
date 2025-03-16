@@ -2,15 +2,16 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/GamePage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CustomHead from '../../components/Head';
+import CustomHead from '../../components/base/Head';
 import { useLanguage } from '../../configs/LanguageContext';
 import Image from 'next/image';
 import { useState } from 'react';
-import Modal from '../../components/photo/Modal';
+import Modal from '../../components/modal/Modal';
 import BackButton from '../../components/buttons/BackButton';
 import { getGame, getGameIds } from '../api/games';
 import Link from 'next/link';
 import { PlayIcon } from "@heroicons/react/24/outline";
+import Loading from '../../components/other/Loading';
 
 const GamePage = ({ game }) => {
     const router = useRouter();
@@ -20,7 +21,7 @@ const GamePage = ({ game }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     if (router.isFallback) {
-        return <div>Loading...</div>;
+        return <Loading />;
     }
 
     if (!game) {
@@ -69,6 +70,10 @@ const GamePage = ({ game }) => {
                             <p>{t('releaseDate')}: </p>
                             <span>{game.releaseDate}</span>
                         </div>
+                        {game.updatedDate && <div className={styles.row}>
+                            <p>{t('updatedDate')}: </p>
+                            <span>{game.updatedDate}</span>
+                        </div>}
                     </div>
                 </div>
 

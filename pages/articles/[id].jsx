@@ -3,11 +3,11 @@ import { getArticle, getArticleIds } from '../api/articles';
 import styles from '../../styles/ArticlePage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CustomHead from '../../components/Head';
+import CustomHead from '../../components/base/Head';
 import { useLanguage } from '../../configs/LanguageContext';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
-import Modal from '../../components/photo/Modal';
+import Modal from '../../components/modal/Modal';
 import { AnimatePresence, motion } from 'framer-motion';
 import { variants } from "../../utils/animationVariants";
 import BackButton from '../../components/buttons/BackButton';
@@ -18,6 +18,7 @@ import { addReaction } from '../api/firebase/reactions';
 import { useNotification } from '../../utils/toast';
 import CommentBox from '../../components/boxes/CommentBox';
 import { addComment, getComments } from '../api/firebase/comments';
+import Loading from '../../components/other/Loading';
 
 const ArticlePage = ({ article }) => {
     const router = useRouter();
@@ -34,7 +35,7 @@ const ArticlePage = ({ article }) => {
     const [commentsLoading, setCommentsLoading] = useState(false);
 
     if (router.isFallback) {
-        return <div>Loading...</div>;
+        return <Loading />;
     }
 
     if (!article) {

@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import styles from '../styles/Titlebar.module.css';
+import styles from '../../styles/Titlebar.module.css';
 import { useState } from 'react';
-import { useGlobalContext } from '../configs/GlobalContext';
-import { useLanguage } from '../configs/LanguageContext';
+import { useGlobalContext } from '../../configs/GlobalContext';
+import { useLanguage } from '../../configs/LanguageContext';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 
