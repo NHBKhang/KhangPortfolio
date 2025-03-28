@@ -1,7 +1,22 @@
 import data from './data/articles.json';
 
-export const getArticles = () => {
-  return data;
+export const getArticles = (page = 1, pageSize = null) => {
+  pageSize = pageSize || 8;
+  page = page || 1;
+  const startIndex = (page - 1) * pageSize;
+  const endIndex = startIndex + pageSize;
+  const totalArticles = data.length;
+  const totalPages = Math.ceil(totalArticles / pageSize);
+
+  return {
+    data: data.sort((a, b) => b.id - a.id).slice(startIndex, endIndex),
+    total: totalArticles,
+    page,
+    pageSize,
+    totalPages,
+    previous: page > 1 ? page - 1 : null,
+    next: page < totalPages ? page + 1 : null,
+  };
 };
 
 export const getArticle = (id) => {

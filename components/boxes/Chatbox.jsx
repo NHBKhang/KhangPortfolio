@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import styles from '../../styles/Chatbox.module.css';
+import styles from '../../styles/components/Chatbox.module.css';
 import { useTranslation } from 'next-i18next';
 import { useNotification } from '../../utils/toast';
 import { useLanguage } from '../../configs/LanguageContext';
@@ -22,7 +22,7 @@ const Chatbox = () => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const messagesRef = useRef();
     const { t } = useTranslation('common');
     const sendNotification = useNotification();
@@ -117,7 +117,7 @@ const Chatbox = () => {
                     ))}
                     {loading &&
                         <div className={`${styles.botMessage} ${styles.loading}`}>
-                            {t('botPlaceholder')}
+                            {t('botComposing')}
                         </div>
                     }
                 </div>

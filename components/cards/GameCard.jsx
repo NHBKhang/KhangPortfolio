@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import styles from '../../styles/GameCard.module.css';
+import styles from '../../styles/components/GameCard.module.css';
 import { useTranslation } from 'next-i18next';
 import { useLanguage } from '../../configs/LanguageContext';
-
 const GameCard = ({ game }) => {
     const router = useRouter();
     const { t } = useTranslation('games');
@@ -24,7 +23,9 @@ const GameCard = ({ game }) => {
             title={game.name[language]}
         >
             <div className={styles.imageContainer}>
-                <Image src={game.image} alt={game.name[language]} layout="fill" objectFit="fill" />
+                <Image
+                    src={game.thumbnail}
+                    alt={game.name[language]} layout="fill" objectFit="fill" />
             </div>
             <div className={styles.content}>
                 <h3 className={styles.title}>{game.name[language]}</h3>

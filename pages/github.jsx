@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import GitHubCalendar from 'react-github-calendar';
 import RepoCard from '../components/cards/RepoCard';
-import styles from '../styles/GithubPage.module.css';
-import CustomHead from '../components/Head';
+import styles from '../styles/pages/GithubPage.module.css';
+import CustomHead from '../components/base/Head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useNotification } from '../utils/toast';
 import axios from 'axios';
+import Loading from '../components/other/Loading';
 
 const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
@@ -50,7 +51,7 @@ const GithubPage = () => {
     fetchGithubData();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loading />;
   if (error) return <p>Error {error.response?.data?.message}</p>;
 
   return (

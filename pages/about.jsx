@@ -1,12 +1,12 @@
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CustomHead from '../components/Head';
+import CustomHead from '../components/base/Head';
 import { getEducationTimeline, getExperienceTimeline } from './api/timeline';
-import Timeline from '../components/Timeline';
+import Timeline from '../components/other/Timeline';
 import { useLanguage } from '../configs/LanguageContext';
 import { useEffect, useState } from 'react';
-import styles from '../styles/AboutPage.module.css';
-import ProgressPie from '../components/ProgressPie';
+import styles from '../styles/pages/AboutPage.module.css';
+import ProgressPie from '../components/boxes/ProgressPie';
 
 const skills = [
   {

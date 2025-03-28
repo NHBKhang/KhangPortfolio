@@ -143,6 +143,40 @@
                 }
             ],
             "description": "✨ Version 1.3.0 brings an exciting new experience with real-time comments and seamless interactions! Try it now and feel the difference! 🚀"
+        },
+        {
+            "id": 6,
+            "version": "1.4.0",
+            "releaseDate": "April 30th, 2025",
+            "notes": [
+                "🎉 More expressive comments with a brand-new emoji collection!",
+                "📜 Browse articles, projects, and games more easily with the convenient pagination feature.",
+                "🎮 Take on a new challenge with the exciting **2048** game!"
+            ],
+            "changelogDescription": "This update brings several improvements to enhance user experience and smooth interactions!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "✨ Added an emoji system to the comment box."
+                },
+                {
+                    "type": "features",
+                    "message": "🔢 Introduced the **2048** puzzle game – Can you reach the 2048 tile?"
+                },
+                {
+                    "type": "improvements",
+                    "message": "🚀 Optimized page loading speed for a faster and smoother experience."
+                },
+                {
+                    "type": "improvements",
+                    "message": "📑 Implemented pagination for articles, projects, and games, making navigation easier and more organized!"
+                },
+                {
+                    "type": "fixes",
+                    "message": "🐞 Fixed minor display issues in the comment section."
+                }
+            ],
+            "description": "Version 1.4.0 brings significant upgrades, including colorful comments, a brand-new game, and a smoother overall experience!"
         }
     ],
     "vi": [
@@ -290,6 +324,40 @@
                 }
             ],
             "description": "✨ Phiên bản 1.3.0 mang đến một trải nghiệm mới đầy thú vị với bình luận trực tiếp và cập nhật theo thời gian thực! Hãy thử ngay để cảm nhận sự khác biệt! 🚀"
+        },
+        {
+            "id": 6,
+            "version": "1.4.0",
+            "releaseDate": "30 tháng 4, 2025",
+            "notes": [
+                "🎉 Bình luận sống động hơn với bộ sưu tập biểu tượng cảm xúc mới!",
+                "📜 Duyệt bài viết, dự án và trò chơi dễ dàng hơn với tính năng phân trang tiện lợi.",
+                "🎮 Trải nghiệm thử thách mới với trò chơi **2048** đầy hấp dẫn!"
+            ],
+            "changelogDescription": "Bản cập nhật này mang đến nhiều cải tiến giúp trải nghiệm người dùng mượt mà hơn!",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": "✨ Thêm hệ thống biểu tượng cảm xúc vào hộp bình luận."
+                },
+                {
+                    "type": "features",
+                    "message": "🔢 Ra mắt trò chơi trí tuệ **2048** – Bạn có thể đạt được ô 2048 chứ?"
+                },
+                {
+                    "type": "improvements",
+                    "message": "🚀 Cải thiện tốc độ tải trang, giúp mọi thứ nhanh hơn bao giờ hết."
+                },
+                {
+                    "type": "improvements",
+                    "message": "📑 Phân trang bài viết, dự án và trò chơi giúp theo dõi dễ dàng hơn, không còn lộn xộn!"
+                },
+                {
+                    "type": "fixes",
+                    "message": "🐞 Sửa lỗi nhỏ về hiển thị bình luận."
+                }
+            ],
+            "description": "Phiên bản 1.4.0 mang đến những cải tiến đáng kể với bình luận đầy màu sắc, trò chơi mới và trải nghiệm nhanh chóng hơn!"
         }
     ]
 }

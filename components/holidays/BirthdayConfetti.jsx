@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import audioSingleton from "../../configs/Singleton";
-import styles from "../../styles/Birthday.module.css";
+import styles from "../../styles/components/Birthday.module.css";
 import { GiSoundOn, GiSoundOff } from "react-icons/gi";
 import FloatingBalloons from "./FloatingBalloons";
 import { useHoliday } from "../../configs/HolidayContext";

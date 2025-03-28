@@ -1,15 +1,16 @@
 import { useRouter } from 'next/router';
 import { getProject, getProjectIds } from '../api/projects';
-import styles from '../../styles/ProjectPage.module.css';
+import styles from '../../styles/pages/ProjectPage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CustomHead from '../../components/Head';
+import CustomHead from '../../components/base/Head';
 import { useLanguage } from '../../configs/LanguageContext';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Modal from '../../components/photo/Modal';
+import Modal from '../../components/modal/Modal';
 import BackButton from '../../components/buttons/BackButton';
+import Loading from '../../components/other/Loading';
 
 const ProjectPage = ({ project }) => {
     const router = useRouter();
@@ -19,7 +20,7 @@ const ProjectPage = ({ project }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     if (router.isFallback) {
-        return <div>Loading...</div>;
+        return <Loading />;
     }
 
     if (!project) {
@@ -37,7 +38,7 @@ const ProjectPage = ({ project }) => {
     return (
         <>
             <CustomHead page={'project'} params={{ name: project.name }} />
-            <BackButton pathname={'/projects'}/>
+            <BackButton pathname={'/projects'} />
             <div className={styles.container}>
                 <h1 className={styles.title}>{project.name}</h1>
                 <Image

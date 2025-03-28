@@ -5,8 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import { GlobalProvider } from "../configs/GlobalContext";
 import { appWithTranslation } from 'next-i18next';
 import { LanguageProvider } from "../configs/LanguageContext";
-import Layout from "../components/Layout";
-import Head from "../components/Head";
+import Layout from "../components/base/Layout";
+import Head from "../components/base/Head";
 import { HolidayProvider} from "../configs/HolidayContext";
 
 function MyApp({ Component, pageProps }) {

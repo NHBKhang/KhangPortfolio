@@ -3,6 +3,7 @@
     "tagsLabel": "Genres",
     "version": "Version",
     "releaseDate": "Release date",
+    "updatedDate": "Updated date",
     "description": "Description",
     "play": "Play game"
 }

@@ -16,6 +16,9 @@ module.exports = {
       'www.vietnamworks.com',
       'cdn-icons-png.flaticon.com',
       'media.hanoitimes.vn',
+      'du0ulnyus7r80.cloudfront.net',
+      'www.cisco.com',
+      'img.freepik.com'
     ],
   },
   async redirects() {

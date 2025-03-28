@@ -325,5 +325,62 @@
       "Scss"
     ],
     "source_code": "https://github.com/NHBKhang/OdooProject"
+  },
+  {
+    "id": 19,
+    "name": "Network Management",
+    "image": "https://www.cisco.com/c/dam/assets/swa/img/anchor-info/network-management-new-628x353.jpg",
+    "description": {
+      "vi": "Ứng dụng quản lý thiết bị mạng giúp theo dõi, cấu hình và tối ưu hóa hiệu suất của các thiết bị mạng trong hệ thống.",
+      "en": "A network device management application that helps monitor, configure, and optimize the performance of network devices in a system."
+    },
+    "tags": [
+      "Node",
+      "Angular",
+      "MongoDB",
+      "Javascript",
+      "Html",
+      "Typescript",
+      "Scss"
+    ],
+    "source_code": "https://github.com/NHBKhang/NetworkManagement"
+  },
+  {
+    "id": 20,
+    "name": "Spring Sale App",
+    "image": "https://du0ulnyus7r80.cloudfront.net/wp-content/uploads/2020/02/spring-boot-logo-png-4-transparent.png",
+    "description": {
+      "vi": "Ứng dụng web bán hàng viết bằng Java Spring framework và Hibernate. Đây là một dự án demo môn phát triển hệ thống web dùng giúp làm quen với công nghệ mới kết hợp với React.",
+      "en": "Sales web application written in Java Spring framework and Hibernate. This is a demo project for web system development to help get acquainted with new technology combined with React."
+    },
+    "tags": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "React",
+      "Javascript",
+      "Css"
+    ],
+    "source_code": "https://github.com/NHBKhang/SpringSaleApp"
+  },
+  {
+    "id": 21,
+    "name": "Gym Health Monitor",
+    "image": "https://img.freepik.com/free-vector/doctor-smartwatch-with-heart-medical-icons-smartwatch-health-tracker-health-monitor-activity-tracking-concept-white-background-bright-vibrant-violet-isolated-illustration_335657-265.jpg",
+    "description": {
+      "vi": "Ứng dụng theo dõi sức khỏe phòng gym giúp giám sát chỉ số cơ thể, hiệu suất tập luyện và đề xuất kế hoạch tập luyện phù hợp.",
+      "en": "A gym health monitoring application that tracks body metrics, workout performance, and suggests personalized training plans."
+    },
+    "tags": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "Firebase",
+      "React",
+      "Javascript",
+      "Html",
+      "Css"
+    ],
+    "source_code": "https://github.com/NHBKhang/GymHealthMonitor"
   }
 ]

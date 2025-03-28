@@ -73,6 +73,7 @@
     cursor: pointer;
     width: auto;
     padding: 10px;
+    width: 100%;
 }
 
 .inlineCard:hover {

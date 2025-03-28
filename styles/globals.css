@@ -135,12 +135,28 @@
   border: 0.1rem solid rgb(49, 120, 198);
 }
 
+.Spring {
+  border: 0.1rem solid rgb(74, 255, 98);
+}
+
+.Node {
+  border: 0.1rem solid rgb(194, 170, 13);
+}
+
+.Angular {
+  border: 0.1rem solid rgb(194, 13, 164);
+}
+
+.MongoDB {
+  border: 0.1rem solid rgb(43, 155, 110);
+}
+
 .PostgreSQL:hover,
 .\.Net:hover,
 .Next:hover,
 .Tailwind:hover,
 .Python:hover,
-.C\#:hover ,
+.C\#:hover,
 .Objective\-C\+\+:hover,
 .Objective\-C:hover,
 .Javascript:hover,
@@ -164,7 +180,11 @@
 .Flask:hover,
 .node:hover,
 .React:hover,
-.Odoo:hover {
+.Odoo:hover,
+.Spring:hover,
+.Node:hover,
+.Angular:hover,
+.MongoDB:hover {
   background: rgba(82, 143, 240, 0.25);
 }
 
@@ -184,9 +204,31 @@
   border: 0.1rem solid rgb(240, 158, 82);
 }
 
+.Strategy {
+  border: 0.1rem solid rgb(225, 36, 36);
+}
+
+.Brain {
+  border: 0.1rem solid rgb(225, 36, 193);
+}
+
+.Casual {
+  border: 0.1rem solid rgb(81, 85, 164);
+}
+
 .Logic:hover,
 .Puzzle:hover,
 .Creative:hover,
-.Fun:hover {
+.Fun:hover,
+.Strategy:hover,
+.Brain:hover,
+.Casual:hover {
   background: rgba(82, 143, 240, 0.25);
+}
+
+@font-face {
+  font-family: 'LoveDays';
+  src: url('/fonts/LoveDays.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

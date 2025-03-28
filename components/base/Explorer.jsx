@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import ChevronRight from '../components/icons/ChevronRight';
-import styles from '../styles/Explorer.module.css';
+import ChevronRight from '../../components/icons/ChevronRight';
+import styles from '../../styles/components/Explorer.module.css';
 import { useRouter } from 'next/router';
-import { useGlobalContext } from '../configs/GlobalContext';
+import { useGlobalContext } from '../../configs/GlobalContext';
 
 const explorerItems = [
   { name: 'home.jsx', path: '/', icon: 'icon/react_icon.svg' },

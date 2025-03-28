@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { ArrowUturnLeftIcon } from "@heroicons/react/24/outline";
-import styles from "../../styles/Button.module.css";
+import styles from "../../styles/components/Button.module.css";
 import { useTranslation } from "next-i18next";
 
 const BackButton = ({ 

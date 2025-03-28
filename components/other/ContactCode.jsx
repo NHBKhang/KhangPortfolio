@@ -1,5 +1,5 @@
-import { useLanguage } from '../configs/LanguageContext';
-import styles from '../styles/ContactCode.module.css';
+import { useLanguage } from '../../configs/LanguageContext';
+import styles from '../../styles/components/ContactCode.module.css';
 
 const contactItems = [
   {

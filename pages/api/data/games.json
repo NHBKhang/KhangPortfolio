@@ -5,7 +5,6 @@
             "vi": "Trò chơi mật khẩu",
             "en": "Password Game"
         },
-        "image": "/img/games/game_1.webp",
         "description": {
             "vi": "Password Game là một trò chơi thách thức tư duy và sáng tạo. Nhiệm vụ của bạn là tạo mật khẩu đáp ứng tất cả các quy tắc phức tạp mà trò chơi đưa ra.",
             "en": "Password Game is a challenging game that tests your thinking and creativity. Your mission is to create passwords that meet all the complex rules provided by the game."
@@ -16,8 +15,30 @@
             "Creative",
             "Fun"
         ],
-        "version": "1.0",
+        "version": "1.1",
         "releaseDate": "29/01/2025",
-        "href": "/games/password-games"
+        "updatedDate": "28/03/2025",
+        "slug": "password-game"
+    },
+    {
+        "id": 2,
+        "name": {
+            "vi": "Trò chơi 2048",
+            "en": "2048 Game"
+        },
+        "description": {
+            "vi": "2048 là một trò chơi logic thú vị, nơi bạn cần kết hợp các ô số để đạt được ô 2048.",
+            "en": "2048 is a fun logic game where you need to merge tiles to reach the 2048 tile."
+        },
+        "tags": [
+            "Puzzle",
+            "Strategy",
+            "Brain Training",
+            "Casual"
+        ],
+        "version": "1.0",
+        "releaseDate": "28/03/2025",
+        "updatedDate": "",
+        "slug": "2048"
     }
 ]

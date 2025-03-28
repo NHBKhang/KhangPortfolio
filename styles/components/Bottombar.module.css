@@ -8,6 +8,8 @@
   align-items: center;
   justify-content: space-between;
   font-size: 0.8rem;
+  position: relative;
+  z-index: 24;
 }
 
 .bottomBar a {

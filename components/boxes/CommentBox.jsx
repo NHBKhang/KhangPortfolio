@@ -1,15 +1,17 @@
 import { useState } from "react";
-import styles from "../../styles/CommentBox.module.css";
+import styles from "../../styles/components/CommentBox.module.css";
 import moment from "moment";
 import { useTranslation } from "next-i18next";
 import { useNotification } from "../../utils/toast";
 import { useLanguage } from "../../configs/LanguageContext";
+import EmojiPicker from "emoji-picker-react";
 
 const CommentBox = ({ comments, onAddComment }) => {
     const { t } = useTranslation('common');
     const { language } = useLanguage();
     const sendNotification = useNotification();
     const [comment, setComment] = useState("");
+    const [showEmojiPicker, setShowEmojiPicker] = useState(false);
 
     const handleAddComment = async () => {
         if (!comment.trim()) {
@@ -25,6 +27,11 @@ const CommentBox = ({ comments, onAddComment }) => {
         setComment("");
     };
 
+    const handleEmojiClick = (emojiObject) => {
+        setComment((prev) => prev + emojiObject.emoji);
+        setShowEmojiPicker(false);
+    };
+
     return (
         <div className={styles.container}>
             <div className={styles.inputArea}>
@@ -33,7 +40,19 @@ const CommentBox = ({ comments, onAddComment }) => {
                     onChange={(e) => setComment(e.target.value)}
                     placeholder={t('commentPlaceholder')}
                 />
-                <button onClick={handleAddComment}>{t('post')}</button>
+                <div className={styles.buttonGroup}>
+                    <div className={styles.emojiContainer}>
+                        <button className={styles.emojiButton} onClick={() => setShowEmojiPicker((prev) => !prev)}>
+                            {t('emoji')}
+                        </button>
+                        {showEmojiPicker && (
+                            <div className={styles.emojiPicker}>
+                                <EmojiPicker onEmojiClick={handleEmojiClick} />
+                            </div>
+                        )}
+                    </div>
+                    <button onClick={handleAddComment}>{t('post')}</button>
+                </div>
             </div>
             <ul className={styles.commentList}>
                 {comments.map((c, index) => (

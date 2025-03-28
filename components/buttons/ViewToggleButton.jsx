@@ -1,5 +1,5 @@
 import { FiList, FiGrid } from "react-icons/fi";
-import styles from "../../styles/Button.module.css";
+import styles from "../../styles/components/Button.module.css";
 
 const ViewToggleButton = ({ currentView, setCurrentView }) => {
     return (

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import ContactCode from '../components/ContactCode';
-import styles from '../styles/ContactPage.module.css';
+import ContactCode from '../components/other/ContactCode';
+import styles from '../styles/pages/ContactPage.module.css';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CustomHead from '../components/Head';
+import CustomHead from '../components/base/Head';
 import { notify, useNotification } from '../utils/toast';
 
 const ContactPage = () => {

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import styles from "../../styles/PasswordGame.module.css";
+import styles from "../../styles/pages/PasswordGame.module.css";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BackButton from "../../components/buttons/BackButton";
-import CustomHead from "../../components/Head";
+import CustomHead from "../../components/base/Head";
 import { getGame } from "../api/games";
 import { useLanguage } from "../../configs/LanguageContext";
 import DialogBox from "../../components/boxes/DialogBox";
@@ -138,8 +138,6 @@ const PasswordGame = ({ game }) => {
         }
     };
 
-    const isPasswordValid = Object.values(validation).every(Boolean);
-
     return (
         <>
             <CustomHead page={'playingGame'} params={{ name: game.name[language] }} />
@@ -168,15 +166,12 @@ const PasswordGame = ({ game }) => {
                         className={`${styles.brutalistInput} ${styles.smoothType}`}
                     />
                     <label className={styles.brutalistLabel}>{t('inputLabel')}</label>
-                </div>
-                <div className={styles.strengthMeter}>
-                    <div
-                        className={styles.strengthBar}
-                        style={{
-                            width: `${(Object.values(validation).filter(Boolean).length / rules.length) * 100}% !important`,
-                            backgroundColor: isPasswordValid ? "green" : "red",
-                        }}
-                    ></div>
+                    
+                    {completedRules.length === 5 &&
+                        <button className={styles.glitchBtn}>
+                            {t('submit')}
+                        </button>
+                    }
                 </div>
                 <ul className={styles.rules}>
                     {rules

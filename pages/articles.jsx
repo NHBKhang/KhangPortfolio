@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import ArticleCard from '../components/cards/ArticleCard';
-import CustomHead from '../components/Head';
-import styles from '../styles/ArticlesPage.module.css';
+import CustomHead from '../components/base/Head';
+import styles from '../styles/pages/ArticlesPage.module.css';
 import { getArticleIds, getArticles } from './api/articles';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getPostsMetrics } from './api/firebase/stats';
+import Pagination from '../components/buttons/Pagination';
 
-const ArticlesPage = ({ articles, articleIds }) => {
+const ArticlesPage = ({ articles, articleIds, pagination }) => {
   const { t } = useTranslation('articles');
   const [stats, setStats] = useState([]);
 
@@ -46,20 +47,30 @@ const ArticlesPage = ({ articles, articleIds }) => {
           <p>{t('noArticles')}</p>
         )}
       </div>
+
+      <Pagination pagination={pagination} />
     </>
   );
 };
 
-export async function getStaticProps({ locale }) {
-  const articles = getArticles();
-  const sortedArticles = articles.sort((a, b) => b.id - a.id);
+export async function getServerSideProps(context) {
+  const { query, locale } = context;
+  const page = query?.page ? parseInt(query.page, 10) : 1;
+  const pageSize = query?.pageSize ? parseInt(query.pageSize, 10) : null;
 
+  const res = getArticles(page, pageSize);
   const articleIds = getArticleIds();
 
   return {
     props: {
-      articles: sortedArticles,
       articleIds: articleIds,
+      articles: res.data,
+      pagination: {
+        previous: res.previous,
+        current: res.page,
+        next: res.next,
+        total: res.totalPages
+      },
       ...(await serverSideTranslations(locale, ['articles', 'common']))
     }
   };

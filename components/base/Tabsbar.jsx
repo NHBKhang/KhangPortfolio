@@ -1,6 +1,6 @@
 import Tab from './Tab';
-import styles from '../styles/Tabsbar.module.css';
-import { useGlobalContext } from '../configs/GlobalContext';
+import styles from '../../styles/components/Tabsbar.module.css';
+import { useGlobalContext } from '../../configs/GlobalContext';
 
 const Tabsbar = () => {
   const { explorerHidden } = useGlobalContext();
