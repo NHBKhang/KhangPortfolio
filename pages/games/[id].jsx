@@ -12,7 +12,6 @@ import { getGame, getGameIds } from '../api/games';
 import Link from 'next/link';
 import { PlayIcon } from "@heroicons/react/24/outline";
 import Loading from '../../components/other/Loading';
-import { getStaticImg } from '../../utils/utils';
 
 const GamePage = ({ game }) => {
     const router = useRouter();
@@ -45,7 +44,7 @@ const GamePage = ({ game }) => {
                 <h1 className={styles.title}>{game.name[language]}</h1>
                 <div className={styles.wrapper}>
                     <Image
-                        src={getStaticImg(game.slug)}
+                        src={game.thumbnail}
                         alt={game.name[language]}
                         width={800}
                         height={450}
@@ -86,7 +85,7 @@ const GamePage = ({ game }) => {
                 <div className={styles.buttonGroup}>
                     <Link
                         className={styles.playGame}
-                        href={`games/${game.slug}`}>
+                        href={game.href}>
                         <PlayIcon />
                         <span>{t('play')}</span>
                     </Link>

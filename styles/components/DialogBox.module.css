@@ -2,7 +2,7 @@
     width: calc(100% - 3rem);
     height: calc(100% - 2rem);
     margin-top: -4rem;
-    margin-left: -3.5rem;
+    margin-left: 0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
