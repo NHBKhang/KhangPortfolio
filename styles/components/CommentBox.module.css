@@ -6,7 +6,7 @@
 .inputArea {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.75rem;
 }
 
 .container textarea {
@@ -19,7 +19,6 @@
 }
 
 .container button {
-    align-self: flex-end;
     padding: 8px 12px;
     background: var(--button-bg);
     color: var(--button-text);
@@ -76,4 +75,34 @@
 
 .content>p {
     font-size: 1rem;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.emojiContainer {
+    position: relative;
+    display: inline;
+}
+
+.emojiButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--button-3nd-bg) !important;
+    color: var(--text-2nd-clr);
+}
+
+.emojiPicker {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

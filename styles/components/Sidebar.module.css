@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: space-between;
   width: 4.5vw;
-  height: calc(100vh - 30px - 25px);
+  height: calc(100vh - 55px);
+  z-index: 25;
 }
 
 .iconContainer {

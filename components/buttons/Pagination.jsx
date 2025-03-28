@@ -12,8 +12,8 @@ const Pagination = ({ pagination, }) => {
             router.push({
                 pathname: router.pathname,
                 query: {
-                    page, 
-                    ...router.query
+                    ...router.query,
+                    page
                 }
             }, undefined, { shallow: false, scroll: true });
         }

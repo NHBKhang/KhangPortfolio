@@ -139,6 +139,18 @@
   border: 0.1rem solid rgb(74, 255, 98);
 }
 
+.Node {
+  border: 0.1rem solid rgb(194, 170, 13);
+}
+
+.Angular {
+  border: 0.1rem solid rgb(194, 13, 164);
+}
+
+.MongoDB {
+  border: 0.1rem solid rgb(43, 155, 110);
+}
+
 .PostgreSQL:hover,
 .\.Net:hover,
 .Next:hover,
@@ -169,7 +181,10 @@
 .node:hover,
 .React:hover,
 .Odoo:hover,
-.Spring:hover {
+.Spring:hover,
+.Node:hover,
+.Angular:hover,
+.MongoDB:hover {
   background: rgba(82, 143, 240, 0.25);
 }
 
@@ -204,7 +219,10 @@
 .Logic:hover,
 .Puzzle:hover,
 .Creative:hover,
-.Fun:hover {
+.Fun:hover,
+.Strategy:hover,
+.Brain:hover,
+.Casual:hover {
   background: rgba(82, 143, 240, 0.25);
 }
 

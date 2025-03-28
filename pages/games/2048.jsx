@@ -74,26 +74,43 @@ const moveBoard = (board, direction) => {
 };
 
 const Tile = ({ value }) => {
-    return <div className={`${styles.tile} ${styles[`tile-${value}`]}`}>{value !== 0 ? value : ""}</div>;
-}
+    return (
+        <div 
+            className={`${styles.tile} ${styles[`tile-${value}`]}`} 
+            style={{
+                animation: value ? 'pop 0.1s ease-in-out' : 'none'
+            }}
+        >
+            {value !== 0 ? value : ""}
+        </div>
+    );
+};
 
 const Game2048 = ({ game }) => {
     const [board, setBoard] = useState(addNewTile(getEmptyBoard()));
     const { t } = useTranslation('2048-game');
     const { language } = useLanguage();
     const { setChatboxHidden, setExplorerHidden } = useGlobalContext();
+    const [hydrated, setHydrated] = useState(false);
 
     useEffect(() => {
         setChatboxHidden(true);
-        setExplorerHidden(true)
+        setExplorerHidden(true);
+        setHydrated(true);
 
         const handleKeyDown = (e) => {
             const keyMap = { ArrowLeft: "LEFT", ArrowRight: "RIGHT", ArrowUp: "UP", ArrowDown: "DOWN" };
-            if (keyMap[e.key]) setBoard(prev => moveBoard(prev, keyMap[e.key]));
+            if (keyMap[e.key]) {
+                e.preventDefault()
+                setBoard(prev => moveBoard(prev, keyMap[e.key]));
+            }
         };
+
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
+    
+    if (!hydrated) return null;
 
     return (
         <>

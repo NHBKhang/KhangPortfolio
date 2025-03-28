@@ -329,10 +329,10 @@
   {
     "id": 19,
     "name": "Network Management",
-    "image": "",
+    "image": "https://www.cisco.com/c/dam/assets/swa/img/anchor-info/network-management-new-628x353.jpg",
     "description": {
-      "vi": "Ứng dụng quản lý mạng",
-      "en": "Network Management application"
+      "vi": "Ứng dụng quản lý thiết bị mạng giúp theo dõi, cấu hình và tối ưu hóa hiệu suất của các thiết bị mạng trong hệ thống.",
+      "en": "A network device management application that helps monitor, configure, and optimize the performance of network devices in a system."
     },
     "tags": [
       "Node",
@@ -366,10 +366,10 @@
   {
     "id": 21,
     "name": "Gym Health Monitor",
-    "image": "",
+    "image": "https://img.freepik.com/free-vector/doctor-smartwatch-with-heart-medical-icons-smartwatch-health-tracker-health-monitor-activity-tracking-concept-white-background-bright-vibrant-violet-isolated-illustration_335657-265.jpg",
     "description": {
-      "vi": "",
-      "en": ""
+      "vi": "Ứng dụng theo dõi sức khỏe phòng gym giúp giám sát chỉ số cơ thể, hiệu suất tập luyện và đề xuất kế hoạch tập luyện phù hợp.",
+      "en": "A gym health monitoring application that tracks body metrics, workout performance, and suggests personalized training plans."
     },
     "tags": [
       "Java",
@@ -381,6 +381,6 @@
       "Html",
       "Css"
     ],
-    "source_code": ""
+    "source_code": "https://github.com/NHBKhang/GymHealthMonitor"
   }
 ]
