@@ -328,11 +328,30 @@
   },
   {
     "id": 19,
+    "name": "Network Management",
+    "image": "",
+    "description": {
+      "vi": "Ứng dụng quản lý mạng",
+      "en": "Network Management application"
+    },
+    "tags": [
+      "Node",
+      "Angular",
+      "MongoDB",
+      "Javascript",
+      "Html",
+      "Typescript",
+      "Scss"
+    ],
+    "source_code": "https://github.com/NHBKhang/NetworkManagement"
+  },
+  {
+    "id": 20,
     "name": "Spring Sale App",
     "image": "https://du0ulnyus7r80.cloudfront.net/wp-content/uploads/2020/02/spring-boot-logo-png-4-transparent.png",
     "description": {
-      "vi": "Ứng dụng web bán hàng viết bằng Java Spring Boot và Hibernate. Đây là một dự án demo môn phát triển hệ thống web dùng giúp làm quen với công nghệ mới kết hợp với React.",
-      "en": "Sales web application written in Java Spring Boot and Hibernate. This is a demo project for web system development to help get acquainted with new technology combined with React."
+      "vi": "Ứng dụng web bán hàng viết bằng Java Spring framework và Hibernate. Đây là một dự án demo môn phát triển hệ thống web dùng giúp làm quen với công nghệ mới kết hợp với React.",
+      "en": "Sales web application written in Java Spring framework and Hibernate. This is a demo project for web system development to help get acquainted with new technology combined with React."
     },
     "tags": [
       "Java",
@@ -343,5 +362,25 @@
       "Css"
     ],
     "source_code": "https://github.com/NHBKhang/SpringSaleApp"
+  },
+  {
+    "id": 21,
+    "name": "Gym Health Monitor",
+    "image": "",
+    "description": {
+      "vi": "",
+      "en": ""
+    },
+    "tags": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "Firebase",
+      "React",
+      "Javascript",
+      "Html",
+      "Css"
+    ],
+    "source_code": ""
   }
 ]

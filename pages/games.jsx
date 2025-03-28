@@ -1,17 +1,23 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import styles from "../styles/GamesPage.module.css";
+import styles from "../styles/pages/GamesPage.module.css";
 import { useTranslation } from "next-i18next";
 import CustomHead from "../components/base/Head";
 import GameCard from "../components/cards/GameCard";
 import { getGames } from "./api/games";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GameInlineCard from "../components/cards/GameInlineCard";
 import ViewToggleButton from "../components/buttons/ViewToggleButton";
 import Pagination from "../components/buttons/Pagination";
+import clsx from "clsx";
+import AOS from "aos";
 
 const GamesPage = ({ games, pagination }) => {
     const { t } = useTranslation('games');
-    const [currentView, setCurrentView] = useState(0)
+    const [currentView, setCurrentView] = useState(0);
+
+    useEffect(() => {
+        AOS.refresh();
+    }, [currentView]);
 
     return (
         <>
@@ -22,7 +28,9 @@ const GamesPage = ({ games, pagination }) => {
                     <ViewToggleButton currentView={currentView} setCurrentView={setCurrentView} />
                 </div>
             </div>
-            <div className={styles.container} data-aos="slide-right">
+            <div
+                className={clsx(styles.container, { [styles.column]: currentView === 1 })}
+                data-aos="slide-right">
                 {games.length > 0 ? (
                     games.map((game) => (
                         currentView === 0 ?

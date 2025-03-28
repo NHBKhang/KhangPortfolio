@@ -143,6 +143,30 @@
                 }
             ],
             "description": "✨ Version 1.3.0 brings an exciting new experience with real-time comments and seamless interactions! Try it now and feel the difference! 🚀"
+        },
+        {
+            "id": 6,
+            "version": "1.4.0",
+            "releaseDate": "April 30th, 2025",
+            "notes": [
+                ""
+            ],
+            "changelogDescription": "",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": ""
+                },
+                {
+                    "type": "improvements",
+                    "message": ""
+                },
+                {
+                    "type": "fixes",
+                    "message": ""
+                }
+            ],
+            "description": ""
         }
     ],
     "vi": [
@@ -290,6 +314,30 @@
                 }
             ],
             "description": "✨ Phiên bản 1.3.0 mang đến một trải nghiệm mới đầy thú vị với bình luận trực tiếp và cập nhật theo thời gian thực! Hãy thử ngay để cảm nhận sự khác biệt! 🚀"
+        },
+        {
+            "id": 6,
+            "version": "1.4.0",
+            "releaseDate": "30 tháng 4, 2025",
+            "notes": [
+                ""
+            ],
+            "changelogDescription": "",
+            "changelogs": [
+                {
+                    "type": "features",
+                    "message": ""
+                },
+                {
+                    "type": "improvements",
+                    "message": ""
+                },
+                {
+                    "type": "fixes",
+                    "message": ""
+                }
+            ],
+            "description": ""
         }
     ]
 }

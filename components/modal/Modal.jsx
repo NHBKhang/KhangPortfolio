@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import useKeypress from "react-use-keypress";
 import SharedModal from "./SharedModal";
-import styles from "../../styles/Modal.module.css";
+import styles from "../../styles/components/Modal.module.css";
 
 const Modal = ({ images, onClose, index = 0, navigation = true }) => {
     const overlayRef = useRef();

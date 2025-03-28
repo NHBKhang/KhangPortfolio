@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../styles/Birthday.module.css";
+import styles from "../../styles/components/Birthday.module.css";
 
 const FloatingBalloons = () => {
     return (

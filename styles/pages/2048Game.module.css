@@ -1,0 +1,114 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-family: "LoveDays", sans-serif;
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin: 1rem 0 2rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    background: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+    margin: auto;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background: #cdc1b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.tile-2 {
+    background: #eee4da;
+    color: #776e65;
+}
+
+.tile-4 {
+    background: #ede0c8;
+    color: #776e65;
+}
+
+.tile-8 {
+    background: #f2b179;
+    color: #fff;
+}
+
+.tile-16 {
+    background: #f59563;
+    color: #fff;
+}
+
+.tile-32 {
+    background: #f67c5f;
+    color: #fff;
+}
+
+.tile-64 {
+    background: #f65e3b;
+    color: #fff;
+}
+
+.tile-128 {
+    background: #edcf72;
+    color: #fff;
+    font-size: 28px;
+}
+
+.tile-256 {
+    background: #edcc61;
+    color: #fff;
+    font-size: 28px;
+}
+
+.tile-512 {
+    background: #edc850;
+    color: #fff;
+    font-size: 28px;
+}
+
+.tile-1024 {
+    background: #edc53f;
+    color: #fff;
+    font-size: 28px;
+}
+
+.tile-2048 {
+    background: #edc22e;
+    color: #fff;
+    font-size: 28px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: 2rem;
+    }
+}

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { getProject, getProjectIds } from '../api/projects';
-import styles from '../../styles/ProjectPage.module.css';
+import styles from '../../styles/pages/ProjectPage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CustomHead from '../../components/base/Head';

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import ChevronRight from '../../components/icons/ChevronRight';
-import styles from '../../styles/Explorer.module.css';
+import styles from '../../styles/components/Explorer.module.css';
 import { useRouter } from 'next/router';
 import { useGlobalContext } from '../../configs/GlobalContext';
 

@@ -3,7 +3,7 @@ import ForkIcon from '../icons/ForkIcon';
 import StarIcon from '../icons/StarIcon';
 import GithubIcon from '../icons/GithubIcon';
 import LinkIcon from '../icons/LinkIcon';
-import styles from '../../styles/RepoCard.module.css';
+import styles from '../../styles/components/RepoCard.module.css';
 
 const RepoCard = ({ repo }) => {
   return (

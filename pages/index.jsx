@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Illustration from '../components/base/Illustration';
-import styles from '../styles/HomePage.module.css';
+import styles from '../styles/pages/HomePage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 

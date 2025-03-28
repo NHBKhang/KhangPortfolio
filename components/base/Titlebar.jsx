@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../../styles/Titlebar.module.css';
+import styles from '../../styles/components/Titlebar.module.css';
 import { useState } from 'react';
 import { useGlobalContext } from '../../configs/GlobalContext';
 import { useLanguage } from '../../configs/LanguageContext';

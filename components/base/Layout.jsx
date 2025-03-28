@@ -3,7 +3,7 @@ import Sidebar from './Sidebar';
 import Explorer from './Explorer';
 import Bottombar from './Bottombar';
 import Tabsbar from './Tabsbar';
-import styles from '../../styles/Layout.module.css';
+import styles from '../../styles/components/Layout.module.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Chatbox from '../boxes/Chatbox';

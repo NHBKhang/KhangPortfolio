@@ -1,5 +1,5 @@
 import ThemeInfo from '../components/cards/ThemeInfo';
-import styles from '../styles/SettingsPage.module.css';
+import styles from '../styles/pages/SettingsPage.module.css';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import CustomHead from '../components/base/Head';

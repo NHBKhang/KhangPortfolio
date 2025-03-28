@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import styles from '../../styles/Chatbox.module.css';
+import styles from '../../styles/components/Chatbox.module.css';
 import { useTranslation } from 'next-i18next';
 import { useNotification } from '../../utils/toast';
 import { useLanguage } from '../../configs/LanguageContext';

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import styles from '../../styles/GamePage.module.css';
+import styles from '../../styles/pages/GamePage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CustomHead from '../../components/base/Head';
@@ -12,6 +12,7 @@ import { getGame, getGameIds } from '../api/games';
 import Link from 'next/link';
 import { PlayIcon } from "@heroicons/react/24/outline";
 import Loading from '../../components/other/Loading';
+import { getStaticImg } from '../../utils/utils';
 
 const GamePage = ({ game }) => {
     const router = useRouter();
@@ -44,7 +45,7 @@ const GamePage = ({ game }) => {
                 <h1 className={styles.title}>{game.name[language]}</h1>
                 <div className={styles.wrapper}>
                     <Image
-                        src={game.image}
+                        src={getStaticImg(game.slug)}
                         alt={game.name[language]}
                         width={800}
                         height={450}
@@ -83,8 +84,9 @@ const GamePage = ({ game }) => {
                 <p className={styles.description}>{game.description[language]}</p>
 
                 <div className={styles.buttonGroup}>
-                    <Link className={styles.playGame}
-                        href={game.href}>
+                    <Link
+                        className={styles.playGame}
+                        href={`games/${game.slug}`}>
                         <PlayIcon />
                         <span>{t('play')}</span>
                     </Link>

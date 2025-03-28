@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../../styles/ThemeInfo.module.css';
+import styles from '../../styles/components/ThemeInfo.module.css';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
 import { useGlobalContext } from '../../configs/GlobalContext';

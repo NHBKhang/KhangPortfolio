@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ContactCode from '../components/other/ContactCode';
-import styles from '../styles/ContactPage.module.css';
+import styles from '../styles/pages/ContactPage.module.css';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';

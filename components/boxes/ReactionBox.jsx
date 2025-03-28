@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../../styles/ReactionBox.module.css";
+import styles from "../../styles/components/ReactionBox.module.css";
 import { useState } from "react";
 
 const reactions = [

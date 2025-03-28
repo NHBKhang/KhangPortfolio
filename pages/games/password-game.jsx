@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "../../styles/PasswordGame.module.css";
+import styles from "../../styles/pages/PasswordGame.module.css";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BackButton from "../../components/buttons/BackButton";

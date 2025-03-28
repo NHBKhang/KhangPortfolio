@@ -2,7 +2,7 @@ import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { variants } from "../../utils/animationVariants";
-import styles from "../../styles/SharedModal.module.css";
+import styles from "../../styles/components/SharedModal.module.css";
 import Image from "next/image";
 import {
     ArrowDownTrayIcon,

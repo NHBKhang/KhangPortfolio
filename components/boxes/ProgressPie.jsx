@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../styles/ProgressPie.module.css';
+import styles from '../../styles/components/ProgressPie.module.css';
 import { useGlobalContext } from '../../configs/GlobalContext';
 
 const ProgressPie = ({ progress }) => {

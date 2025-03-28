@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ArticleCard from '../components/cards/ArticleCard';
 import CustomHead from '../components/base/Head';
-import styles from '../styles/ArticlesPage.module.css';
+import styles from '../styles/pages/ArticlesPage.module.css';
 import { getArticleIds, getArticles } from './api/articles';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';

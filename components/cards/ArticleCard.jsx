@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import EyeIcon from '../icons/EyeIcon';
 import HeartIcon from '../icons/HeartIcon';
 import CommentIcon from '../icons/CommentIcon';
-import styles from '../../styles/ArticleCard.module.css';
+import styles from '../../styles/components/ArticleCard.module.css';
 import { useLanguage } from '../../configs/LanguageContext';
 
 const ArticleCard = ({ article, stat = {} }) => {

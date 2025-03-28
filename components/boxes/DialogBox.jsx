@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/DialogBox.module.css';
+import styles from '../../styles/components/DialogBox.module.css';
 import { useTranslation } from 'next-i18next';
 
 const DialogBox = ({ text, onNext, onSkip, onCancel, isNext = true, hideCancel = false }) => {

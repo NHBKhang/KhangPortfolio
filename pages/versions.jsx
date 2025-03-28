@@ -3,7 +3,7 @@ import { useLanguage } from '../configs/LanguageContext';
 import CustomHead from '../components/base/Head';
 import { getNewestVersion, getPreviousVersion, getNextVersion } from './api/versions';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import styles from '../styles/VersionPage.module.css';
+import styles from '../styles/pages/VersionPage.module.css';
 import { useEffect, useState } from 'react';
 import { FiInfo } from 'react-icons/fi';
 

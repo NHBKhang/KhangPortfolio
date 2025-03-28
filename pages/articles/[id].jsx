@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { getArticle, getArticleIds } from '../api/articles';
-import styles from '../../styles/ArticlePage.module.css';
+import styles from '../../styles/pages/ArticlePage.module.css';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CustomHead from '../../components/base/Head';

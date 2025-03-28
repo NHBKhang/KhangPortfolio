@@ -1,6 +1,6 @@
 import ProjectCard from '../components/cards/ProjectCard';
 import { getProjects } from './api/projects';
-import styles from '../styles/ProjectsPage.module.css';
+import styles from '../styles/pages/ProjectsPage.module.css';
 import CustomHead from '../components/base/Head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';

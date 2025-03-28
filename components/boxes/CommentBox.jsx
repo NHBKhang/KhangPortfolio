@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../styles/CommentBox.module.css";
+import styles from "../../styles/components/CommentBox.module.css";
 import moment from "moment";
 import { useTranslation } from "next-i18next";
 import { useNotification } from "../../utils/toast";

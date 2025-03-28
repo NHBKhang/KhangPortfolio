@@ -7,7 +7,7 @@ import PencilIcon from '../icons/PencilIcon';
 import MailIcon from '../icons/MailIcon';
 import AccountIcon from '../icons/AccountIcon';
 import SettingsIcon from '../icons/SettingsIcon';
-import styles from '../../styles/Sidebar.module.css';
+import styles from '../../styles/components/Sidebar.module.css';
 
 const sidebarTopItems = [
   {
