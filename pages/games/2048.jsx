@@ -115,7 +115,7 @@ const Game2048 = ({ game }) => {
     return (
         <>
             <CustomHead page={'playingGame'} params={{ name: game.name[language] }} />
-            <BackButton pathname={'/games/2'} callback={() => setExplorerHidden(false)} />
+            <BackButton pathname={`/games/${game.id}`} callback={() => setExplorerHidden(false)} />
             <div className={styles.container}>
                 <h1 className={styles.title}>[{t('title')}]</h1>
                 <div className={styles.board}>

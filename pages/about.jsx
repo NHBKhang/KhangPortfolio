@@ -27,7 +27,7 @@ const skills = [
   },
   {
     "skill": "C/C++",
-    "percentage": 50,
+    "percentage": 55,
   },
   {
     "skill": "HTML/XML",
@@ -39,7 +39,7 @@ const skills = [
   },
   {
     "skill": "Java",
-    "percentage": 40,
+    "percentage": 62,
   },
 ]
 

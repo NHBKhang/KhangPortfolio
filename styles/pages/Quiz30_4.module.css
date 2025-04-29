@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.25rem;
+}
+
+.quizCard {
+    background-color: rgba(245, 245, 245, 0.75);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 50rem;
+}
+
+.question {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.optionButton {
+    width: 100%;
+    background-color: #e0f2fe;
+    text-align: left;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.optionButton:hover {
+    background-color: #bae6fd;
+}
+
+.optionButton:last-child {
+    margin-bottom: 0;
+}
+
+.doneMessage {
+    text-align: center;
+}
+
+.doneMessageText {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.doneMessageSubText {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.retryButton {
+    margin-top: 1rem;
+    background-color: #22c55e;
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.retryButton:hover {
+    background-color: #16a34a;
+}

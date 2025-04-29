@@ -40,5 +40,26 @@
         "releaseDate": "28/03/2025",
         "updatedDate": "",
         "slug": "2048"
+    },
+    {
+        "id": 3,
+        "name": {
+            "vi": "Trắc nghiệm 30/04",
+            "en": "30/04 Quiz"
+        },
+        "description": {
+            "vi": "Trò chơi trắc nghiệm thú vị về lịch sử ngày 30/04 – kiểm tra kiến thức và khám phá những sự kiện quan trọng trong ngày giải phóng miền Nam.",
+            "en": "A fun quiz game about the historical events of April 30th – test your knowledge and learn about Vietnam's Reunification Day."
+        },
+        "tags": [
+            "Quiz",
+            "History",
+            "Education",
+            "Casual"
+        ],
+        "version": "1.0",
+        "releaseDate": "30/04/2025",
+        "updatedDate": "",
+        "slug": "quiz-30-4"
     }
 ]

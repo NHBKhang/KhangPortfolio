@@ -141,7 +141,7 @@ const PasswordGame = ({ game }) => {
     return (
         <>
             <CustomHead page={'playingGame'} params={{ name: game.name[language] }} />
-            <BackButton pathname={'/games/1'} callback={() => setExplorerHidden(false)} />
+            <BackButton pathname={`/games/${game.id}`} callback={() => setExplorerHidden(false)} />
             <div className={styles.container}>
                 {showDialog &&
                     <DialogBox

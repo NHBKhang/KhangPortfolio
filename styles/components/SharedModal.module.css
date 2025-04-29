@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .imageContainer {
@@ -21,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .imageContainer img {
@@ -35,13 +37,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 100;
 }
 
 .navigationWrapper {
     position: relative;
     width: 100vw;
     height: 100vh;
+    z-index: 100;
 }
 
 .navButtonLeft,

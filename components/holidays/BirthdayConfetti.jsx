@@ -64,7 +64,6 @@ const BirthdayConfetti = () => {
             <div>
                 <FloatingBalloons />
             </div>
-            {/* <p>🎉 Chúc mừng sinh nhật! 🎉</p> */}
         </div>
     );
 };

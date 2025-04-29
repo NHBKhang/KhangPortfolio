@@ -216,13 +216,28 @@
   border: 0.1rem solid rgb(81, 85, 164);
 }
 
+.History {
+  border: 0.1rem solid rgb(172, 44, 44);
+}
+
+.Education {
+  border: 0.1rem solid rgb(93, 190, 255);
+}
+
+.Quiz {
+  border: 0.1rem solid rgb(223, 209, 8);
+}
+
 .Logic:hover,
 .Puzzle:hover,
 .Creative:hover,
 .Fun:hover,
 .Strategy:hover,
 .Brain:hover,
-.Casual:hover {
+.Casual:hover,
+.History:hover,
+.Education:hover,
+.Quiz:hover {
   background: rgba(82, 143, 240, 0.25);
 }
 
