@@ -13,6 +13,7 @@ module.exports = {
       'i0.wp.com',
       'i.imgflip.com',
       'media.licdn.com',
+      'encrypted-tbn0.gstatic.com',
       'www.vietnamworks.com',
       'cdn-icons-png.flaticon.com',
       'media.hanoitimes.vn',

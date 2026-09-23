@@ -10,9 +10,22 @@ const Timeline = ({ data }) => {
                     style={{ animationDelay: `${index * 0.2}s` }}
                 >
                     <h3 className={styles.timelineTitle}>{item.title}</h3>
-                    <p className={styles.timelineOrganization}>{item.organization}</p>
+                    <p className={styles.timelineOrganization}>
+                        {item.organization}
+                    </p>
                     <time className={styles.timelineDate}>{item.date}</time>
-                    <p className={styles.timelineDescription}>{item.description}</p>
+
+                    {Array.isArray(item.description) ? (
+                        <ul className={styles.timelineDescription}>
+                            {item.description.map((desc, descIndex) => (
+                                <li key={descIndex}>{desc}</li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p className={styles.timelineDescription}>
+                            {item.description}
+                        </p>
+                    )}
                 </div>
             ))}
         </div>

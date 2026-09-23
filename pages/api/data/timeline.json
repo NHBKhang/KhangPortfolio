@@ -4,7 +4,7 @@
             {
                 "title": "Bachelor's Degree in Computer Science",
                 "organization": "Ho Chi Minh City Open University",
-                "date": "2021 - Present",
+                "date": "2021 - 2025",
                 "description": "Completed Bachelor's degree with a focus on software technology."
             },
             {
@@ -30,7 +30,7 @@
             {
                 "title": "Cử nhân Công nghệ Thông tin",
                 "organization": "Đại học Mở thành phố Hồ Chí Minh",
-                "date": "2021 - Hiện tại",
+                "date": "2021 - 2025",
                 "description": "Hoàn thành bằng cử nhân với chuyên ngành công nghệ phần mềm."
             },
             {
@@ -56,6 +56,18 @@
     "experience": {
         "en": [
             {
+                "title": "Technician",
+                "organization": "Viettel Construction Corporation",
+                "date": "November 2025 - April 2026",
+                "description": [
+                    "Installed, operated, and maintained equipment systems at telecommunications stations.",
+                    "Inspected and maintained power systems, power cabinets, transmission systems, and telecommunications equipment.",
+                    "Troubleshot and resolved equipment issues to ensure stable system operation.",
+                    "Inspected telecommunications station infrastructure, electrical systems, air conditioning systems, and supporting equipment.",
+                    "Performed assigned tasks according to plans while ensuring work progress, quality, and technical safety at stations."
+                ]
+            },
+            {
                 "title": "Software Developer",
                 "organization": "Aegona Ltd.",
                 "date": "February 2025 - April 2025",
@@ -70,15 +82,25 @@
         ],
         "vi": [
             {
+                "title": "Kỹ thuật viên",
+                "organization": "Công ty công trình Viettel",
+                "date": "Tháng 11 2025 - Tháng 4 năm 2026",
+                "description": ["Lắp đặt, vận hành và bảo trì hệ thống thiết bị tại các nhà trạm viễn thông.",
+                    "Kiểm tra, bảo dưỡng nguồn điện, tủ nguồn, hệ thống truyền dẫn và các thiết bị viễn thông.",
+                    "Thực hiện xử lý sự cố, khắc phục lỗi thiết bị và đảm bảo hệ thống hoạt động ổn định.",
+                    "Kiểm tra tình trạng cơ sở hạ tầng nhà trạm, hệ thống điện, điều hòa và các thiết bị phụ trợ.",
+                    "Thực hiện công việc theo kế hoạch, đảm bảo tiến độ, chất lượng và an toàn kỹ thuật tại trạm."]
+            },
+            {
                 "title": "Software Developer",
                 "organization": "Aegona Ltd.",
-                "date": "Tháng 2 2025 - Tháng 4 2025",
+                "date": "Tháng 2 2025 - Tháng 4 năm 2025",
                 "description": "Phát triển ứng dụng phần mềm sử dụng nhiều ngôn ngữ như Python, Javascript, HTML/XML và CSS. Sử dụng các hệ thống mã nguồn mở như Odoo và InvenTree."
             },
             {
                 "title": "Thực tập sinh Python Developer",
                 "organization": "Aegona Ltd.",
-                "date": "Tháng 11 2024 - Tháng 2 2025",
+                "date": "Tháng 11 2024 - Tháng 2 năm 2025",
                 "description": "Phát triển ứng dụng web sử dụng Python. Làm việc chặt chẽ với nhóm phát triển để cung cấp các giải pháp phần mềm chất lượng cao."
             }
         ]

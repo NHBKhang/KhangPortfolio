@@ -65,6 +65,7 @@
 .timelineDescription {
     font-size: 0.8rem;
     margin: 2px 0;
+    padding-left: 1rem;
 }
 
 @keyframes circle {

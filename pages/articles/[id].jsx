@@ -136,7 +136,6 @@ const ArticlePage = ({ article }) => {
             <BackButton pathname={'/articles'} />
             <div className={styles.container}>
                 <h1 className={styles.title}>{article.title[language] || article.title['en']}</h1>
-                <p className={styles.description}>{article.description[language]}</p>
                 <div className={styles.coverWrapper} onClick={() => openModal()}>
                     <AnimatePresence initial={false} custom={direction}>
                         <motion.div
@@ -168,6 +167,7 @@ const ArticlePage = ({ article }) => {
                         )}
                     </div>
                 </div>
+                <p className={styles.description}>{article.description[language]}</p>
                 <div className={styles.createdDate}>
                     <p>{t('postedOn')} {moment(article.created_date).fromNow()}</p>
                 </div>
