@@ -14,12 +14,13 @@ const explorerItems = [
   { name: 'articles.json', path: '/articles', icon: 'icon/json_icon.svg' },
   { name: 'github.md', path: '/github', icon: 'icon/markdown_icon.svg' },
   { name: 'games.html', path: '/games', icon: 'icon/html_icon.svg' },
+  { name: 'her.love', path: '/love', icon: 'icon/love-folder.png' },
   { name: 'version.xml', path: '/versions', icon: 'icon/xml_icon.png' },
 ];
 
 const Explorer = () => {
   const { explorerHidden, setExplorerHidden } = useGlobalContext();
-  const [portfolioOpen, setPortfolioOpen] = useState(true);
+  const [nhbkhangOpen, setNhbkhangOpen] = useState(true);
   const [width, setWidth] = useState(175);
   const [isResizing, setIsResizing] = useState(false);
   const router = useRouter();
@@ -63,46 +64,92 @@ const Explorer = () => {
 
   return (
     <div className={styles.explorerWrapper}>
-      <div
-        className={styles.explorer}
-        style={{ width: `${width}px`, display: explorerHidden ? 'none' : 'block' }}
-      >
-        <p className={styles.title}>Explorer</p>
-        <div>
-          <input
-            type="checkbox"
-            className={styles.checkbox}
-            id="portfolio-checkbox"
-            checked={portfolioOpen}
-            onChange={() => setPortfolioOpen(!portfolioOpen)}
-          />
-          <label htmlFor="portfolio-checkbox" className={styles.heading}>
-            <ChevronRight
-              className={styles.chevron}
-              style={portfolioOpen ? { transform: 'rotate(90deg)' } : {}}
+      {explorerHidden ? (
+        <button
+          className={styles.openExplorer}
+          onMouseDown={() => {
+            setWidth(150);
+            setExplorerHidden(false);
+          }}
+          title="Open Explorer"
+        >
+        </button>
+      ) : (
+        <div
+          className={styles.explorer}
+          style={{ width: `${width}px` }}
+        >
+          <p className={styles.title}>Explorer</p>
+
+          <div>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              id="nhbkhang-checkbox"
+              checked={nhbkhangOpen}
+              onChange={() => setNhbkhangOpen(!nhbkhangOpen)}
             />
-            Portfolio
-          </label>
-          <div
-            className={styles.files}
-            style={portfolioOpen ? { display: 'block' } : { display: 'none' }}
-          >
-            {explorerItems.map((item, index) => (
-              <Link
-                key={index}
-                style={{ textDecoration: 'none' }}
-                href={item.path}>
-                <div className={`${styles.file} ${router.pathname === item.path && styles.active}`}>
-                  <Image src={`/img/${item.icon}`} alt={item.name} height={18} width={18} />
-                  <p className={styles.name}>{item.name}</p>
-                </div>
-              </Link>
-            ))}
+
+            <label
+              htmlFor="nhbkhang-checkbox"
+              className={styles.heading}
+            >
+              <ChevronRight
+                className={styles.chevron}
+                style={
+                  nhbkhangOpen
+                    ? { transform: 'rotate(90deg)' }
+                    : {}
+                }
+              />
+
+              nhbkhang
+            </label>
+
+            <div
+              className={styles.files}
+              style={{
+                display: nhbkhangOpen ? 'block' : 'none',
+              }}
+            >
+              {explorerItems.map((item, index) => (
+                <Link
+                  key={index}
+                  style={{ textDecoration: 'none' }}
+                  href={item.path}
+                >
+                  <div
+                    className={`${styles.file} ${router.pathname === item.path
+                      ? styles.active
+                      : ''
+                      }`}
+                  >
+                    <Image
+                      src={`/img/${item.icon}`}
+                      alt={item.name}
+                      height={18}
+                      width={18}
+                    />
+
+                    <p className={styles.name}>
+                      {item.name}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      <div className={styles.resizer} onMouseDown={handleMouseDown} />
+      {!explorerHidden ? (
+        <div
+          className={styles.resizer}
+          onMouseDown={handleMouseDown}
+        />
+      ) : (
+        <div className={styles.border}></div>
+      )}
     </div>
   );
 };

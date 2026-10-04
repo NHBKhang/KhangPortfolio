@@ -17,6 +17,7 @@ export const getPageTitle = (locale, title, params = {}) => {
             project: `Project ${params.name || ''}`,
             game: `${params.name || ''}`,
             playingGame: `Playing ${params.name || ''}`,
+            love: 'Love',
             version: 'Version'
         },
         vi: {
@@ -34,6 +35,7 @@ export const getPageTitle = (locale, title, params = {}) => {
             project: `Dự án ${params.name || ''}`,
             game: `${params.name || ''}`,
             playingGame: `Đang chơi ${params.name || ''}`,
+            love: 'Yêu',
             version: 'Phiên bản'
         },
     };

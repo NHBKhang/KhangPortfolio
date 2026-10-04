@@ -1,0 +1,94 @@
+{
+    "hero": {
+        "label": "A little place for you",
+        "title": "Anh viết nơi này\ncho riêng em.",
+        "description": "Không phải vì anh có quá nhiều điều để nói.\nChỉ là có một vài điều anh muốn em biết."
+    },
+
+    "intro": {
+        "title": "Có những người\nxuất hiện rất bình thường.",
+        "p1": "Rồi chẳng biết từ lúc nào, họ trở thành một phần trong những điều mình nghĩ đến mỗi ngày.",
+        "p2": "Em đối với anh là như vậy.",
+        "p3": "Không cần một khoảnh khắc quá đặc biệt. Không cần một câu chuyện thật hoàn hảo. Chỉ đơn giản là từ khi có em, những ngày bình thường của anh bỗng trở nên đáng nhớ hơn."
+    },
+
+    "her": {
+        "title": "Có rất nhiều điều\nanh thích ở em.",
+        "item1": "Anh thích cách em quan tâm đến mọi người, kể cả khi chẳng ai yêu cầu em phải làm vậy.",
+        "item2": "Anh thích cách em cố gắng với những điều em thật sự quan tâm.",
+        "item3": "Anh thích những lúc em vui, cười một cách vô tư và làm mọi thứ xung quanh cũng trở nên nhẹ nhàng hơn.",
+        "item4": "Và anh thích cả những điều nhỏ bé về em mà có lẽ chính em cũng chẳng nhận ra."
+    },
+
+    "quote": {
+        "text": "Anh không cần một câu chuyện hoàn hảo. Anh chỉ cần câu chuyện đó có em.",
+        "author": "Anh"
+    },
+
+    "message": {
+        "title": "Anh không biết\nchúng ta sẽ đi bao xa.",
+        "p1": "Anh cũng không muốn hứa những điều quá lớn lao về tương lai.",
+        "p2": "Anh chỉ biết rằng nếu sau này có những ngày vui, anh muốn được cùng em cười. Nếu có những ngày không vui, anh vẫn muốn là người ở bên cạnh em.",
+        "p3": "Và nếu được chọn lại, anh vẫn sẽ chọn bước về phía em."
+    },
+
+    "littleThings": {
+        "title": "Anh nhớ\nnhững điều rất nhỏ.",
+        "description": "Có những chuyện có thể chẳng đáng để nhớ, nhưng chẳng hiểu sao anh lại nhớ.",
+        "item1": "Những lần hai đứa nói chuyện đến quên mất thời gian.",
+        "item2": "Những lúc em cười vì một chuyện rất bình thường.",
+        "item3": "Những câu chuyện mà sau này nghĩ lại vẫn khiến anh mỉm cười.",
+        "item4": "Những khoảnh khắc chẳng có gì đặc biệt, nhưng vì có em nên anh vẫn nhớ."
+    },
+
+    "ordinaryDays": {
+        "title": "Anh thích\nnhững ngày bình thường.",
+        "p1": "Không nhất thiết phải có một buổi hẹn thật đẹp.",
+        "p2": "Không nhất thiết phải đi đâu thật xa.",
+        "p3": "Đôi khi chỉ cần được nói chuyện với em, nghe em kể một ngày của mình, hoặc đơn giản là biết hôm nay em vẫn ổn.",
+        "p4": "Những điều nhỏ như vậy thôi cũng đủ làm một ngày của anh trở nên tốt hơn."
+    },
+
+    "thankYou": {
+        "title": "Có vài điều\nanh muốn cảm ơn em.",
+        "item1": "Cảm ơn em vì đã bước vào cuộc sống của anh.",
+        "item2": "Cảm ơn em vì đã kiên nhẫn với một người đôi khi chẳng biết phải nói gì.",
+        "item3": "Cảm ơn em vì những niềm vui rất nhỏ mà em mang đến.",
+        "item4": "Và cảm ơn em vì đã cho anh biết cảm giác có một người để thương là như thế nào."
+    },
+
+    "future": {
+        "title": "Nếu sau này\nchúng ta nhìn lại...",
+        "p1": "Anh hy vọng chúng ta sẽ nhớ về những ngày này và cùng nhau mỉm cười.",
+        "p2": "Có thể chúng ta sẽ thay đổi. Có thể cuộc sống sẽ có rất nhiều điều khác đi.",
+        "p3": "Nhưng anh mong rằng giữa tất cả những thay đổi đó, chúng ta vẫn sẽ nhớ lý do vì sao mình đã chọn nhau từ đầu.",
+        "p4": "Và vẫn sẽ muốn ở cạnh nhau thêm một ngày nữa."
+    },
+
+    "promise": {
+        "title": "Anh không hứa\nmọi thứ sẽ luôn hoàn hảo.",
+        "p1": "Anh biết sẽ có những ngày chúng ta không hiểu nhau.",
+        "p2": "Sẽ có những lúc mệt mỏi, những lúc giận nhau, những lúc chẳng biết phải nói gì.",
+        "p3": "Nhưng anh muốn học cách lắng nghe em thay vì chỉ muốn mình đúng.",
+        "p4": "Muốn học cách hiểu em thay vì đoán em đang nghĩ gì.",
+        "p5": "Và muốn cùng em giải quyết những điều khó khăn, thay vì bỏ cuộc khi mọi thứ không còn dễ dàng."
+    },
+
+    "oneThing": {
+        "title": "Nếu chỉ được nói\nmột điều...",
+        "text": "Anh muốn em biết rằng anh thật sự trân trọng việc em đã xuất hiện trong cuộc đời anh.",
+        "description": "Không phải vì em làm cuộc sống của anh trở nên hoàn hảo.\nMà vì từ khi có em, anh bắt đầu muốn trở thành một phiên bản tốt hơn của chính mình."
+    },
+
+    "quoteTwo": {
+        "text": "Có lẽ điều đẹp nhất không phải là tìm được một người hoàn hảo, mà là tìm được một người khiến mình muốn cùng nhau trưởng thành.",
+        "author": "Anh"
+    },
+
+    "ending": {
+        "label": "To the person I love",
+        "title": "Cảm ơn em\nvì đã ở đây.",
+        "description": "Giữa rất nhiều người trên thế giới này,\nanh thật may mắn vì câu chuyện của mình lại có em.",
+        "signature": "Anh"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "hero": {
+        "label": "A little place for you",
+        "title": "I made this place\njust for you.",
+        "description": "Not because I have too many things to say.\nThere are simply a few things I want you to know."
+    },
+
+    "intro": {
+        "title": "Some people\nappear so ordinarily.",
+        "p1": "And somehow, without realizing it, they become a part of the things we think about every day.",
+        "p2": "That's what you became to me.",
+        "p3": "There didn't have to be a perfect moment or a perfect story. Somehow, after you came into my life, ordinary days became a little more meaningful."
+    },
+
+    "her": {
+        "title": "There are so many things\nI love about you.",
+        "item1": "I love the way you care about the people around you, even when nobody asks you to.",
+        "item2": "I love the way you keep trying for the things you truly care about.",
+        "item3": "I love the way you smile and somehow make everything around you feel a little lighter.",
+        "item4": "And I love all those little things about you that you probably don't even notice."
+    },
+
+    "quote": {
+        "text": "I don't need a perfect story. I just need our story to have you in it.",
+        "author": "Me"
+    },
+
+    "littleThings": {
+        "title": "I remember\nthe little things.",
+        "description": "Some moments may seem too small to remember, but somehow, I still do.",
+        "item1": "The times we talked until we completely lost track of time.",
+        "item2": "The moments when you laughed at something so simple.",
+        "item3": "The conversations that still make me smile whenever I think about them.",
+        "item4": "The moments that seemed ordinary, but became memorable simply because you were there."
+    },
+
+    "ordinaryDays": {
+        "title": "I love\nordinary days.",
+        "p1": "They don't have to be a perfect date.",
+        "p2": "We don't have to go somewhere far away.",
+        "p3": "Sometimes, all I need is to talk to you, listen to you tell me about your day, or simply know that you're doing okay.",
+        "p4": "Sometimes, those little things are enough to make my day better."
+    },
+
+    "thankYou": {
+        "title": "There are a few things\nI want to thank you for.",
+        "item1": "Thank you for walking into my life.",
+        "item2": "Thank you for being patient with someone who sometimes doesn't know what to say.",
+        "item3": "Thank you for all the little happiness you bring into my days.",
+        "item4": "And thank you for showing me what it feels like to have someone to love."
+    },
+
+    "message": {
+        "title": "I don't know\nhow far we'll go.",
+        "p1": "I don't want to make promises about some perfect future.",
+        "p2": "I only know that if there are happy days ahead, I want to laugh with you. And if there are difficult ones, I still want to be there beside you.",
+        "p3": "And if I could choose again, I would still choose to walk toward you."
+    },
+
+    "future": {
+        "title": "If someday\nwe look back...",
+        "p1": "I hope we'll remember these days and smile together.",
+        "p2": "Maybe we'll change. Maybe life will take us through many different things.",
+        "p3": "But I hope that among all those changes, we'll still remember why we chose each other in the first place.",
+        "p4": "And we'll still want to spend one more day together."
+    },
+
+    "promise": {
+        "title": "I won't promise\nthat everything will be perfect.",
+        "p1": "I know there will be days when we don't understand each other.",
+        "p2": "There will be moments when we're tired, moments when we're upset, and moments when we don't know what to say.",
+        "p3": "But I want to learn how to listen to you instead of always trying to be right.",
+        "p4": "I want to learn how to understand you instead of trying to guess what you're thinking.",
+        "p5": "And I want us to face difficult things together instead of giving up when things stop being easy."
+    },
+
+    "oneThing": {
+        "title": "If I could only say\none thing...",
+        "text": "I want you to know how deeply I appreciate the fact that you came into my life.",
+        "description": "Not because you made my life perfect.\nBut because having you in my life made me want to become a better version of myself."
+    },
+
+    "quoteTwo": {
+        "text": "Maybe the most beautiful thing isn't finding someone perfect, but finding someone who makes you want to grow together.",
+        "author": "Me"
+    },
+
+    "ending": {
+        "label": "To the person I love",
+        "title": "Thank you\nfor being here.",
+        "description": "Out of all the people in this world,\nI'm lucky that my story happens to have you in it.",
+        "signature": "Me"
+    }
+}
